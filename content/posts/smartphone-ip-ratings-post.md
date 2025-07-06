@@ -1,6 +1,6 @@
 +++
 date = '2025-07-06T17:58:47Z'
-draft = true
+draft = false
 title = 'Smartphone Ip Ratings Post'
 +++
 # Smartphone IP Ratings: Water and Dust Resistance Explained
