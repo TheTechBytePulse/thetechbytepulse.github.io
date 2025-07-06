@@ -1,29 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Tech Byte Pulse</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Tech Byte Pulse</description>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 06 Jul 2025 14:12:25 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Lovable Ai Post</title>
-      <link>http://localhost:1313/posts/my-lovable-ai-post/</link>
-      <pubDate>Sun, 06 Jul 2025 14:12:25 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-lovable-ai-post/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s the detailed prompt for creating web application for AirDeals to find cheap flights between the points.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Project Specification: AirDeals Flight Search Web Application
++++
+date = '2025-07-06T14:12:25Z'
+draft = false
+title = 'My Lovable AI Post'
++++
+
+Here's the detailed prompt for creating web application for AirDeals to find cheap flights between the points.
+
+```
+# Project Specification: AirDeals Flight Search Web Application
 
 ## Overview
-Create a comprehensive flight search web application called &amp;#34;AirDeals&amp;#34; with the following specifications:
+Create a comprehensive flight search web application called "AirDeals" with the following specifications:
 
 Build a modern, responsive flight booking platform using React, TypeScript, Tailwind CSS, and Supabase with these core features:
 
 ## Core Features
 
-### Authentication &amp;amp; User Management
+### Authentication & User Management
 - Implement complete user authentication system with Supabase Auth
 - User registration, login, logout functionality
 - Protected routes requiring authentication
@@ -39,7 +32,7 @@ Build a modern, responsive flight booking platform using React, TypeScript, Tail
 - Location autocomplete with comprehensive airport database
 - Real-time flight search using Amadeus API integration
 
-### Flight Results &amp;amp; Display
+### Flight Results & Display
 - Professional flight results layout with airline information
 - Flight duration, stops, departure/arrival times
 - Dynamic pricing in user-selected currency
@@ -85,15 +78,4 @@ The application should have:
 - Intuitive UX
 - Comprehensive error handling
 - Production-ready security configurations
-&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 06 Jul 2025 09:39:59 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+```
