@@ -52,7 +52,7 @@ outputs:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   description: "Tech Byte Pulse"
-  author: Theme PaperMod
+  author: TechBytePulse
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: auto
