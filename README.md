@@ -1,1 +1,2 @@
-# thetechbytepulse.github.io
+# The Tech Byte Pulse
+[![Deploy Hugo site to Pages](https://github.com/TheTechBytePulse/thetechbytepulse.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/TheTechBytePulse/thetechbytepulse.github.io/actions/workflows/hugo.yml)
