@@ -6,7 +6,6 @@ title = 'My Lovable AI Post'
 
 Here's the detailed prompt for creating web application for AirDeals to find cheap flights between the points.
 
-```
 # Project Specification: AirDeals Flight Search Web Application
 
 ## Overview
@@ -78,4 +77,3 @@ The application should have:
 - Intuitive UX
 - Comprehensive error handling
 - Production-ready security configurations
-```
