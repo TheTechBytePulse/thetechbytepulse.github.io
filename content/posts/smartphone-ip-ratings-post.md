@@ -1,7 +1,7 @@
 +++
-date = '2025-07-06T18:10:25Z'
-draft = false
-title = 'My Lovable AI Post'
+date = '2025-07-06T17:58:47Z'
+draft = true
+title = 'Smartphone Ip Ratings Post'
 +++
 # Smartphone IP Ratings: Water and Dust Resistance Explained
 This briefing reviews the concept of IP ratings in smartphones, a global standard that indicates a device's resistance to solid particles (like dust) and liquids (like water). Understanding IP ratings is crucial for consumers seeking durable devices that can withstand accidental exposure to environmental elements.

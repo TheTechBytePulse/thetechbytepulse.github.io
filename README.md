@@ -1,2 +1,6 @@
 # The Tech Byte Pulse
 [![Deploy Hugo site to Pages](https://github.com/TheTechBytePulse/thetechbytepulse.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/TheTechBytePulse/thetechbytepulse.github.io/actions/workflows/hugo.yml)
+
+```
+hugo new content content/posts/my-first-post.md
+```
