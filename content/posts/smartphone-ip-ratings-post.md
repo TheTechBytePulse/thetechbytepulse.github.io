@@ -46,7 +46,7 @@ The source highlights three common IP ratings found in contemporary smartphones:
 
 In summary, understanding IP ratings empowers consumers to make informed decisions about smartphone durability, ensuring their chosen device can withstand common environmental challenges like dust and water exposure.
 
-#FAQ
+## FAQ
 
 ### What does "IP rating" mean for smartphones?
 
