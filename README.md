@@ -5,5 +5,4 @@ Command for new post
 ```
 hugo new content content/posts/my-first-post.md
 ```
-URL for RichText to MD
-http://rich-text-to-markdown.com/
+[**RichText to MD**](http://rich-text-to-markdown.com/)
