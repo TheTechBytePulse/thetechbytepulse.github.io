@@ -3,7 +3,6 @@ date = '2025-07-06T17:58:47Z'
 draft = false
 title = '💧Smartphone IP Ratings: Water and Dust Resistance Explained'
 +++
-# 💧 Smartphone IP Ratings: Water and Dust Resistance Explained
 This briefing reviews the concept of IP ratings in smartphones, a global standard that indicates a device's resistance to solid particles (like dust) and liquids (like water). Understanding IP ratings is crucial for consumers seeking durable devices that can withstand accidental exposure to environmental elements.
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3LKxAHLzXyr8UWM2GOie9Z?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
