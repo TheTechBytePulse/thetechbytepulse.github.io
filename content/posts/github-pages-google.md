@@ -1,10 +1,10 @@
 +++
-date = '2025-07-08T17:58:47Z'
+date = '2025-07-08T13:16:32Z'
 draft = false
 title = '🔎 How to verify your Hugo site with Google Search Console'
 +++
 To verify your Hugo site with Google Search Console, you need to place the verification file in the static directory of your Hugo project and then publish your site. Hugo will automatically serve files from the static directory at the root of your site.
-  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s0Tuat2VReQ?si=9QLLiYeU_Zd_4AAt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
 
 
 **Here's a step-by-step guide:**
