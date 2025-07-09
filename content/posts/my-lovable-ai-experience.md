@@ -21,6 +21,8 @@ title = '❤️ My Lovable.Dev AI Usage Experience'
 
 Here's the detailed prompt I used to create web application for [**AirDeals**](https://globe-trotter-deals-tracker.lovable.app) to find cheap flights between the points.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/konGWiEs220?si=8U_TeinCPW9z8ZA6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # Project Specification: AirDeals Flight Search Web Application
 
 ## Overview
