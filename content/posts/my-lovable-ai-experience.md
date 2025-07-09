@@ -19,9 +19,11 @@ title = '❤️ My Lovable.Dev AI Usage Experience'
     
 *   **React and Vite for Frontend:** Lovable utilizes React, a widely used JavaScript library for building user interfaces, and Vite, a fast and efficient build tool, to ensure a modern and performant frontend.
 
-Here's the detailed prompt I used to create web application for [**AirDeals**](https://globe-trotter-deals-tracker.lovable.app) to find cheap flights between the points.
+Please watch a video demo of [**AirDeals**](https://globe-trotter-deals-tracker.lovable.app) web app to find cheap flights between the points, I created with the help of Lovable AI. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/konGWiEs220?si=8U_TeinCPW9z8ZA6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Here's the detailed prompt used to create the web application.
 
 # Project Specification: AirDeals Flight Search Web Application
 
