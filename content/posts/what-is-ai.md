@@ -4,6 +4,7 @@ draft = false
 title = '🤖 What Is Ai'
 +++
 <iframe src="https://gamma.app/embed/16mquv6f8vu2o40" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="Understanding Artificial Intelligence (AI)"></iframe>
+
 [**Present**](https://gamma.app/docs/Understanding-Artificial-Intelligence-AI-16mquv6f8vu2o40?mode=doc) 
 
 # What is artificial intelligence (AI)?
