@@ -4,6 +4,7 @@ draft = false
 title = '🤖 What Is Ai'
 +++
 <iframe src="https://gamma.app/embed/16mquv6f8vu2o40" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="Understanding Artificial Intelligence (AI)"></iframe>
+[**Present**](https://gamma.app/docs/Understanding-Artificial-Intelligence-AI-16mquv6f8vu2o40?mode=doc) 
 
 # What is artificial intelligence (AI)?
 Artificial intelligence (AI) is a branch of computer science that focuses on creating machines capable of performing tasks that typically require human intelligence. This includes various functions, from learning and problem-solving to understanding language and recognizing patterns. AI encompasses several subfields: 
