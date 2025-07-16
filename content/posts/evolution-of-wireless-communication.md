@@ -1,7 +1,7 @@
 +++
 date = '2025-07-16T12:00:00Z'
 draft = false
-title = 'The Evolution of Wireless Communication: From 1G to 6G'
+title = '📡 The Evolution of Wireless Communication: From 1G to 6G'
 +++
 
 ## The Evolution of Wireless Communication: From 1G to 6G
