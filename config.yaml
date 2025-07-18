@@ -69,6 +69,13 @@ params:
   ShowPageNums: true
   ShowToc: true
   comments: true
+  giscus:
+    repo: "TheTechBytePulse/thetechbytepulse.github.io"
+    repoId: "R_kgDOPHqAGQ" # Get this from Giscus website
+    category: "General" # Or whatever category you choose
+    categoryId: "DIC_kwDOPHqAGc4CtJSX" # Get this from Giscus website
+    theme: "preferred_color_scheme"
+    lang: "en"
   #images: ["images/papermod-cover.png"]
 
   profileMode:
