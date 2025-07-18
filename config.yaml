@@ -111,6 +111,7 @@ params:
   analytics:
        google:
            SiteVerificationTag: "G-NCMGBXTSTV"
+           ID: "G-NCMGBXTSTV" # Google Analytics ID
 
   assets:
     disableHLJS: true
