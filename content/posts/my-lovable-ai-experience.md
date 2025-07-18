@@ -1,7 +1,7 @@
 +++
 date = '2025-07-06T14:12:25Z'
 draft = false
-tags: ["AI", "Low-Code", "Development", "Supabase"]
+tags = ["AI", "Low-Code", "Development", "Supabase"]
 tags = ["AI", "Low-Code", "Development", "Supabase"]
 title = '❤️ My Lovable.Dev AI Usage Experience'
 +++

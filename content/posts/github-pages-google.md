@@ -1,7 +1,7 @@
 +++
 date = '2025-07-08T13:16:32Z'
 draft = false
-tags: ["Hugo", "Google", "SEO", "GitHub"]
+tags = ["Hugo", "Google", "SEO", "GitHub"]
 tags = ["Hugo", "Google", "SEO", "GitHub"]
 title = '🔎 How to verify your Hugo site with Google Search Console'
 +++

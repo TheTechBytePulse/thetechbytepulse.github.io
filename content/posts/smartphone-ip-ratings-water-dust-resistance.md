@@ -1,7 +1,7 @@
 +++
 date = '2025-07-06T17:58:47Z'
 draft = false
-tags: ["Smartphones", "IP Rating", "Hardware", "Technology"]
+tags = ["Smartphones", "IP Rating", "Hardware", "Technology"]
 tags = ["Smartphones", "IP Rating", "Hardware", "Technology"]
 title = '💧Smartphone IP Ratings: Water and Dust Resistance Explained'
 +++

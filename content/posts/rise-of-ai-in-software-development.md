@@ -1,7 +1,7 @@
 +++
 date = '2025-07-16T18:00:00Z'
 draft = false
-tags: ["AI", "Software Development", "Productivity"]
+tags = ["AI", "Software Development", "Productivity"]
 tags = ["AI", "Software Development", "Productivity"]
 title = '💻 The Rise of AI in Software Development'
 +++
