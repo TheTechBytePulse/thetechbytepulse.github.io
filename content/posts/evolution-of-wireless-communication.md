@@ -1,6 +1,8 @@
 +++
 date = '2025-07-16T12:00:00Z'
 draft = false
+tags: ["Wireless", "5G", "6G", "Technology"]
+tags = ["Wireless", "5G", "6G", "Technology"]
 title = '📡 The Evolution of Wireless Communication: From 1G to 6G'
 +++
 

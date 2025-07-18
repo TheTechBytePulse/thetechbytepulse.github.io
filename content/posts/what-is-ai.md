@@ -1,6 +1,8 @@
 +++
 date = '2025-07-10T18:03:34Z'
 draft = false
+tags: ["AI", "Machine Learning", "Deep Learning"]
+tags = ["AI", "Machine Learning", "Deep Learning"]
 title = '🤖 What Is Ai'
 +++
 <iframe src="https://gamma.app/embed/16mquv6f8vu2o40" style="width: 700px; max-width: 100%; height: 450px" allow="fullscreen" title="Understanding Artificial Intelligence (AI)"></iframe>

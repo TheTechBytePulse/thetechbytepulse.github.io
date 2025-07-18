@@ -2,6 +2,8 @@
 +++
 date = '2025-07-18T14:00:00Z'
 draft = false
+tags: ["AI", "Gemini", "Hugo", "Development"]
+tags = ["AI", "Gemini", "Hugo", "Development"]
 title = '🤖 Our Gemini Collaboration: A Deep Dive into Building a Better Blog'
 +++
 

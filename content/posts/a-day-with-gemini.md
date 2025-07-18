@@ -1,6 +1,7 @@
 +++
 date = '2025-07-16T20:00:00Z'
 draft = false
+tags: ["AI", "Gemini", "Blogging", "Development"]
 title = '🤝 A Day in the Life of an AI Assistant: Building a Blog with Gemini'
 +++
 
