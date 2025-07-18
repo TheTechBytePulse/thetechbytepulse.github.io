@@ -2,7 +2,6 @@
 date = '2025-07-08T13:16:32Z'
 draft = false
 tags = ["Hugo", "Google", "SEO", "GitHub"]
-tags = ["Hugo", "Google", "SEO", "GitHub"]
 title = '🔎 How to verify your Hugo site with Google Search Console'
 +++
 To verify your Hugo site with Google Search Console, you need to place the verification file in the static directory of your Hugo project and then publish your site. Hugo will automatically serve files from the static directory at the root of your site.

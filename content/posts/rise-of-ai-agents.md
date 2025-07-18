@@ -3,7 +3,6 @@
 date = '2025-07-18T10:00:00Z'
 draft = false
 tags = ["AI", "AI Agents", "Automation", "Productivity"]
-tags = ["AI", "AI Agents", "Automation", "Productivity"]
 title = '🤖 Rise of the AI Agents: The Next Wave of Automation'
 +++
 
