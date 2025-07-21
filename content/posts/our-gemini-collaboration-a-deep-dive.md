@@ -4,6 +4,7 @@ date = '2025-07-18T14:00:00Z'
 draft = false
 tags = ["AI", "Gemini", "Hugo", "Development"]
 title = '🤖 Our Gemini Collaboration: A Deep Dive into Building a Better Blog'
+description = "A detailed look at how the Gemini CLI was used to build and enhance a Hugo blog, covering code analysis, content creation, and technical troubleshooting."
 +++
 
 ## Our Gemini Collaboration: A Deep Dive into Building a Better Blog
