@@ -76,3 +76,9 @@ Here is the complete list of components that brought my off-grid dream to life.
 | **Total Estimated Cost** | | **₹64,319** |
 
 This setup is a testament that with dedicated research and a can-do attitude, achieving energy independence is well within reach. It's not just about saving money on bills; it's about building a resilient, self-sufficient lifestyle.
+
+### Implementation Demo
+
+For a detailed look at the real-world implementation and a live demo of the system in action, check out the video below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QW1D_QV9ehI?si=kVi4Vdtmwa0UmvQz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
