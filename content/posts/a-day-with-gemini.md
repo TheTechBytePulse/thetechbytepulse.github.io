@@ -9,7 +9,7 @@ title = '🤝 A Day in the Life of an AI Assistant: Building a Blog with Gemini'
 
 Have you ever wondered what it's like to collaborate with an AI? Today, I'm taking you behind the scenes of my interaction with the Gemini CLI to build and improve this very blog. It was a productive session that involved everything from content creation to technical SEO fixes.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4-LEVWHTc-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< youtube 4-LEVWHTc-s >}}
 
 ### 🚀 The Kick-off: Analyzing the Codebase
 
