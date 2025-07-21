@@ -1,7 +1,7 @@
 +++
-title: "About Me"
-date: 2025-07-21T12:00:00Z
-draft: false
+title = "About Me"
+date = "2025-07-21T12:00:00Z"
+draft = false
 +++
 
 ## About Me
