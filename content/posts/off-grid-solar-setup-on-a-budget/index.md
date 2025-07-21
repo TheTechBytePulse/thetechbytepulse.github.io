@@ -9,6 +9,9 @@ title = '☀️ Off-Grid Solar Setup on a Budget: A DIY Guide'
 
 This post details a self-installed off-grid solar power system, demonstrating how to achieve energy independence without breaking the bank. We'll cover the essential components, their approximate costs, and how they come together to power your home or specific appliances.
 
+![Off-Grid Solar System](./Off-Grid%20Solar%20System.png)
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QW1D_QV9ehI?si=9QLLiYeU_Zd_4AAt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The video by Prateep Gedupudi showcases a practical, budget-friendly off-grid solar setup. It highlights the key components and accessories needed for a functional system, emphasizing a DIY approach to energy saving.
