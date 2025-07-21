@@ -79,17 +79,22 @@ params:
   #images: ["images/papermod-cover.png"]
 
   profileMode:
-    enabled: false
-    title: PaperMod
-    imageUrl: "#"
-    imageTitle: my image
-    # imageWidth: 120
-    # imageHeight: 120
+    enabled: true
+    title: Prateep Gedupudi
+    subtitle: "Exploring the pulse of technology, one byte at a time. Your guide to AI, renewable energy, and DIY tech."
+    imageUrl: "images/profile.png"
+    imageTitle: "Prateep Gedupudi"
+    imageWidth: 150
+    imageHeight: 150
     buttons:
+      - name: Posts
+        url: /posts
       - name: Archives
-        url: archives
+        url: /archives
       - name: Tags
-        url: tags
+        url: /tags
+      - name: About Me
+        url: /about
 
   homeInfoParams:
     Title: "Tech Byte Pulse"
