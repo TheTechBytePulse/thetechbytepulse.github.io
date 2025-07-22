@@ -2,7 +2,7 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://thetechbytepulse.github.io/"
 title: Tech Byte Pulse
-theme: DreamMod
+theme: [PaperMod]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
