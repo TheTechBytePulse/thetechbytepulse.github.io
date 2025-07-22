@@ -79,7 +79,7 @@ params:
   #images: ["images/papermod-cover.png"]
 
   profileMode:
-    enabled: true
+    enabled: false
     title: Prateep Gedupudi
     subtitle: "Exploring the pulse of technology, one byte at a time. Your guide to AI, renewable energy, and DIY tech."
     imageUrl: "images/profile.jpeg"
