@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+<meta name="keywords" content="{{ if .Keywords }}{{ delimit .Keywords ", " }}{{ else }}{{ delimit .Site.Params.keywords ", " }}{{ end }}">
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link crossorigin="anonymous" href="/css/stylesheet.css" rel="preload stylesheet" as="style">
+<link rel="icon" href="{{ .Site.Params.favicon | default "/favicon.ico" }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.favicon16x16 | default "/favicon-16x16.png" }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.favicon32x32 | default "/favicon-32x32.png" }}">
+<link rel="apple-touch-icon" href="{{ .Site.Params.apple_touch_icon | default "/apple-touch-icon.png" }}">
+<link rel="mask-icon" href="{{ .Site.Params.safari_pinned_tab | default "/safari-pinned-tab.svg" }}">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+{{- partial "templates/opengraph.html" . -}}
+{{- partial "templates/twitter_cards.html" . -}}
+{{- partial "templates/schema_json.html" . -}}
