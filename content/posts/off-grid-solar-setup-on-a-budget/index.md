@@ -16,7 +16,7 @@ description = "A detailed guide to building a budget-friendly off-grid solar sys
 
 Going off-grid with solar power felt like a daunting task at first. It's a world filled with technical jargon, complex components, and a dizzying array of choices. But after dedicating significant time to research and getting my hands dirty, I successfully built a budget-friendly off-grid system that provides true energy independence. This guide details my journey, the knowledge I gained, and the choices I made, hoping it will empower you to do the same.
 
-![Off-Grid Solar System](./Off-Grid%20Solar%20System.png)
+
 
 ### The Initial Spark: Why Off-Grid?
 
