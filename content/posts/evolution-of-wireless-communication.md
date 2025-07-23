@@ -4,6 +4,11 @@ draft = false
 tags = ["Wireless", "5G", "6G", "Technology"]
 title = '📡 The Evolution of Wireless Communication: From 1G to 6G'
 description = "Explore the journey of wireless technology, from the analog voice calls of 1G to the super-fast speeds of 5G and the futuristic promise of 6G."
+
+[cover]
+  image = "/images/evolution-of-wireless-communication-cover.png"
+  alt = "An illustration showing the evolution of wireless communication from 1G to 6G."
+  caption = "The journey of wireless technology."
 +++
 
 ## The Evolution of Wireless Communication: From 1G to 6G

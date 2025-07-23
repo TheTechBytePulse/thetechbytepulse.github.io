@@ -2,8 +2,14 @@
 date = '2025-07-16T18:00:00Z'
 draft = false
 tags = ["AI", "Software Development", "Productivity"]
+series = ["AI Series"]
 title = '💻 The Rise of AI in Software Development'
 description = "Learn how AI is reshaping the software development lifecycle, from AI-powered code generation and automated testing to intelligent project management."
+
+[cover]
+  image = "/images/rise-of-ai-in-software-development-cover.png"
+  alt = "A robot interacting with data visualizations, representing AI in software development."
+  caption = "AI is transforming the software development landscape."
 +++
 
 ## The Rise of AI in Software Development

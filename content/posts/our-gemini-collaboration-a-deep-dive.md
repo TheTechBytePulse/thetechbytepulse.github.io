@@ -3,8 +3,14 @@
 date = '2025-07-18T14:00:00Z'
 draft = false
 tags = ["AI", "Gemini", "Hugo", "Development"]
+series = ["AI Series"]
 title = '🤖 Our Gemini Collaboration: A Deep Dive into Building a Better Blog'
 description = "A detailed look at how the Gemini CLI was used to build and enhance a Hugo blog, covering code analysis, content creation, and technical troubleshooting."
+
+[cover]
+  image = "/images/our-gemini-collaboration-a-deep-dive-cover.png"
+  alt = "An illustration of a human and an AI collaborating on a project."
+  caption = "A deep dive into our collaboration with Gemini."
 +++
 
 ## Our Gemini Collaboration: A Deep Dive into Building a Better Blog

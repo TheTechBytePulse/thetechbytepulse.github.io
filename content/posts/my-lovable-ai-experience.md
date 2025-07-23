@@ -2,8 +2,14 @@
 date = '2025-07-06T14:12:25Z'
 draft = false
 tags = ["AI", "Low-Code", "Development", "Supabase"]
+series = ["AI Series"]
 title = '❤️ My Lovable.Dev AI Usage Experience'
 description = "An overview of Lovable.Dev AI, an AI-powered platform for building full-stack web apps with natural language, and a look at a flight-finder app built with it."
+
+[cover]
+  image = "/images/my-lovable-ai-experience-cover.png"
+  alt = "The logo for Lovable.Dev AI."
+  caption = "My experience with Lovable.Dev AI."
 +++
 ❤️ Lovable.Dev AI is an AI-powered platform designed to simplify and accelerate web application development. It allows users to build full-stack web applications using natural language prompts, essentially turning descriptions into functional code and deployable apps. It focuses on code generation and enables users to build working frontends, backends, and logic without extensive coding expertise. 
 

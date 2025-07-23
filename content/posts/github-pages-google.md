@@ -4,6 +4,11 @@ draft = false
 tags = ["Hugo", "Google", "SEO", "GitHub"]
 title = '🔎 How to verify your Hugo site with Google Search Console'
 description = "A step-by-step guide on how to verify your Hugo static site with Google Search Console by placing the HTML verification file in the static directory."
+
+[cover]
+  image = "/images/github-pages-google-cover.webp"
+  alt = "The logos of GitHub Pages and Google Search Console."
+  caption = "Get your GitHub Pages site indexed by Google."
 +++
 To verify your Hugo site with Google Search Console, you need to place the verification file in the static directory of your Hugo project and then publish your site. Hugo will automatically serve files from the static directory at the root of your site.
 

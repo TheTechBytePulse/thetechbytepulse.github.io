@@ -3,8 +3,14 @@
 date = '2025-07-18T10:00:00Z'
 draft = false
 tags = ["AI", "AI Agents", "Automation", "Productivity"]
+series = ["AI Series"]
 title = '🤖 Rise of the AI Agents: The Next Wave of Automation'
 description = "Discover what AI Agents are, how they differ from simple AI tools, and how these autonomous, goal-oriented systems are set to redefine automation."
+
+[cover]
+  image = "/images/rise-of-ai-agents-cover.png"
+  alt = "An illustration of autonomous AI agents working together."
+  caption = "AI Agents: The next wave of automation."
 +++
 
 ## Rise of the AI Agents: The Next Wave of Automation
