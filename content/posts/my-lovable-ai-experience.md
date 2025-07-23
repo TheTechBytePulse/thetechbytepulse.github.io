@@ -3,6 +3,7 @@ date = '2025-07-06T14:12:25Z'
 draft = false
 tags = ["AI", "Low-Code", "Development", "Supabase"]
 series = ["AI Series"]
+category = "AI & Machine Learning"
 title = '❤️ My Lovable.Dev AI Usage Experience'
 description = "An overview of Lovable.Dev AI, an AI-powered platform for building full-stack web apps with natural language, and a look at a flight-finder app built with it."
 
