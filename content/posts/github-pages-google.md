@@ -6,7 +6,7 @@ title = '🔎 How to verify your Hugo site with Google Search Console'
 description = "A step-by-step guide on how to verify your Hugo static site with Google Search Console by placing the HTML verification file in the static directory."
 
 [cover]
-  image = "/images/github-pages-google-cover.webp"
+  image = "/images/github-pages-google-cover.jpg"
   alt = "The logos of GitHub Pages and Google Search Console."
   caption = "Get your GitHub Pages site indexed by Google."
 +++
