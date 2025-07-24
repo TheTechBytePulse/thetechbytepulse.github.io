@@ -100,13 +100,9 @@ params:
         url: /about
 
   homeInfoParams:
-    Title: "Tech Byte Pulse"
+    Title: "Explore the pulse of technology, one byte at a time"
     Content: 
-      👋 Welcome to TechBytePulse. Your ultimate destination for all things tech.
-      
-      - From the latest technology reviews and software tutorials to breaking tech news and in-depth industry analysis, we have got you covered. Whether you're a tech enthusiast, a professional, or just curious about the digital world.
-      
-      - This blog delivers bite-sized, engaging, and informative content to keep you ahead of the curve. Join us as we explore the pulse of technology, one byte at a time. 🚀💻
+      👋 Welcome to TechBytePulse. Your ultimate destination for all things tech. From the latest technology reviews and software tutorials to breaking tech news and in-depth industry analysis, we have got you covered. Whether you're a tech enthusiast, a professional, or just curious about the digital world. This blog delivers bite-sized, engaging, and informative content to keep you ahead of the curve. 🚀💻
 
   socialIcons:
     - name: github
