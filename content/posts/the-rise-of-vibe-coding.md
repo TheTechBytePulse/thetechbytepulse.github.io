@@ -3,7 +3,7 @@ date = '2025-07-26T20:05:00Z'
 draft = false
 tags = ["AI", "Vibe-Coding", "Software Development", "Future of Code"]
 series = ["AI Series"]
-category = "AI & Machine Learning"
+categories = ["AI & Machine Learning"]
 title = "The Rise of Vibe-Coding: How AI is Reshaping Software Development"
 description = "A look at the trend of 'vibe-coding,' where AI tools are transforming software development by allowing users to build applications with natural language."
 [cover]
