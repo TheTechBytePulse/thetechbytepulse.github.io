@@ -2,7 +2,7 @@
 date = '2025-07-27T14:00:00Z'
 draft = false
 tags = ["iOS", "Apple", "iPhone", "Beta Program", "Software Update"]
-categories = ["Mobile Technology"]
+categories = ["Mobile Technology", "News"]
 title = 'Apple Releases iOS 26 Public Beta with New Features'
 description = "Apple has just released the public beta for iOS 26, allowing iPhone users to test out the new features before the official release. Here's what's new and how to get it."
 
