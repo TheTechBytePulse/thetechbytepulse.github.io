@@ -3,15 +3,14 @@ date = '2025-07-19T00:00:00Z'
 draft = false
 tags = ["DIY Solar", "Off-Grid Living", "Solar Power", "Renewable Energy", "Home Improvement", "Solar Panels", "Solar Batteries", "Inverters"]
 series = ["Off-Grid Solar"]
-category = ["DIY & Hardware", "Sustainable Living"]
+categories = ["DIY & Hardware", "Sustainable Living"]
 title = '☀️ My DIY Off-Grid Solar Setup: A Journey from Novice to Pro'
 description = "A detailed guide to building a budget-friendly off-grid solar system, covering panel types, batteries, PCUs like the UTL Gamma Plus, and wiring."
 
 [cover]
-  image = "Off-Grid Solar System.png"
+  image = "/images/off-grid-solar-setup-on-a-budget-cover.png"
   alt = "A diagram of an off-grid solar power system"
   caption = "My budget-friendly solar setup"
-  relative = true
 +++
 
 ## My DIY Off-Grid Solar Setup: A Journey from Novice to Pro
