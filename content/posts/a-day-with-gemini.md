@@ -1,9 +1,9 @@
 +++
 date = '2025-07-16T20:00:00Z'
 draft = false
-tags = ["AI", "Gemini", "Blogging", "Development"]
+tags = ["AI", "Gemini", "Blogging", "Development", "Hugo", "SEO"]
 series = ["AI Series"]
-categories = ["AI & Machine Learning"]
+categories = ["AI & Machine Learning", "Web Development"]
 title = '🤝 A Day in the Life of an AI Assistant: Building a Blog with Gemini'
 description = "A behind-the-scenes look at collaborating with the Gemini CLI to build a blog, from content creation and code analysis to fixing technical SEO issues."
 

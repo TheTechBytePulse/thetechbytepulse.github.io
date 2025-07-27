@@ -1,9 +1,9 @@
 +++
 date = '2025-07-26T20:00:00Z'
 draft = false
-tags = ["AI", "Google", "Vibe-Coding", "Development", "Opal"]
+tags = ["AI", "Google", "Vibe-Coding", "Low-Code", "No-Code", "App Development", "Opal"]
 series = ["AI Series"]
-categories = ["AI & Machine Learning"]
+categories = ["AI & Machine Learning", "Software Development"]
 title = "Google's New AI 'Opal' Challenges the $26 Billion Vibe-Coding Market"
 description = "Google has launched Opal, a new AI-powered tool for app development, entering the rapidly growing vibe-coding market."
 [cover]

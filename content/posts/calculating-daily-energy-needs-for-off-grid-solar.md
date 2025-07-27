@@ -2,8 +2,9 @@
 title = "How to Calculate Your Daily Energy Needs for an Off-Grid Solar Setup"
 date = "2025-07-24"
 author = "Prateep Gedupudi"
-tags = ["Solar", "Off-Grid", "DIY", "Energy Calculation", "Renewable Energy", "Budget"]
-categories = ["DIY & Hardware"]
+tags = ["Solar Power", "Off-Grid Living", "DIY Solar", "Energy Calculation", "Renewable Energy", "Home Improvement"]
+categories = ["DIY & Hardware", "Sustainable Living"]
+series = ["Off-Grid Solar"]
 description = "A step-by-step guide to accurately calculating your daily energy consumption, a crucial first step in designing a successful and budget-friendly off-grid solar system."
 [cover]
   image = "/images/calculating-energy-needs-cover.png" # Placeholder - a new image should be created
