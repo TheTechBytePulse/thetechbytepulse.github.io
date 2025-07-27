@@ -6,22 +6,12 @@ draft = false
 
 ## About Me
 
-Hello! I'm Prateep Gedupudi, a passionate technologist and Senior Cloud Computing Architect at Boeing. With a strong foundation in software engineering and a keen interest in AI/ML, I thrive on designing and building scalable, resilient, and high-quality systems.
+Hello! I'm Prateep Gedupudi, a technologist with a deep passion for building and architecting software. My journey in the tech world has been driven by a fascination with how complex systems work and a desire to create solutions that are scalable, resilient, and impactful.
 
-### My Professional Journey
+With a background in software engineering and a strong focus on cloud computing and AI/ML, I've had the privilege of working on a wide range of projects. From modernizing global trade finance platforms to architecting secure, cloud-native solutions for the aerospace industry, I've always been drawn to challenges that push the boundaries of technology.
 
-My career has been a rewarding journey through various facets of software development and architecture.
+I believe that the most effective solutions come from a blend of solid engineering principles, a forward-thinking mindset, and a commitment to continuous learning. I'm particularly excited by the potential of AI and cloud technologies to transform industries and our daily lives.
 
-At **Boeing**, I've had the opportunity to work on critical projects, from enhancing the security of the MyBoeingFleet suite during its migration to Azure Cloud to championing a DevSecOps culture. I've led the transformation of on-premise services to the cloud and helped set new standards for automation and quality. Before my current role, I worked as an IT Systems and Data Analyst, where I developed solutions for flight testing systems, email processing, and even factory automation for painting robots using machine learning.
+This blog, The Tech Byte Pulse, is my platform for exploring the latest trends, sharing insights from my experiences, and connecting with a community of fellow tech enthusiasts. My goal is to break down complex topics and spark conversations about the ever-evolving world of technology.
 
-Before Boeing, I was a Senior Software Engineer at **CGI**, where I spent several years innovating on Trade360, a global trade and supply chain finance solution. There, I worked on everything from modernizing the UI with Dojo Toolkit to implementing RESTful services and even exploring blockchain with a POC on Ripple.
-
-My earlier roles at **Marlabs Inc** and **Bilvac Techno Management Pvt Ltd** helped build the foundation of my career, where I honed my skills in Java, Spring, Hibernate, and various web technologies.
-
-### My Philosophy
-
-I believe in the power of data-driven solutions and continuous innovation. Whether it's architecting a complex cloud system or exploring the potential of a new technology, my goal is always to deliver successful products with efficiency and a forward-thinking approach.
-
-This blog is my space to share my experiences, explore the pulse of technology, and connect with others who are just as excited about the future of tech as I am.
-
-Thank you for stopping by!
+Thanks for joining me on this journey!
