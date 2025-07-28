@@ -8,7 +8,7 @@ title = '💻 The Rise of AI in Software Development'
 description = "Learn how AI is reshaping the software development lifecycle, from AI-powered code generation and automated testing to intelligent project management."
 
 [cover]
-  image = "/images/rise-of-ai-in-software-development-cover.png"
+  image = "/images/rise-of-ai-in-software-development-cover.jpg"
   alt = "A robot interacting with data visualizations, representing AI in software development."
   caption = "AI is transforming the software development landscape."
 +++

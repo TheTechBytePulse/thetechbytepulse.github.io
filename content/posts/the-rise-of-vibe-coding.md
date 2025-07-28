@@ -7,7 +7,7 @@ categories = ["AI & Machine Learning", "Software Development"]
 title = "The Rise of Vibe-Coding: How AI is Reshaping Software Development"
 description = "A look at the trend of 'vibe-coding,' where AI tools are transforming software development by allowing users to build applications with natural language."
 [cover]
-  image = "/images/rise-of-vibe-coding-cover.png"
+  image = "/images/rise-of-vibe-coding-cover.jpg"
   alt = "An abstract image representing the concept of AI and code."
   caption = "AI is reshaping how we build software."
 +++

@@ -8,7 +8,7 @@ title = '🤖 What Is Ai'
 description = "A comprehensive overview of Artificial Intelligence (AI), including its subfields like Machine Learning and Deep Learning, its applications, and the different types of AI."
 
 [cover]
-  image = "/images/what-is-ai-cover.png"
+  image = "/images/what-is-ai-cover.jpg"
   alt = "Abstract image representing artificial intelligence"
   caption = "The building blocks of AI"
 +++

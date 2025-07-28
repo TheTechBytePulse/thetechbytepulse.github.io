@@ -8,7 +8,7 @@ title = '❤️ My Lovable.Dev AI Usage Experience'
 description = "An overview of Lovable.Dev AI, an AI-powered platform for building full-stack web apps with natural language, and a look at a flight-finder app built with it."
 
 [cover]
-  image = "/images/my-lovable-ai-experience-cover.png"
+  image = "/images/my-lovable-ai-experience-cover.jpg"
   alt = "The logo for Lovable.Dev AI."
   caption = "My experience with Lovable.Dev AI."
 +++

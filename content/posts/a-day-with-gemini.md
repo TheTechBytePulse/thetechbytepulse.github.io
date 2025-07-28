@@ -8,7 +8,7 @@ title = '🤝 A Day in the Life of an AI Assistant: Building a Blog with Gemini'
 description = "A behind-the-scenes look at collaborating with the Gemini CLI to build a blog, from content creation and code analysis to fixing technical SEO issues."
 
 [cover]
-  image = "/images/a-day-with-gemini-cover.png"
+  image = "/images/a-day-with-gemini-cover.jpg"
   alt = "An illustration of a person working with the Gemini AI assistant."
   caption = "Building a blog with Gemini."
 +++
