@@ -5,10 +5,11 @@ draft = false
 author = "Prateep Gedupudi"
 tags = ["Gemini", "Hugo", "CSS", "Debugging", "Web Development", "Case Study"]
 categories = ["AI", "Web Development"]
+series = ["Gemini Journals"]
 description = "A step-by-step case study of how a frustrating CSS issue was diagnosed and solved with the help of the Gemini AI assistant, highlighting a real-world debugging journey."
 
 [cover]
-  image = "/images/our-gemini-collaboration-solving-the-missing-cover-image-cover.png"
+  image = "/images/our-gemini-collaboration-solving-the-missing-cover-image-cover.jpg"
   alt = "An illustration showing a magnifying glass over a web page, focusing on a missing image."
   caption = "The case of the missing cover image."
 +++
