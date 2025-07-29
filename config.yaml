@@ -108,9 +108,9 @@ params:
       👋 Welcome to Tech Byte Pulse. Your ultimate destination for all things tech. From the latest technology reviews and software tutorials to breaking tech news and in-depth industry analysis, we have got you covered. Whether you're a tech enthusiast, a professional, or just curious about the digital world. This blog delivers bite-sized, engaging, and informative content to keep you ahead of the curve. 🚀💻
 
   socialIcons:
-    - name: github
-      title: View Source on Github
-      url: "https://github.com/TheTechBytePulse"
+    # - name: github
+    #   title: View Source on Github
+    #   url: "https://github.com/TheTechBytePulse"
     - name: youtube
       title: TechBytePulse
       url: "https://www.youtube.com/@TechBytePulse"
@@ -135,10 +135,10 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/apple-touch-icon.png"
 
-  # cover:
-  #     hidden: true # hide everywhere but not in structured data
-  #     hiddenInList: true # hide on list pages and home
-  #     hiddenInSingle: true # hide on single page
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
 
   # fuseOpts:
   #     isCaseSensitive: false
