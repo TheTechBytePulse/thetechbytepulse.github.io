@@ -1,6 +1,6 @@
 +++
 title = "Moto G86: A New Contender in the Mid-Range Market"
-date = '2025-07-30T10:00:00+00:00'
+date = '2025-07-30T10:00:00Z'
 draft = false
 tags = ["smartphones", "motorola", "tech news"]
 categories = ["Smartphones", "Tech News"]
