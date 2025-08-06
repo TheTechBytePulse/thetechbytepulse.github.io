@@ -2,7 +2,7 @@
 date = '2025-07-16T12:00:00Z'
 draft = false
 tags = ["Wireless Technology", "Mobile Networks", "5G", "6G", "Tech History", "Telecommunications"]
-categories = ["Technology Explained", "History of Technology"]
+categories = ["Tech Explained"]
 title = '📡 The Evolution of Wireless Communication: From 1G to 6G'
 description = "Explore the journey of wireless technology, from the analog voice calls of 1G to the super-fast speeds of 5G and the futuristic promise of 6G."
 

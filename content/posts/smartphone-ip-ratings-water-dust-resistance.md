@@ -2,7 +2,7 @@
 date = '2025-07-06T17:58:47Z'
 draft = false
 tags = ["Smartphones", "IP Rating", "Water Resistance", "Dust Resistance", "Hardware", "Tech Explained"]
-categories = ["Technology Explained", "Mobile Technology"]
+categories = ["Tech Explained"]
 title = '💧Smartphone IP Ratings: Water and Dust Resistance Explained'
 description = "Learn what smartphone IP ratings like IP67 and IP68 mean, how they measure dust and water resistance, and why they are crucial for device durability."
 

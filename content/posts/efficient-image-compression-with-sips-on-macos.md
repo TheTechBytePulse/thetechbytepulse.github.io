@@ -2,7 +2,7 @@
 date = '2025-07-27T12:00:00-05:00'
 draft = false
 tags = ["macOS", "Web Development", "Image Compression", "CLI", "sips"]
-categories = ["Web Development", "Productivity"]
+categories = ["DIY & How-To"]
 title = 'Efficient Image Compression with `sips` on macOS'
 description = "Learn how to use the built-in `sips` command-line tool on macOS to quickly and effectively compress images for your website, improving performance and user experience."
 [cover]

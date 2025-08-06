@@ -2,7 +2,7 @@
 date = '2025-07-27T22:00:00Z'
 draft = false
 tags = ["AI", "GitHub", "Software Development", "No-Code", "Low-Code", "Spark"]
-categories = ["AI & Machine Learning", "Software Development", "News"]
+categories = ["AI & Software"]
 title = "GitHub's New AI 'Spark' Turns Ideas into Apps Without Code"
 description = "GitHub has unveiled 'Spark,' a new AI tool that allows users to create applications from natural language prompts, further pushing the boundaries of no-code development."
 

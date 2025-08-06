@@ -2,7 +2,7 @@
 date = '2025-07-30T14:00:00Z'
 draft = false
 tags = ["Apple", "iPhone", "Filmmaking", "28 Years Later", "Movie"]
-categories = ["Mobile Technology", "News"]
+categories = ["Tech News"]
 title = "Apple Shares Behind-the-Scenes Look at '28 Years Later' Filmed on iPhone"
 description = "Apple has released a new video showcasing how the upcoming movie '28 Years Later' was filmed using 20 iPhones, highlighting the device's professional filmmaking capabilities."
 

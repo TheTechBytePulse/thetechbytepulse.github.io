@@ -3,7 +3,7 @@ date = '2025-08-05T12:00:00Z'
 draft = false
 tags = ["AI", "Vectorization", "Machine Learning", "NLP", "Embeddings", "Computer Vision", "Audio Processing"]
 series = ["AI Series"]
-categories = ["AI & Machine Learning"]
+categories = ["Tech Explained"]
 title = 'Understanding AI Vectorization: From Data to Numbers'
 description = "A comprehensive guide to AI vectorization, explaining how it converts text, images, audio, and video into numerical data for machine learning models. Discover why this process is crucial for all modern AI applications."
 

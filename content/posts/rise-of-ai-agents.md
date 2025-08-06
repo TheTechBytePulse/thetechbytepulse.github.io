@@ -4,7 +4,7 @@ date = '2025-07-18T10:00:00Z'
 draft = false
 tags = ["AI", "AI Agents", "Automation", "Future of Work", "Productivity", "Artificial Intelligence"]
 series = ["AI Series"]
-categories = ["AI & Machine Learning", "Future Tech"]
+categories = ["AI & Software"]
 title = '🤖 Rise of the AI Agents: The Next Wave of Automation'
 description = "Discover what AI Agents are, how they differ from simple AI tools, and how these autonomous, goal-oriented systems are set to redefine automation."
 

@@ -4,7 +4,7 @@ title = "Gemini CLI Sandbox: A Deep Dive into its Security Benefits"
 date = "2025-07-31T14:00:00+00:00"
 draft = false
 tags = ["Gemini", "CLI", "security", "sandbox", "development"]
-categories = ["Software Development", "Security"]
+categories = ["AI & Software"]
 description = "The Gemini CLI includes a powerful sandbox feature designed to protect your system from potentially harmful AI-generated code. This article explores the key security benefits and how it creates a safer development environment."
 author = "Prateep Gedupudi"
 [cover]

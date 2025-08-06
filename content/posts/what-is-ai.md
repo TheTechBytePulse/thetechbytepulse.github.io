@@ -3,7 +3,7 @@ date = '2025-07-10T18:03:34Z'
 draft = false
 tags = ["AI", "Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Tech Explained"]
 series = ["AI Series"]
-categories = ["AI & Machine Learning", "Technology Explained"]
+categories = ["Tech Explained"]
 title = '🤖 What Is Ai'
 description = "A comprehensive overview of Artificial Intelligence (AI), including its subfields like Machine Learning and Deep Learning, its applications, and the different types of AI."
 

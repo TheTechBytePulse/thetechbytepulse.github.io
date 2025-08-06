@@ -3,7 +3,7 @@ title = "Oppo Reno 14 Pro 5G Price in India: Launch, Specifications, and Availab
 date = "2025-07-30T12:00:00+00:00"
 draft = false
 tags = ["Oppo", "smartphones", "tech news", "India", "Oppo Reno"]
-categories = ["Smartphones", "Tech News"]
+categories = ["Tech News"]
 description = "Oppo has finally revealed the price of the highly anticipated Oppo Reno 14 Pro 5G in India. Here's everything you need to know about the new device."
 
 [cover]

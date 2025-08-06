@@ -3,7 +3,7 @@ title = "Redmi Note 14 SE 5G Launched in India: A New Contender in the Budget Se
 date = "2025-07-28T12:00:00+00:00"
 draft = false
 tags = ["Redmi", "Xiaomi", "smartphones", "tech news", "India"]
-categories = ["Smartphones", "Tech News"]
+categories = ["Tech News"]
 description = "Xiaomi has expanded its Redmi Note 14 series in India with the launch of the Redmi Note 14 SE 5G, a device that offers a compelling set of features at a competitive price point."
 
 [cover]

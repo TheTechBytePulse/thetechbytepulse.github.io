@@ -4,7 +4,7 @@ title = "Galaxy Z Fold 7 Breaks Preorder Records, Outselling the Z Flip 7"
 date = "2025-07-31T13:00:00+00:00"
 draft = false
 tags = ["Samsung", "smartphones", "tech news", "foldable", "Galaxy Z Fold 7"]
-categories = ["Smartphones", "Tech News"]
+categories = ["Tech News"]
 description = "Samsung's new Galaxy Z Fold 7 is a massive hit, breaking preorder records across the globe and, for the first time, outselling its popular sibling, the Z Flip 7."
 author = "Prateep Gedupudi"
 [cover]

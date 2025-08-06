@@ -4,7 +4,7 @@ date = '2025-07-18T14:00:00Z'
 draft = false
 tags = ["AI", "Gemini", "Hugo", "Web Development", "SEO", "Google Analytics", "Giscus", "Case Study"]
 series = ["Gemini Journals"]
-categories = ["AI & Machine Learning", "Web Development"]
+categories = ["AI & Software", "Gemini Journals"]
 title = '🤖 Our Gemini Collaboration: A Deep Dive into Building a Better Blog'
 description = "A detailed look at how the Gemini CLI was used to build and enhance a Hugo blog, covering code analysis, content creation, and technical troubleshooting."
 

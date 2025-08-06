@@ -4,7 +4,7 @@ date = '2025-07-31T12:00:00+00:00'
 draft = false
 author = "Prateep Gedupudi"
 tags = ["Gemini", "Lovable.dev", "SaaS", "Debugging", "Web Development", "Case Study", "AI"]
-categories = ["AI", "Web Development"]
+categories = ["AI & Software", "Gemini Journals"]
 series = ["Gemini Journals"]
 description = "A case study comparing the experience of using Lovable.dev for bootstrapping a project and the Gemini CLI for deep, iterative debugging."
 

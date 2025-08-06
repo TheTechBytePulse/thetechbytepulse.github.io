@@ -4,7 +4,7 @@ date = '2025-07-29T11:00:00+00:00'
 draft = false
 author = "Prateep Gedupudi"
 tags = ["Vivo", "5G", "Smartphone", "Tech Review"]
-categories = ["Smartphones", "Tech News"]
+categories = ["Tech News"]
 description = "The Vivo V60 5G is here to revolutionize your mobile experience with lightning-fast 5G, a powerful Snapdragon processor, and a pro-grade camera system. Discover if this is the upgrade you've been waiting for."
 
 [cover]

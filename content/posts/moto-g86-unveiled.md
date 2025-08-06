@@ -3,7 +3,7 @@ title = "Moto G86: A New Contender in the Mid-Range Market"
 date = '2025-07-30T10:00:00Z'
 draft = false
 tags = ["smartphones", "motorola", "tech news"]
-categories = ["Smartphones", "Tech News"]
+categories = ["Tech News"]
 description = "Motorola is back with a bang, introducing the Moto G86, a smartphone that's set to shake up the mid-range market. With a focus on a massive battery, a durable build, and a powerful camera system, the Moto G86 is designed to impress."
 [cover]
   image = "/images/moto-g86-unveiled-cover.jpg"

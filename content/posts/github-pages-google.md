@@ -2,7 +2,7 @@
 date = '2025-07-08T13:16:32Z'
 draft = false
 tags = ["Hugo", "Google Search Console", "SEO", "GitHub Pages", "Static Site Generator", "Tutorial"]
-categories = ["Web Development", "Blogging"]
+categories = ["Tech Explained"]
 title = '🔎 How to verify your Hugo site with Google Search Console'
 description = "A step-by-step guide on how to verify your Hugo static site with Google Search Console by placing the HTML verification file in the static directory."
 

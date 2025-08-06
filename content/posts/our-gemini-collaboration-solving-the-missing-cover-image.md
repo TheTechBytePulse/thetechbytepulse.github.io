@@ -4,7 +4,7 @@ date = '2025-07-29T12:00:00+00:00'
 draft = false
 author = "Prateep Gedupudi"
 tags = ["Gemini", "Hugo", "CSS", "Debugging", "Web Development", "Case Study"]
-categories = ["AI", "Web Development"]
+categories = ["AI & Software", "Gemini Journals"]
 series = ["Gemini Journals"]
 description = "A step-by-step case study of how a frustrating CSS issue was diagnosed and solved with the help of the Gemini AI assistant, highlighting a real-world debugging journey."
 

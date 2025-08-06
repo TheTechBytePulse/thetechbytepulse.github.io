@@ -4,7 +4,7 @@ title = "Vivo T4 5G Launched: A New Powerhouse with a Massive 7300mAh Battery"
 date = "2025-07-31T11:00:00+00:00"
 draft = false
 tags = ["Vivo", "smartphones", "tech news", "5G"]
-categories = ["Smartphones", "Tech News"]
+categories = ["Tech News"]
 description = "Vivo has unveiled the T4 5G, a new smartphone that's set to dominate the market with its enormous 7300mAh battery, powerful Snapdragon 7s Gen 3 chipset, and a stunning 120Hz AMOLED display."
 author = "Prateep Gedupudi"
 [cover]

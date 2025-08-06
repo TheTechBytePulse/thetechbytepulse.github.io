@@ -2,7 +2,7 @@
 date = '2025-07-27T22:05:00Z'
 draft = false
 tags = ["WhatsApp", "Instagram", "Facebook", "Social Media", "App Update"]
-categories = ["Social Media", "News"]
+categories = ["Tech News"]
 title = "WhatsApp May Soon Let You Import Profile Photos from Instagram"
 description = "A new beta feature in WhatsApp suggests that users will soon be able to import their profile photos directly from Instagram and Facebook."
 

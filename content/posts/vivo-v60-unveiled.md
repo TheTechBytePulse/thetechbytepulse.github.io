@@ -3,7 +3,7 @@ title = "Vivo V60: A New Era of Smartphone Innovation"
 date = '2025-07-28T10:00:00+00:00'
 draft = false
 tags = ["smartphones", "vivo", "tech news"]
-categories = ["Smartphones", "Tech News"]
+categories = ["Tech News"]
 description = "Vivo is set to redefine the smartphone market with its upcoming V60, a device that perfectly blends a sleek design with a powerhouse of features. Teased as the slimmest smartphone in its battery category, the V60 is making headlines for its impressive battery life, advanced camera technology, and stunning display."
 
 [cover]
