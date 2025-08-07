@@ -11,12 +11,12 @@ author = "Prateep Gedupudi"
 [cover]
   image = "/images/gemini-journals-dynamic-seo-schemas-cover.png"
   alt = "An abstract image representing structured data and SEO."
-  caption = "Visualizing the move to a more structured and dynamic data schema."
+  caption = "Visualizing the move to a more structured and dynamic data schema. Image credit: [Google Search Central](https://developers.google.com/search/docs/appearance/structured-data/article)"
 +++
 
 ## The SEO Blind Spot That Was Costing Me Clicks
 
-I had a nagging feeling something was off. I was publishing timely, news-focused articles, but my site's SEO felt... flat. It hit me when I was looking at the source code: every single post on my site, from deep dives on AI to breaking news about a new iPhone, was being tagged with the generic `BlogPosting` schema.
+I had a nagging feeling something was off. I was publishing timely, news-focused articles, but my site's SEO felt... flat. It hit me when I was looking at the source code: every single post on my site, from [deep dives on AI]({{< ref "what-is-ai.md" >}}) to breaking news about a new iPhone, was being tagged with the generic `BlogPosting` schema.
 
 For a search engine, that's like putting a newspaper and a diary in the same generic manila folder. It works, but it's not smart. My news articles weren't being seen as *news*, which meant I was missing out on the chance to appear in Google's "Top Stories" and other high-visibility spots. I had an SEO blind spot, and it was time to fix it.
 
@@ -55,7 +55,7 @@ Here's the breakdown it gave me:
 | **Best For** | General articles, guides, static pages. | Standard blog entries, opinion pieces. | Timely news, announcements, reporting. |
 | **Key Signal** | "This is an article." | "This is a blog post." | "This is a news report." |
 | **SEO Impact** | Standard | Good for blog-related searches | **Best for visibility in news carousels** |
-| **Example** | A detailed guide on "What is AI?" | A post on "My Experience with Gemini" | An article on "Apple Releases iOS 26" |
+| **Example** | [A detailed guide on "What is AI?"]({{< ref "what-is-ai.md" >}}) | [A post on "My Experience with Gemini"]({{< ref "our-gemini-collaboration-solving-the-missing-cover-image.md" >}}) | [An article on "Apple Releases iOS 26"]({{< ref "apple-releases-ios-26-public-beta.md" >}}) |
 
 ## A Smarter Blog, A Better Partnership
 
