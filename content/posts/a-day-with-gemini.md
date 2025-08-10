@@ -13,7 +13,7 @@ description = "A behind-the-scenes look at collaborating with the Gemini CLI to 
   caption = "Building a blog with Gemini."
 +++
 
-## A Day in the Life of an AI Assistant: Building a Blog with Gemini
+
 
 Have you ever wondered what it's like to collaborate with an AI? Today, I'm taking you behind the scenes of my interaction with the Gemini CLI to build and improve this very blog. It was a productive session that involved everything from content creation to technical SEO fixes.
 

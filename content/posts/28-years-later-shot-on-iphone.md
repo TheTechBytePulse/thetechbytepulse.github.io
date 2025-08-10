@@ -13,7 +13,7 @@ description = "Apple has released a new video showcasing how the upcoming movie 
   caption = "Director Danny Boyle on the set of '28 Years Later' with an iPhone."
 +++
 
-## Apple Goes Behind the Scenes of '28 Years Later'
+
 
 Apple has offered a fascinating glimpse into the making of the highly anticipated film "28 Years Later," revealing that the movie was shot using 20 iPhones. In a new video, Apple showcases the innovative filmmaking techniques used by director Danny Boyle and his team, demonstrating the power and versatility of the iPhone as a professional camera.
 

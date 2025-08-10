@@ -12,7 +12,7 @@ description = "A new beta feature in WhatsApp suggests that users will soon be a
   caption = "A new level of integration between Meta's apps."
 +++
 
-## WhatsApp May Soon Let You Import Profile Photos from Instagram
+
 
 In a move that signals deeper integration between Meta's family of apps, WhatsApp is testing a new feature that will allow users to import their profile photos directly from Instagram and Facebook. This new option was spotted in the latest beta version of the Android app and could soon roll out to all users.
 

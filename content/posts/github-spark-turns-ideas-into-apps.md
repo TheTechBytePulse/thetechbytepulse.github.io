@@ -12,7 +12,7 @@ description = "GitHub has unveiled 'Spark,' a new [AI-powered](/posts/what-is-ai
   caption = "GitHub Spark is set to revolutionize app development."
 +++
 
-## GitHub's New AI 'Spark' Turns Ideas into Apps Without Code
+
 
 GitHub has once again pushed the boundaries of AI-assisted development with the announcement of **Spark**, a new tool that can turn natural language ideas into functional applications. This move marks a significant step forward in the "no-code" and "low-code" revolution, making app development more accessible than ever before.
 

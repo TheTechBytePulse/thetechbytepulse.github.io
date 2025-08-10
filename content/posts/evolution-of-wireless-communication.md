@@ -12,7 +12,7 @@ description = "Explore the journey of wireless technology, from the analog voice
   caption = "The journey of wireless technology."
 +++
 
-## The Evolution of Wireless Communication: From 1G to 6G
+
 
 From the first car phones to the super-fast speeds of 5G and the promise of 6G, wireless communication has come a long way. This post explores the journey of wireless technology, highlighting the key advancements of each generation and what the future holds.
 

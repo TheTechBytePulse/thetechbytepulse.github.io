@@ -12,7 +12,7 @@ description = "Apple has just released the public beta for iOS 26, allowing iPho
   caption = "The iOS 26 public beta is now available for download."
 +++
 
-## Apple Releases iOS 26 Public Beta
+
 
 The wait is over for iPhone enthusiasts who want to get an early look at the next generation of iOS. Apple has officially released the first public beta of iOS 26, making it available to anyone enrolled in the Apple Beta Software Program.
 
