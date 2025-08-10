@@ -4,7 +4,7 @@ draft = false
 tags = ["AI", "Artificial Intelligence", "Machine Learning", "Deep Learning", "NLP", "Computer Vision", "Tech Explained"]
 series = ["AI Series"]
 categories = ["Tech Explained"]
-title = '🤖 What Is Ai'
+title = '🤖 What is AI'
 description = "A comprehensive overview of Artificial Intelligence (AI), including its subfields like Machine Learning and Deep Learning, its applications, and the different types of AI."
 
 [cover]
@@ -19,7 +19,7 @@ description = "A comprehensive overview of Artificial Intelligence (AI), includi
 # What is artificial intelligence (AI)?
 Artificial intelligence (AI) is a branch of computer science that focuses on creating machines capable of performing tasks that typically require human intelligence. This includes various functions, from learning and problem-solving to understanding language and recognizing patterns. AI encompasses several subfields: 
 
-*   **Machine Learning (ML):** Computers learn from data and improve their performance without explicit programming for each task. ML algorithms use large datasets to identify patterns and relationships, applying this learning to new information.
+*   **Machine Learning (ML):** Computers learn from data and improve their performance without explicit programming for each task. ML [algorithms](/posts/understanding-ai-vectorization/) use large datasets to identify patterns and relationships, applying this learning to new information.
     
 *   **Deep Learning (DL):** A subset of machine learning using complex, multilayered neural networks inspired by the human brain. This allows deep learning models to process large amounts of data, automate feature extraction, and make predictions or classifications without direct human intervention.
     
@@ -44,7 +44,7 @@ AI is integrated into many aspects of daily life and plays an increasingly impor
     
 *   **Finance:** AI helps detect fraudulent transactions, assess risks, and automate data management tasks.
     
-*   **Generative AI:** This AI can create new content like conversations, stories, images, and videos based on human prompts. Examples include ChatGPT, [Google Gemini](/posts/a-day-with-gemini/), and Microsoft Copilot. 
+*   **[Generative AI](/posts/openai-launches-gpt-5-free-for-all-users/):** This AI can create new content like conversations, stories, images, and videos based on human prompts. Examples include ChatGPT, [Google Gemini](/posts/a-day-with-gemini/), and Microsoft Copilot. 
     
 
 # Different types of AI
@@ -69,3 +69,12 @@ Based on functionality, AI can be categorized as: 
     
 
 AI aims to replicate human intelligence in machines, and is constantly evolving with advancements in areas like machine learning and deep learning. While there are philosophical debates about the extent to which current AI truly represents intelligence, it's undeniable that AI is transforming various industries and improving daily life.
+
+## AI in Action
+
+Here are some real-world examples of how AI is being used in software development and other fields, as documented on this blog:
+
+*   [My Lovable AI Experience](/posts/my-lovable-ai-experience/)
+*   [From Lovable Dev to Gemini CLI](/posts/from-lovable-dev-to-gemini-cli/)
+*   [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
+*   [Google's New AI 'Opal' Challenges the Vibe-Coding Market](/posts/google-opal-disrupts-vibe-coding-market/)
