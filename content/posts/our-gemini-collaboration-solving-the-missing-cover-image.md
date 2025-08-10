@@ -14,7 +14,7 @@ description = "A step-by-step case study of how a frustrating CSS issue was diag
   caption = "The case of the missing cover image."
 +++
 
-Every developer knows the feeling: you make a change that should work, but for some reason, it doesn't. This is the story of one such recent interaction with the Gemini CLI, where a seemingly simple task—making sure cover images appeared everywhere—turned into a fascinating debugging journey that led us deep into the theme's CSS.
+Every developer knows the feeling: you make a change that should work, but for some reason, it doesn't. This is the story of one such recent interaction with the [Gemini CLI](/posts/a-day-with-gemini/), where a seemingly simple task—making sure cover images appeared everywhere—turned into a fascinating debugging journey that led us deep into the theme's CSS.
 
 ### The Goal: Consistent Cover Images
 

@@ -5,7 +5,7 @@ author = "Prateep Gedupudi"
 tags = ["Solar Power", "Off-Grid Living", "DIY Solar", "Energy Calculation", "Renewable Energy", "Home Improvement"]
 categories = ["DIY & How-To"]
 series = ["Off-Grid Solar"]
-description = "A step-by-step guide to accurately calculating your daily energy consumption, a crucial first step in designing a successful and budget-friendly off-grid solar system."
+description = "A step-by-step guide to accurately calculating your daily energy consumption, a crucial first step in designing a [solar power system](/posts/off-grid-solar-setup-on-a-budget/) that will reliably power your life"
 [cover]
   image = "/images/calculating-energy-needs-cover.png" # Placeholder - a new image should be created
   alt = "A calculator and a sun icon, symbolizing energy calculation"

@@ -44,7 +44,7 @@ AI is integrated into many aspects of daily life and plays an increasingly impor
     
 *   **Finance:** AI helps detect fraudulent transactions, assess risks, and automate data management tasks.
     
-*   **Generative AI:** This AI can create new content like conversations, stories, images, and videos based on human prompts. Examples include ChatGPT, Google Gemini, and Microsoft Copilot. 
+*   **Generative AI:** This AI can create new content like conversations, stories, images, and videos based on human prompts. Examples include ChatGPT, [Google Gemini](/posts/a-day-with-gemini/), and Microsoft Copilot. 
     
 
 # Different types of AI

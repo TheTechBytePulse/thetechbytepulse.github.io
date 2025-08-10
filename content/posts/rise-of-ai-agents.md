@@ -40,4 +40,4 @@ The potential applications for AI agents are vast and span across numerous indus
 
 While the idea of fully autonomous AI might seem daunting, the immediate future is one of collaboration. AI agents are powerful tools that will augment human capabilities, not replace them. They will handle the tedious, multi-step processes, allowing us to focus on creativity, strategy, and high-level problem-solving.
 
-The rise of AI agents marks a significant shift from simply asking AI for information to delegating complex outcomes to it. As this technology matures, it will unlock a new era of productivity and innovation, changing the way we work, live, and solve problems.
+The rise of [AI agents](/posts/what-is-ai/) marks a significant shift from simply asking AI for information to delegating complex outcomes to it. As this technology matures, it will unlock a new era of productivity and innovation, changing the way we work, live, and solve problems.

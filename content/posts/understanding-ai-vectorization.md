@@ -15,7 +15,7 @@ description = "A comprehensive guide to AI vectorization, explaining how it conv
 
 ## Understanding AI Vectorization: From Data to Numbers
 
-Have you ever wondered how a machine can grasp the nuances of human language, recognize faces in photos, or identify a song from a short clip? The answer lies in a fundamental concept in artificial intelligence: **vectorization**.
+Have you ever wondered how a machine can grasp the nuances of human language, recognize faces in photos, or identify a song from a short clip? The answer lies in a fundamental concept in [AI](/posts/what-is-ai/): **vectorization**.
 
 At its core, vectorization is the process of converting unstructured data—like text, images, audio, or video—into a numerical format called a **vector**. Think of it as creating a universal translator that turns the rich, messy data of our world into the structured, mathematical language that computers understand. This process, often called creating **embeddings**, is the critical first step for nearly any machine learning task.
 

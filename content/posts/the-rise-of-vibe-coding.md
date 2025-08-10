@@ -12,7 +12,7 @@ description = "A look at the trend of 'vibe-coding,' where AI tools are transfor
   caption = "AI is reshaping how we build software."
 +++
 
-**A major shift is happening in software development. It's called "vibe-coding," a term from computer scientist Andrej Karpathy. It means you can describe an app idea in plain language, and an AI will build it for you. This isn't just a cool new trend; it's a response to the need for faster innovation and a shortage of developers.**
+**A major shift is happening in [software development](/posts/rise-of-ai-in-software-development/). It's called "vibe-coding," a term from computer scientist Andrej Karpathy. It means you can describe an app idea in plain language, and an AI will build it for you. This isn't just a cool new trend; it's a response to the need for faster innovation and a shortage of developers.**
 
 The market for AI coding tools is booming, expected to grow from $4.86 billion in 2023 to over $26 billion by 2030. This growth is all about making software development easier and faster for everyone.
 

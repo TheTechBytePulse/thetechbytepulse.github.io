@@ -4,7 +4,7 @@ draft = false
 tags = ["AI", "GitHub", "Software Development", "No-Code", "Low-Code", "Spark"]
 categories = ["AI & Software"]
 title = "GitHub's New AI 'Spark' Turns Ideas into Apps Without Code"
-description = "GitHub has unveiled 'Spark,' a new AI tool that allows users to create applications from natural language prompts, further pushing the boundaries of no-code development."
+description = "GitHub has unveiled 'Spark,' a new [AI-powered](/posts/what-is-ai/) feature that allows users to create applications from natural language prompts, further pushing the boundaries of no-code development."
 
 [cover]
   image = "/images/github-spark-cover.jpg"

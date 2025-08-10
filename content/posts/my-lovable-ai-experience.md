@@ -12,7 +12,7 @@ description = "An overview of Lovable.Dev AI, an AI-powered platform for buildin
   alt = "The logo for Lovable.Dev AI."
   caption = "My experience with Lovable.Dev AI."
 +++
-❤️ Lovable.Dev AI is an AI-powered platform designed to simplify and accelerate web application development. It allows users to build full-stack web applications using natural language prompts, essentially turning descriptions into functional code and deployable apps. It focuses on code generation and enables users to build working frontends, backends, and logic without extensive coding expertise. 
+❤️ Lovable.Dev AI is an [AI-powered](/posts/what-is-ai/) platform designed to simplify and accelerate web application development. It allows users to build full-stack web applications using natural language prompts, essentially turning descriptions into functional code and deployable apps. It focuses on code generation and enables users to build working frontends, backends, and logic without extensive coding expertise. 
 
 *   **AI-Powered Development:** Lovable AI leverages AI to translate user-provided descriptions (in natural language) into code, automating the process of building web applications. 
     

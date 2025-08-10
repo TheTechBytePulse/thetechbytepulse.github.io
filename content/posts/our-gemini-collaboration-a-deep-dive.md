@@ -11,7 +11,7 @@ description = "A detailed look at how the Gemini CLI was used to build and enhan
 [cover]
   image = "/images/our-gemini-collaboration-a-deep-dive-cover.png"
   alt = "An illustration of a human and an AI collaborating on a project."
-  caption = "A deep dive into our collaboration with Gemini."
+  caption = "A deep dive into our collaboration with [Gemini](/posts/a-day-with-gemini/)."
 +++
 
 ## Our Gemini Collaboration: A Deep Dive into Building a Better Blog

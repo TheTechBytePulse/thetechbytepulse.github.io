@@ -14,7 +14,7 @@ description = "Google has launched Opal, a new AI-powered tool for app developme
 
 **Google has launched Opal, a new AI-powered app development tool, stepping into the booming "vibe-coding" market. Available through Google Labs in the U.S., Opal positions Google to compete with startups like Lovable and Cursor in a market expected to hit $26 billion by 2030.**
 
-The AI code tools market is growing fast. "Vibe-coding," a term from computer scientist Andrej Karpathy, lets users describe an app idea in plain language, and the AI builds it.
+The AI code tools market is growing fast. "[Vibe-coding](/posts/the-rise-of-vibe-coding/)", a term from computer scientist Andrej Karpathy, lets users describe an app idea in plain language, and the AI builds it.
 
 ## The Vibe-Coding Revolution
 

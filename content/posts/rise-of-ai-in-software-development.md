@@ -15,7 +15,7 @@ description = "Learn how AI is reshaping the software development lifecycle, fro
 
 ## The Rise of AI in Software Development
 
-Artificial intelligence is no longer just a buzzword; it's a transformative force that is reshaping the software development landscape. From code generation to automated testing, AI is empowering developers to build better software faster. This post explores the growing role of AI in software development and what it means for the future of the industry.
+[Artificial intelligence](/posts/what-is-ai/) is no longer just a buzzword; it's a transformative force that is reshaping the software development landscape. From code generation to automated testing, AI is empowering developers to build better software faster. This post explores the growing role of AI in software development and what it means for the future of the industry.
 
 ### 🤖 How AI is Revolutionizing Software Development
 

@@ -14,7 +14,7 @@ schemaType = "NewsArticle"
     caption = "OpenAI's new GPT-5 is now available to all users, redefining AI capabilities."
 +++
 
-**BREAKING:** OpenAI has officially launched its next-generation flagship model, **GPT-5**, making it available to all users starting today, August 7, 2025. The release marks a pivotal moment in the AI landscape, introducing a unified, multimodal system with what OpenAI describes as "PhD-level expert" reasoning capabilities.
+**BREAKING:** OpenAI has officially launched its next-generation flagship model, **GPT-5**, making it available to all users starting today, August 7, 2025. The release marks a pivotal moment in the [AI landscape](/posts/what-is-ai/), introducing a unified, multimodal system with what OpenAI describes as "PhD-level expert" reasoning capabilities.
 
 ## What's New in GPT-5?
 

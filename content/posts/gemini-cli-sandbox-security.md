@@ -13,7 +13,7 @@ author = "Prateep Gedupudi"
   caption = "Understanding the security benefits of the Gemini CLI sandbox."
 +++
 
-As AI-powered coding assistants become more integrated into development workflows, ensuring the security of your local environment is paramount. The Gemini CLI addresses this concern with a robust sandboxing feature that provides a critical layer of protection when executing AI-generated code and commands.
+As AI-powered coding assistants become more integrated into development workflows, ensuring the security of your local environment is paramount. The [Gemini CLI](/posts/from-lovable-dev-to-gemini-cli/) addresses this concern with a robust sandboxing feature that provides a critical layer of protection when executing AI-generated code and commands.
 
 ### The Core Security Benefit: Isolation
 

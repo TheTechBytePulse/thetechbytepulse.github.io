@@ -18,7 +18,7 @@ author = "Prateep Gedupudi"
 
 I had a nagging feeling something was off. I was publishing timely, news-focused articles, but my site's SEO felt... flat. It hit me when I was looking at the source code: every single post on my site, from [deep dives on AI]({{< ref "what-is-ai.md" >}}) to breaking news about a new iPhone, was being tagged with the generic `BlogPosting` schema.
 
-For a search engine, that's like putting a newspaper and a diary in the same generic manila folder. It works, but it's not smart. My news articles weren't being seen as *news*, which meant I was missing out on the chance to appear in Google's "Top Stories" and other high-visibility spots. I had an SEO blind spot, and it was time to fix it.
+For a search engine, that's like putting a newspaper and a diary in the same generic manila folder. It works, but it's not smart. My news articles weren't being seen as *news*, which meant I was missing out on the chance to appear in Google's "Top Stories" and other high-visibility spots. I had an [SEO](/posts/github-pages-google/) blind spot, and it was time to fix it.
 
 ## A Collaboration, Not Just a Command
 
