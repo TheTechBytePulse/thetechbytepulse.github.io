@@ -28,7 +28,7 @@ description = "An overview of Lovable.Dev AI, an AI-powered platform for buildin
     
 *   **React and Vite for Frontend:** Lovable utilizes React, a widely used JavaScript library for building user interfaces, and Vite, a fast and efficient build tool, to ensure a modern and performant frontend.
 
-Please watch a video demo of [**AirDeals**](https://globe-trotter-deals-tracker.lovable.app) web app to find cheap flights between the points, I created with the help of Lovable AI. 
+Please watch a video demo of [**AirDeals**](https://test.airdeals.techbytepulse.com) web app to find cheap flights between the points, I created with the help of Lovable AI. 
 
 {{< youtube konGWiEs220 >}}
 

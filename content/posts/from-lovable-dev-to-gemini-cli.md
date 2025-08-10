@@ -15,7 +15,7 @@ description = "A case study comparing the experience of using Lovable.dev for bo
 +++
 
 
-As a Vibe Coder, I'm always excited to explore new tools that can streamline my workflow. For my latest project, "AirDeals"—a flight deal tracker—I decided to go all-in on AI-driven development from the start. I used the **Lovable.dev** platform to bootstrap and build the entire application, and the experience was fantastic for getting a feature-rich prototype off the ground quickly.
+As a Vibe Coder, I'm always excited to explore new tools that can streamline my workflow. For my latest project, "[AirDeals](https://test.airdeals.techbytepulse.com)"—a flight deal tracker—I decided to go all-in on AI-driven development from the start. I used the **Lovable.dev** platform to bootstrap and build the entire application, and the experience was fantastic for getting a feature-rich prototype off the ground quickly.
 
 However, as I was getting into the nitty-gritty of debugging, I hit a small roadblock: I had run out of my monthly credits on the platform. This felt like the perfect opportunity to put another tool to the test: Google's **[Gemini CLI](/posts/gemini-cli-sandbox-security/)**. Could it jump into a codebase it had no prior context on and help me squash the remaining bugs? I was eager to find out.
 
