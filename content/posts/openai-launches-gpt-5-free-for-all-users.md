@@ -5,7 +5,7 @@ date = "2025-08-07T19:00:00+05:30"
 draft = false
 author = "Prateep Gedupudi"
 tags = ["OpenAI", "GPT-5", "AI", "Large Language Models", "Tech News", "Product Launch"]
-categories = ["AI", "Tech News"]
+categories = ["AI & Software", "Tech News"]
 schemaType = "NewsArticle"
 
 [cover]
