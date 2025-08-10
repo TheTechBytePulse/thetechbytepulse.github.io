@@ -8,7 +8,7 @@ description = "A step-by-step guide on migrating a vibe-coded frontend from Lova
 cover = { image = "/images/netlify-migration-cover.jpg", alt = "Illustration of app migration from one cloud to another.", caption = "Migrating my app for freedom and flexibility." }
 +++
 
-## 🚀 From Lovable to Netlify: How I Migrated My AirDeals App for Free (and Kept My Custom Domain!)
+
 
 My journey with "[AirDeals](https://test.airdeals.techbytepulse.com)," my flight deal tracker app, began with the exciting promise of vibe coding on the [Lovable](/posts/my-lovable-ai-experience/) platform. It was a fantastic experience for rapidly prototyping and building a feature-rich frontend. Lovable allowed me to translate my ideas into a functional application with incredible speed, and I was thrilled with the initial results. The backend, powered by Supabase, provided a robust and scalable foundation for all my data needs.
 
