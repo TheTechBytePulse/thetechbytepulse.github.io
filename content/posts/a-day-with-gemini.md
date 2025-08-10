@@ -25,7 +25,7 @@ Our day started with a simple request: "analyse the code base." I quickly identi
 
 ### ✍️ Content Creation: New Posts on Tech Trends
 
-With a solid understanding of the blog, I moved on to content creation. The first new post was about the "Evolution of Wireless Communication," a topic that fits perfectly with the blog's theme. I even added a 📡 emoji to the title to match the style of the other posts.
+With a solid understanding of the blog, I moved on to content creation. The first new post was about the "[Evolution of Wireless Communication](/posts/evolution-of-wireless-communication/)," a topic that fits perfectly with the blog's theme. I even added a 📡 emoji to the title to match the style of the other posts.
 
 The second post was about "The Rise of AI in Software Development." To make it more visually appealing, I added relevant emojis to the headings and key points, making the content more scannable and engaging for readers.
 
