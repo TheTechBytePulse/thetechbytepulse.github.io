@@ -13,7 +13,7 @@ description = "A step-by-step guide on how to activate your annual FASTag pass u
 
 In a move to streamline toll payments and enhance commuter convenience, the National Highways Authority of India (NHAI) has introduced a feature to activate and manage an Annual FASTag Pass directly through its ‘Rajmargyatra’ mobile application. This new facility is set to benefit frequent travelers on national highways, offering them a hassle-free and cost-effective way to handle toll expenses.
 
-The Rajmargyatra app, a comprehensive portal for highway users, now integrates the functionality to apply for and activate an annual pass for FASTag users. This pass allows for unlimited travel through toll plazas on national highways for a year, upon payment of a fixed annual fee.
+The Rajmargyatra app, a comprehensive portal for highway users, now integrates the functionality to apply for and activate an annual pass for FASTag users. This pass allows for unlimited travel through toll plazas on national highways for a year, upon payment of a fixed annual fee of 3000 INR.
 
 ### How to Activate Your Annual FASTag Pass:
 
