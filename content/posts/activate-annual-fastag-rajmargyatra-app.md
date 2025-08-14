@@ -17,6 +17,8 @@ The Rajmargyatra app, a comprehensive portal for highway users, now integrates t
 
 ### How to Activate Your Annual FASTag Pass:
 
+{{< youtube a1d0OoJJqvQ >}}
+
 Here’s a step-by-step guide to activating your annual pass using the Rajmargyatra app:
 
 1.  **Download and Login to the Rajmargyatra App:** If you haven't already, download the app from the Google Play Store or Apple App Store. After installation, log in to your account using your mobile number or social logins.
