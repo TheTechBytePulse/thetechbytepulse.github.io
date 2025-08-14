@@ -19,7 +19,7 @@ The Rajmargyatra app, a comprehensive portal for highway users, now integrates t
 
 Here’s a step-by-step guide to activating your annual pass using the Rajmargyatra app:
 
-1.  **Download the Rajmargyatra App:** If you haven't already, download the app from the Google Play Store or Apple App Store.
+1.  **Download and Login to the Rajmargyatra App:** If you haven't already, download the app from the Google Play Store or Apple App Store. After installation, log in to your account using your mobile number or social logins.
     {{< figure src="/images/activate-annual-fastag-rajmargyatra-app-step-1-download.jpeg" title="Download the Rajmargyatra App" >}}
 
 2.  **Navigate to the Annual Pass Section:** Open the app and locate the 'Annual Pass' or a similarly named section within the services menu.
