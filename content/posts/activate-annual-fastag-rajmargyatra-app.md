@@ -1,10 +1,10 @@
 +++
-title = "Activate Your Annual FASTag Pass via the Rajmargyatra App"
+title = "Save Big on Tolls: Activate Your FASTag Annual Pass Now for ₹3000!"
 date = "2025-08-14T12:00:00+05:30"
 draft = false
-tags = ["FASTag", "Rajmargyatra", "NHAI", "Travel"]
+tags = ["FASTagAnnualPass", "Rajmargyatra", "NHAI", "Travel"]
 categories = ["Tech News", "Travel"]
-description = "A step-by-step guide on how to activate your annual FASTag pass using the Rajmargyatra mobile app."
+description = "A step-by-step guide on how to activate your FASTag annual pass using the Rajmargyatra mobile app."
 [cover]
   image = "/images/activate-annual-fastag-rajmargyatra-app-cover.jpg"
   alt = "A phone displaying the Rajmargyatra app with a FASTag logo."
@@ -21,7 +21,7 @@ The Rajmargyatra app, a comprehensive portal for highway users, now integrates t
 
 Here’s a step-by-step guide to activating your annual pass using the Rajmargyatra app:
 
-1.  **Download and Login to the Rajmargyatra App:** If you haven't already, download the app from the Google Play Store or Apple App Store. After installation, log in to your account using your mobile number or social logins.
+1.  **Download and Login to the Rajmargyatra App:** If you haven't already, download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.nhai.rajmargyatra) or [Apple App Store](https://apps.apple.com/in/app/rajmargyatra/id6449488412). After installation, log in to your account using your mobile number or social logins.
     {{< figure src="/images/activate-annual-fastag-rajmargyatra-app-step-1-download.jpeg" title="Download the Rajmargyatra App" >}}
 
 2.  **Navigate to the Annual Pass Section:** Open the app and locate the 'Annual Pass' or a similarly named section within the services menu.
