@@ -1,4 +1,3 @@
-
 +++
 title = "Gemini CLI Sandbox: A Deep Dive into its Security Benefits"
 date = "2025-07-31T14:00:00+00:00"
@@ -49,3 +48,13 @@ This command instructs the Gemini CLI to start with its Docker-based sandbox ena
 While the sandbox provides significant security benefits, it's important to understand that it can sometimes limit access to external tools or commands that reside outside the project directory. In such cases, you may need to temporarily disable sandboxing. However, for most day-to-day development tasks, the sandbox offers an excellent balance of security and functionality.
 
 By leveraging the Gemini CLI's sandboxing feature, developers can confidently harness the power of AI in their workflows while maintaining a secure and controlled development environment.
+
+### The Gemini Journals Series
+
+1.  [A Day with Gemini: From Code to Content](/posts/a-day-with-gemini/)
+2.  [From Lovable Dev to Gemini CLI: A Developer's Journey](/posts/from-lovable-dev-to-gemini-cli/)
+3.  **The Gemini CLI Sandbox: A Secure Environment for AI-Powered Development (This Post)**
+4.  [Dynamic SEO Schemas with Gemini Journals](/posts/gemini-journals-dynamic-seo-schemas/)
+5.  [My Lovable AI Experience: A Journey of Collaboration](/posts/my-lovable-ai-experience/)
+6.  [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
+7.  [Our Gemini Collaboration: Solving the Missing Cover Image](/posts/our-gemini-collaboration-solving-the-missing-cover-image/)

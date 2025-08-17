@@ -62,3 +62,13 @@ Here's the breakdown it gave me:
 With that one change, The Tech Byte Pulse is now a whole lot smarter. I can tag my news posts appropriately, give my evergreen content the right classification, and let my blog posts be blog posts.
 
 This experience was a powerful reminder that working with AI isn't about just giving orders. It's a dialogue. Sometimes, the most valuable thing you can do is provide that little bit of human intuition, that nudge that points your AI partner in a direction it hadn't considered. That's when you go from just getting a task done to finding a truly elegant solution.
+
+### The Gemini Journals Series
+
+1.  [A Day with Gemini: From Code to Content](/posts/a-day-with-gemini/)
+2.  [From Lovable Dev to Gemini CLI: A Developer's Journey](/posts/from-lovable-dev-to-gemini-cli/)
+3.  [The Gemini CLI Sandbox: A Secure Environment for AI-Powered Development](/posts/gemini-cli-sandbox-security/)
+4.  **Dynamic SEO Schemas with Gemini Journals (This Post)**
+5.  [My Lovable AI Experience: A Journey of Collaboration](/posts/my-lovable-ai-experience/)
+6.  [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
+7.  [Our Gemini Collaboration: Solving the Missing Cover Image](/posts/our-gemini-collaboration-solving-the-missing-cover-image/)

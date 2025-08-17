@@ -69,3 +69,13 @@ So, how did Gemini CLI fare? Impressively well. It was able to jump into a codeb
 This experience also highlighted a key difference in their free tier models, especially since I'm not a paying user on either platform. Lovable.dev offers a free plan with 5 daily credits, but it's capped at 30 credits per month. Once I exhausted my monthly quota, my progress on the platform was stalled until the next cycle. Gemini CLI, on the other hand, offers a free tier with a daily limit of 100 requests that resets every day, without a monthly cap. For the kind of focused, high-intensity debugging I was doing, this daily refresh was a game-changer. Hitting a daily limit means I can just pick things up the next day, whereas a monthly limit could have left me blocked for weeks.
 
 Ultimately, the future of development isn't about finding a single, all-powerful AI, but about having a versatile toolkit at your disposal. Lovable.dev was invaluable for getting the project off the ground, and Gemini CLI was the perfect tool for the deep, iterative work that followed. The journey of "AirDeals" is far from over, but it's now more robust and has a clear path forward, thanks to a little help from two very different AI friends.
+
+### The Gemini Journals Series
+
+1.  [A Day with Gemini: From Code to Content](/posts/a-day-with-gemini/)
+2.  **From Lovable Dev to Gemini CLI: A Developer's Journey (This Post)**
+3.  [The Gemini CLI Sandbox: A Secure Environment for AI-Powered Development](/posts/gemini-cli-sandbox-security/)
+4.  [Dynamic SEO Schemas with Gemini Journals](/posts/gemini-journals-dynamic-seo-schemas/)
+5.  [My Lovable AI Experience: A Journey of Collaboration](/posts/my-lovable-ai-experience/)
+6.  [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
+7.  [Our Gemini Collaboration: Solving the Missing Cover Image](/posts/our-gemini-collaboration-solving-the-missing-cover-image/)

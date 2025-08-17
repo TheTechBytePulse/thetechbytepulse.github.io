@@ -105,3 +105,13 @@ The application should have:
 - Intuitive UX
 - Comprehensive error handling
 - Production-ready security configurations
+
+### The Gemini Journals Series
+
+1.  [A Day with Gemini: From Code to Content](/posts/a-day-with-gemini/)
+2.  [From Lovable Dev to Gemini CLI: A Developer's Journey](/posts/from-lovable-dev-to-gemini-cli/)
+3.  [The Gemini CLI Sandbox: A Secure Environment for AI-Powered Development](/posts/gemini-cli-sandbox-security/)
+4.  [Dynamic SEO Schemas with Gemini Journals](/posts/gemini-journals-dynamic-seo-schemas/)
+5.  **My Lovable AI Experience: A Journey of Collaboration (This Post)**
+6.  [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
+7.  [Our Gemini Collaboration: Solving the Missing Cover Image](/posts/our-gemini-collaboration-solving-the-missing-cover-image/)

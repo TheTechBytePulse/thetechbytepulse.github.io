@@ -80,3 +80,13 @@ With this final change, the cover images appeared exactly as intended on all pag
 ### What This Teaches Us
 
 This collaboration was a powerful reminder that debugging is a process of elimination. We started with the most likely suspect (configuration), moved to the next (templates), and finally uncovered the true cause in a place we hadn't initially considered (CSS). It highlights the importance of understanding the different layers that make up a website and how they interact. It was a great real-world example of how an AI assistant can work through a problem logically, even when the initial assumptions are wrong.
+
+### The Gemini Journals Series
+
+1.  [A Day with Gemini: From Code to Content](/posts/a-day-with-gemini/)
+2.  [From Lovable Dev to Gemini CLI: A Developer's Journey](/posts/from-lovable-dev-to-gemini-cli/)
+3.  [The Gemini CLI Sandbox: A Secure Environment for AI-Powered Development](/posts/gemini-cli-sandbox-security/)
+4.  [Dynamic SEO Schemas with Gemini Journals](/posts/gemini-journals-dynamic-seo-schemas/)
+5.  [My Lovable AI Experience: A Journey of Collaboration](/posts/my-lovable-ai-experience/)
+6.  [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
+7.  **Our Gemini Collaboration: Solving the Missing Cover Image (This Post)**

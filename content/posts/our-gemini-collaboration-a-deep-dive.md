@@ -1,4 +1,3 @@
-
 +++
 date = '2025-07-18T14:00:00Z'
 draft = false
@@ -64,3 +63,13 @@ The final challenge was enabling comments. The process was remarkably similar to
 This entire interaction was a powerful demonstration of how AI can be more than just a code generator. It was a true collaborator—analyzing, diagnosing, and solving complex, real-world problems. It understood the nuances of the Hugo framework, debugged deployment-specific issues, and helped me implement features that required a deep understanding of the theme's architecture.
 
 The age of the AI assistant is here, and as this experience shows, it's an incredible time to be a developer.
+
+### The Gemini Journals Series
+
+1.  [A Day with Gemini: From Code to Content](/posts/a-day-with-gemini/)
+2.  [From Lovable Dev to Gemini CLI: A Developer's Journey](/posts/from-lovable-dev-to-gemini-cli/)
+3.  [The Gemini CLI Sandbox: A Secure Environment for AI-Powered Development](/posts/gemini-cli-sandbox-security/)
+4.  [Dynamic SEO Schemas with Gemini Journals](/posts/gemini-journals-dynamic-seo-schemas/)
+5.  [My Lovable AI Experience: A Journey of Collaboration](/posts/my-lovable-ai-experience/)
+6.  **Our Gemini Collaboration: A Deep Dive (This Post)**
+7.  [Our Gemini Collaboration: Solving the Missing Cover Image](/posts/our-gemini-collaboration-solving-the-missing-cover-image/)
