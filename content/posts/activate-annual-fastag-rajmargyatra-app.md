@@ -13,7 +13,22 @@ description = "A step-by-step guide on how to activate your FASTag annual pass u
 
 In a move to streamline toll payments and enhance commuter convenience, the National Highways Authority of India (NHAI) has introduced a feature to activate and manage an Annual FASTag Pass directly through its ‘Rajmargyatra’ mobile application. This new facility is set to benefit frequent travelers on national highways, offering them a hassle-free and cost-effective way to handle toll expenses.
 
-The Rajmargyatra app, a comprehensive portal for highway users, now integrates the functionality to apply for and activate an annual pass for FASTag users. This pass allows for unlimited travel through toll plazas on national highways for a year, upon payment of a fixed annual fee of 3000 INR.
+The Rajmargyatra app, a comprehensive portal for highway users, now integrates the functionality to apply for and activate an annual pass for FASTag users. This pass allows for up to 200 trips through toll plazas on national highways for a year, upon payment of a fixed annual fee of 3000 INR. Each toll plaza entry is calculated as one trip.
+
+### Annual Pass vs. Regular Toll: A Cost Comparison
+
+With the annual pass, each trip through a toll plaza costs a flat rate of ₹15 (₹3000 / 200 trips). Let's see how this compares to the standard toll fees on the Bangalore to Tirupati route:
+
+| Toll Plaza          | Regular Toll (₹) | Annual Pass Cost (₹) | Savings (₹) |
+| ------------------- | ---------------- | -------------------- | ----------- |
+| Hoskote             | 25               | 15                   | 10          |
+| Mulbagal            | 90               | 15                   | 75          |
+| Nangli              | 35               | 15                   | 20          |
+| Mahasamudram        | 100              | 15                   | 85          |
+| Gadanki             | 125              | 15                   | 110         |
+| **Total (One-Way)** | **375**          | **75**               | **300**     |
+
+As you can see, the annual pass offers significant savings at each toll plaza. A one-way trip from Bangalore to Tirupati would cost only ₹75 with the annual pass, compared to ₹375 at the regular price, saving you ₹300 on a single trip.
 
 ### How to Activate Your Annual FASTag Pass:
 
