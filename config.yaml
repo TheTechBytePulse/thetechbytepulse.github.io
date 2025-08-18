@@ -86,8 +86,6 @@ params:
         url: /posts
       - name: Archives
         url: /archives
-      - name: Tags
-        url: /tags
       - name: About Me
         url: /about
 
