@@ -1,3 +1,4 @@
-{{- with .Params.author | default site.Params.Author.name }}
-<span><a href="/about/#{{ . | urlize }}">{{ . }}</a></span>
+{{- $authorName := .Params.author | default site.Params.Author.name }}
+{{- if $authorName }}
+<span><a href="/about/#{{ $authorName | urlize }}">{{ $authorName }}</a></span>
 {{- end }}
