@@ -1,0 +1,3 @@
+{{- with .Params.author | default site.Params.Author.name }}
+<span><a href="/about/#{{ . | urlize }}">{{ . }}</a></span>
+{{- end }}
