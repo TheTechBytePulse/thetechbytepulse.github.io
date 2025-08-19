@@ -2,11 +2,12 @@
 title: "Disclaimer"
 date: 2025-08-19T12:05:00+05:30
 draft: false
+comments: false
 ---
 
 ## Disclaimer for Tech Byte Pulse
 
-If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at prateep.gedupudi@gmail.com.
+If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at thetechbytepulse@gmail.com.
 
 ### Disclaimers for Tech Byte Pulse
 

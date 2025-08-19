@@ -2,13 +2,14 @@
 title: "Privacy Policy"
 date: 2025-08-19T12:00:00+05:30
 draft: false
+comments: false
 ---
 
 ## Privacy Policy for Tech Byte Pulse
 
 At Tech Byte Pulse, accessible from https://www.techbytepulse.com/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Tech Byte Pulse and how we use it.
 
-If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at prateep.gedupudi@gmail.com.
+If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at thetechbytepulse@gmail.com.
 
 This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Tech Byte Pulse. This policy is not applicable to any information collected offline or via channels other than this website.
 
@@ -72,7 +73,7 @@ Request that a business delete any personal data about the consumer that a busin
 
 Request that a business that sells a consumer's personal data, not sell the consumer's personal data.
 
-If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at prateep.gedupudi@gmail.com.
+If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at thetechbytepulse@gmail.com.
 
 ### GDPR Data Protection Rights
 
@@ -90,7 +91,7 @@ The right to object to processing – You have the right to object to our proces
 
 The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
 
-If you make a a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at prateep.gedupudi@gmail.com.
+If you make a a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at thetechbytepulse@gmail.com.
 
 ### Children's Information
 
