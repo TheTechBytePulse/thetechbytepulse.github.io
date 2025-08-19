@@ -2,6 +2,8 @@
 title = "About Me"
 date = "2025-07-21T12:00:00Z"
 draft = false
+hideMeta = true
+disableShare = true
 +++
 
 ## About Me

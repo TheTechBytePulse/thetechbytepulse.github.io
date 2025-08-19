@@ -4,6 +4,7 @@ date: 2025-08-19T12:05:00+05:30
 draft: false
 comments: false
 hideMeta: true
+disableShare: true
 ---
 
 ## Disclaimer for Tech Byte Pulse
