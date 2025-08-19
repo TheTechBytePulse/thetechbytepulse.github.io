@@ -17,7 +17,7 @@ We are a team of passionate technologists and writers dedicated to bringing you 
 
 ### Prateep Gedupudi
 
-![Prateep Gedupudi](/images/profile.jpeg)
+<img src="/images/profile.jpeg" alt="Prateep Gedupudi" class="profile-image">
 
 Prateep Gedupudi is a technologist with a deep passion for building and architecting software. His journey in the tech world has been driven by a fascination with how complex systems work and a desire to create solutions that are scalable, resilient, and impactful.
 
