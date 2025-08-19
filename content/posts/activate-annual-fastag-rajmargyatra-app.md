@@ -59,3 +59,10 @@ Here’s a step-by-step guide to activating your annual pass using the Rajmargya
     {{< figure src="/images/activate-annual-fastag-rajmargyatra-app-step-8-complete-payment.jpeg" title="Complete Payment" >}}
 
 This initiative is a significant step towards digitalizing highway travel and reducing congestion at toll plazas. By opting for an annual pass, users can enjoy seamless travel without the need to recharge their FASTag frequently.
+
+### Official FAQs
+
+For more detailed information and frequently asked questions, please refer to the official NHAI resources:
+
+*   [FAQs in Multiple Indian Languages](https://nhai.gov.in/#/faq-annual-pass)
+*   [FAQs in English (PDF)](https://nhai.gov.in/nhai/sites/default/files/mix_file/FAQs_English.pdf)
