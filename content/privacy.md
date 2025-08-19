@@ -3,6 +3,7 @@ title: "Privacy Policy"
 date: 2025-08-19T12:00:00+05:30
 draft: false
 comments: false
+hideMeta: true
 ---
 
 ## Privacy Policy for Tech Byte Pulse
