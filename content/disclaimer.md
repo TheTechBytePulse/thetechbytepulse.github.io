@@ -9,7 +9,7 @@ disableShare: true
 
 ## Disclaimer for Tech Byte Pulse
 
-If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at thetechbytepulse@gmail.com.
+If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at contact@techbytepulse.com.
 
 ### Disclaimers for Tech Byte Pulse
 
