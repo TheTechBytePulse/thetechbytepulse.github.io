@@ -66,3 +66,17 @@ For more detailed information and frequently asked questions, please refer to th
 
 *   [FAQs in Multiple Indian Languages](https://nhai.gov.in/#/faq-annual-pass)
 *   [FAQs in English (PDF)](https://nhai.gov.in/nhai/sites/default/files/mix_file/FAQs_English.pdf)
+
+### Frequently Asked Questions
+
+{{< collapse summary="Is the Annual Pass available for all vehicle types?" >}}
+No, the FASTag Annual Pass is exclusively for private, non-commercial vehicles like cars, jeeps, and vans. Commercial vehicles are not eligible.
+{{< /collapse >}}
+
+{{< collapse summary="Can I transfer the Annual Pass to another vehicle?" >}}
+No, the pass is non-transferable and linked to a specific FASTag.
+{{< /collapse >}}
+
+{{< collapse summary="Can I get an Annual Pass if my FASTag is registered with a chassis number?" >}}
+No, FASTags registered only with a chassis number must be updated with the Vehicle Registration Number (VRN) to be eligible.
+{{< /collapse >}}
