@@ -3,6 +3,7 @@
 baseURL: "https://www.techbytepulse.com/"
 title: Tech Byte Pulse
 theme: [PaperMod]
+enableGitInfo: true
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -60,6 +61,7 @@ params:
   # disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
+  ShowLastMod: true
   # disableSpecial1stPost: true
   displayFullLangName: true
   ShowPostNavLinks: true
