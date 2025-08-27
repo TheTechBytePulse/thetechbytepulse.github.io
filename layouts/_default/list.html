@@ -41,9 +41,9 @@
 {{- $pages := union .RegularPages .Sections }}
 
 {{- if .IsHome }}
-{{- partial "joke.html" . -}}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- partial "joke.html" . -}}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
