@@ -58,6 +58,8 @@ Here’s a step-by-step guide to activating your annual pass using the Rajmargya
 8.  **Complete Payment:** Proceed to make the required payment for the annual pass through the available online payment options.
     {{< figure src="/images/activate-annual-fastag-rajmargyatra-app-step-8-complete-payment.jpeg" title="Complete Payment" >}}
 
+> Every time you cross the toll with the annual pass activated, you will receive an SMS message: "Your Vehicle KA03XXXXXX crossed MulbagalTollPlaza on 31-08-2025 17:45:10 under **Annual Pass** on XXXX Bank **FASTag**. Call 1800XXXXXXX for dispute."
+
 This initiative is a significant step towards digitalizing highway travel and reducing congestion at toll plazas. By opting for an annual pass, users can enjoy seamless travel without the need to recharge their FASTag frequently.
 
 ### Official FAQs
