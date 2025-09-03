@@ -72,3 +72,4 @@ This experience was a powerful reminder that working with AI isn't about just gi
 5.  [My Lovable AI Experience: A Journey of Collaboration](/posts/my-lovable-ai-experience/)
 6.  [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
 7.  [Our Gemini Collaboration: Solving the Missing Cover Image](/posts/our-gemini-collaboration-solving-the-missing-cover-image/)
+8.  [Gemini CLI in the Cloud: Secure and Isolated Development with Codespaces/Gitpod](/posts/gemini-cli-in-the-cloud/)
