@@ -90,3 +90,4 @@ This collaboration was a powerful reminder that debugging is a process of elimin
 5.  [My Lovable AI Experience: A Journey of Collaboration](/posts/my-lovable-ai-experience/)
 6.  [Our Gemini Collaboration: A Deep Dive](/posts/our-gemini-collaboration-a-deep-dive/)
 7.  **Our Gemini Collaboration: Solving the Missing Cover Image (This Post)**
+8.  [Gemini CLI in the Cloud: Secure and Isolated Development with Codespaces/Gitpod](/posts/gemini-cli-in-the-cloud/)
