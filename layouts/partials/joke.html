@@ -1,7 +1,7 @@
 {{ $joke := index (site.Data.jokes | shuffle) 0 }}
 
 <div class="joke" style="text-align: center; margin-bottom: 2rem;">
-    <h3>Joke of the Day</h3>
+    <h3>Tech Joke Byte</h3>
     <div onclick="this.querySelector('.answer').style.display='block'" style="cursor: pointer;">
         <p class="question">{{ $joke.question }}</p>
         <p class="answer" style="display: none;">{{ $joke.answer }}</p>
