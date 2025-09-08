@@ -11,55 +11,49 @@ description = "Learn how to use the built-in `sips` command-line tool on macOS t
   caption = "Compressing images with `sips` on macOS."
 +++
 
-As a developer, optimizing website performance is a top priority, and one of the most effective ways to achieve this is by compressing images. Large image files can significantly slow down page load times, leading to a poor user experience. While there are many tools available for image compression, macOS users have a powerful and convenient utility built right into the operating system: `sips` (Scriptable Image Processing System).
+If you have a website, making it fast is important. One of the best ways to speed up your website is to make your image files smaller. Large images can make your website load slowly, which can be frustrating for visitors. If you use a Mac, you have a powerful tool already built-in to help you with this: `sips`.
 
-In this tutorial, we'll explore how to use `sips` to quickly and efficiently compress images, making your website faster and more efficient.
+In this guide, we'll show you how to use `sips` to make your images smaller, so your website will be faster.
 
-### Prerequisites
+### What You Need
 
-The best part about using `sips` is that it comes pre-installed on macOS. This means there are no external dependencies or installations required. All you need is:
+The best part about using `sips` is that it's already on your Mac. You don't need to install anything. All you need is:
 
-- A computer running macOS.
-- Access to the Terminal application.
+- A Mac computer.
+- The Terminal app (you can find it in your Applications folder, inside the Utilities folder).
 
-### Compressing a Single Image
+### Making a Single Image Smaller
 
-Let's start with the basics. To compress a single image, you can use the `--resampleHeight` or `--resampleWidth` option to resize the image, which in turn reduces the file size. For example, to resize an image to a maximum width of 1024 pixels while maintaining the aspect ratio, you would use the following command:
+Let's start with the basics. To make an image smaller, you can change its height or width. This will also make the file size smaller. For example, to make an image 1024 pixels wide (while keeping the picture from looking stretched), you can use this command in the Terminal:
 
 ```bash
 sips --resampleWidth 1024 your-image.jpg
 ```
 
-This command will overwrite the original file with the new, smaller version. If you want to keep the original, make sure to create a backup first.
+This command will replace the original image with the new, smaller one. If you want to keep the original, make a copy of it first.
 
-### Compressing Multiple Images
+### Making Many Images Smaller at Once
 
-Now, let's consider a more practical scenario where you have a directory full of images for your website. Compressing them one by one would be tedious, but with a simple `for` loop, you can process them all at once.
+What if you have a whole folder of images for your website? Making them smaller one by one would take a long time. But with a simple loop, you can do them all at once.
 
-Navigate to the directory containing your images and run the following command:
+Go to the folder with your images in the Terminal and run this command:
 
 ```bash
 for i in *.jpg; do sips --resampleWidth 1024 "$i"; done
 ```
 
-This command iterates through all files ending with `.jpg` in the current directory and resizes each to a maximum width of 1024 pixels.
+This command goes through all the files that end in `.jpg` in the folder and makes each one 1024 pixels wide.
 
-### Advanced Compression with Quality Adjustment
+### More Control Over File Size
 
-For even greater control over the file size, you can adjust the image quality. The `--setProperty` option allows you to change the format and quality of JPEG images. For example, to set the quality to medium, you can use:
-
-```bash
-sips -s format jpeg -s formatOptions "medium" your-image.jpg
-```
-
-You can also combine this with resizing for maximum effect:
+For even smaller file sizes, you can lower the image quality a little bit. You can do this and resize the image at the same time.
 
 ```bash
 for i in *.jpg; do sips --resampleWidth 1024 -s format jpeg -s formatOptions "medium" "$i"; done
 ```
 
-This command will resize all JPEG images to a width of 1024 pixels and set their quality to medium, resulting in a significant reduction in file size.
+This command will make all your JPEG images 1024 pixels wide and set their quality to "medium." This will make the file sizes much smaller.
 
-### Conclusion
+### Why You Should Use `sips`
 
-The `sips` command-line tool is a powerful and convenient utility for macOS users who need to perform quick and efficient image compression. By mastering a few simple commands, you can dramatically reduce the size of your website's images, leading to faster load times and a better user experience. The next time you need to optimize images, give `sips` a try—you might be surprised at how easy and effective it is.
+The `sips` tool is a great way for Mac users to quickly make images smaller. By learning a few simple commands, you can make your website load faster for your visitors. The next time you need to make your images smaller, give `sips` a try!

@@ -15,20 +15,20 @@ description = "A case study comparing the experience of using Lovable.dev for bo
 +++
 
 
-As a Vibe Coder, I'm always excited to explore new tools that can streamline my workflow. For my latest project, "[AirDeals](https://test.airdeals.techbytepulse.com)"—a flight deal tracker—I decided to go all-in on AI-driven development from the start. I used the **Lovable.dev** platform to bootstrap and build the entire application, and the experience was fantastic for getting a feature-rich prototype off the ground quickly.
+I love trying new tools that make my work easier. For my latest project, a website called "[AirDeals](https://test.airdeals.techbytepulse.com)" that helps people find cheap flights, I decided to use AI to help me build it. I used a tool called **Lovable.dev** to create the first version of the website. It was great for getting a working website up and running quickly.
 
-However, as I was getting into the nitty-gritty of debugging, I hit a small roadblock: I had run out of my monthly credits on the platform. This felt like the perfect opportunity to put another tool to the test: Google's **[Gemini CLI](/posts/gemini-cli-sandbox-security/)**. Could it jump into a codebase it had no prior context on and help me squash the remaining bugs? I was eager to find out.
+But when I started to fix some small problems (called bugs), I ran out of my free credits on Lovable.dev. This was a good time to try another tool: Google's **[Gemini CLI](/posts/gemini-cli-sandbox-security/)**. I wanted to see if it could help me fix the bugs, even though it had never seen the website's code before.
 
-### The First Bug: The Frustratingly Sticky Search Form
+### The First Bug: The Search Form That Wouldn't Change
 
-The first issue was a tricky one. The main flight search form was designed to load the user's saved preferences (default origin and destination), which was great. But it was too "sticky"—if a user tried to clear a field to type in a new city, the saved default would immediately snap back.
+The first problem was with the flight search form. It was set up to automatically fill in the user's favorite departure and arrival cities. But if a user tried to type in a new city, the old one would pop right back in.
 
-I explained the problem to Gemini. It quickly analyzed the `FlightSearchForm.tsx` component and proposed a fix. Its first attempt was logical, but it didn't quite stick the landing. It prevented the form from being overwritten, but it also stopped the initial preferences from loading at all.
+I explained the problem to Gemini. It looked at the code and suggested a fix. The first try didn't work perfectly. It stopped the form from changing back, but it also stopped the user's favorite cities from loading in the first place.
 
-This is where the collaboration shined. After I provided feedback, Gemini understood the nuance required. The correct solution was to ensure the defaults were set only *once* when the component first loaded. Gemini introduced a state flag, `initialDefaultsSet`, to track this, which worked perfectly.
+This is where working with Gemini was great. I told it what was wrong, and it understood what needed to be done. The right solution was to make sure the favorite cities were loaded only once when the page first opened. Gemini added a little piece of code to keep track of this, and it worked!
 
 ```javascript
-// The final, working solution
+// The code that fixed the problem
 const [initialDefaultsSet, setInitialDefaultsSet] = useState(false);
 
 useEffect(() => {
@@ -40,35 +40,35 @@ useEffect(() => {
 }, [settings, settingsLoading, initialDefaultsSet]);
 ```
 
-It was a great example of the iterative process that defines software development, whether you're working with a human or an AI.
+This was a good example of how making software is a step-by-step process, whether you're working with a person or an AI.
 
-### The Second Bug: A Familiar Foe
+### The Second Bug: A Problem I'd Seen Before
 
-With one bug down, we moved to the price alerts page. When creating a new alert, the currency field was getting stuck on the user's saved preference, ignoring any new selection.
+Next, we moved to the page where users can set up price alerts. When creating a new alert, the currency was stuck on the user's favorite currency, even if they tried to choose a new one.
 
-I immediately had a hunch. "This feels like the exact same bug we just fixed," I told Gemini. It immediately understood the pattern, applied the same `initialDefaultsSet` logic to the `PriceAlerts.tsx` component, and just like that, the issue was resolved. It was impressive to see it recognize a recurring pattern and apply a known solution so quickly.
+I had a feeling I knew what was wrong. "This seems like the same problem we just fixed," I told Gemini. It understood right away and used the same fix as before. Just like that, the problem was solved. It was cool to see the AI recognize the same type of problem and use the same solution.
 
-### Beyond the Bugs: Charting a Course for Production
+### More Than Just Bugs: Getting Ready for the Real World
 
-With the app now working as intended, I decided to push Gemini further. "Is this thing ready for production?" I asked.
+With the website working correctly, I asked Gemini a bigger question: "Is this website ready for people to use?"
 
-What followed was an incredibly thorough and insightful breakdown of everything I'd need to consider for a real-world micro-SaaS application. It covered critical areas like:
+Gemini gave me a very detailed list of everything I needed to do to get my website ready for the real world. It covered important things like:
 
--   **Security:** Moving hardcoded API keys to environment variables and implementing Supabase Row Level Security (RLS).
--   **Infrastructure:** Switching from the Amadeus test API to their production environment.
--   **Monetization:** Integrating a payment provider like Stripe.
--   **Automation:** Setting up the price tracking function as a Supabase Cron Job.
--   **Reliability:** Adding proper logging and error tracking.
+-   **Security:** Moving secret codes (like API keys) to a safer place and making sure users' data is protected.
+-   **Making it Real:** Switching from a test version of the flight data to the real version.
+-   **Making Money:** Adding a way for people to pay for the service, like with Stripe.
+-   **Making it Automatic:** Setting up the price checker to run on its own.
+-   **Making it Reliable:** Adding tools to track any errors or problems.
 
-To make this even more actionable, Gemini compiled the entire list into a `production_checklist.md` file and saved it in my project.
+To make it even more helpful, Gemini put this whole list into a file called `production_checklist.md` and saved it in my project.
 
-### My Verdict: A Powerful New Tool in the Arsenal
+### My Thoughts: A Great New Tool
 
-So, how did Gemini CLI fare? Impressively well. It was able to jump into a codebase it had never seen, understand the context from our conversation, diagnose complex React state management issues, and collaborate on fixes.
+So, what did I think of the Gemini CLI? It was very impressive. It was able to understand a brand new project, figure out some tricky problems, and work with me to fix them.
 
-This experience also highlighted a key difference in their free tier models, especially since I'm not a paying user on either platform. Lovable.dev offers a free plan with 5 daily credits, but it's capped at 30 credits per month. Once I exhausted my monthly quota, my progress on the platform was stalled until the next cycle. Gemini CLI, on the other hand, offers a free tier with a daily limit of 100 requests that resets every day, without a monthly cap. For the kind of focused, high-intensity debugging I was doing, this daily refresh was a game-changer. Hitting a daily limit means I can just pick things up the next day, whereas a monthly limit could have left me blocked for weeks.
+This experience also showed me a big difference between the free plans of the two AI tools. Lovable.dev gives you a certain number of free credits each month. Once you use them up, you have to wait until the next month. The Gemini CLI gives you a certain number of free requests every day, and it resets every day. For fixing a lot of bugs in a short time, the daily reset was much better. If I ran out of requests, I could just start again the next day. With a monthly limit, I could have been stuck for weeks.
 
-Ultimately, the future of development isn't about finding a single, all-powerful AI, but about having a versatile toolkit at your disposal. Lovable.dev was invaluable for getting the project off the ground, and Gemini CLI was the perfect tool for the deep, iterative work that followed. The journey of "AirDeals" is far from over, but it's now more robust and has a clear path forward, thanks to a little help from two very different AI friends.
+In the end, the best way to build things is to have a lot of different tools. Lovable.dev was great for starting the project, and the Gemini CLI was perfect for the detailed work that came after. My "AirDeals" website is much better now, and I have a clear plan for what to do next, thanks to my two AI helpers.
 
 ### The Gemini Journals Series
 

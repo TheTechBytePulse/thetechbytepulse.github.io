@@ -14,15 +14,15 @@ description = "A step-by-step case study of how a frustrating CSS issue was diag
   caption = "The case of the missing cover image."
 +++
 
-Every developer knows the feeling: you make a change that should work, but for some reason, it doesn't. This is the story of one such recent interaction with the [Gemini CLI](/posts/a-day-with-gemini/), where a seemingly simple task—making sure cover images appeared everywhere—turned into a fascinating debugging journey that led us deep into the theme's CSS.
+Every person who works with computers knows this feeling: you make a change that should work, but it doesn't. This is a story about one of those times. I was working with the [Gemini CLI](/posts/a-day-with-gemini/) on a seemingly simple problem: making sure the main picture (the "cover image") for my blog posts showed up on all pages. This turned into a fun little mystery that led us to look deep into the website's code.
 
-### The Goal: Consistent Cover Images
+### The Goal: Cover Images Everywhere
 
-The goal was straightforward. I wanted the cover images for my blog posts to be visible on all list pages, including the homepage, category pages, and tag pages. Initially, they were only showing up on the homepage.
+My goal was simple. I wanted the cover images for my blog posts to show up on all the pages that list my posts, like the homepage, category pages, and tag pages. At first, they were only showing up on the homepage.
 
-### Attempt #1: The Global Configuration
+### Try #1: Changing the Main Settings
 
-My first thought, and Gemini's, was to check the site's main configuration file, `config.yaml`. The PaperMod theme has a `cover` section that seems to control this exact behavior. We uncommented the section and set all the `hidden` parameters to `false`:
+My first idea, and Gemini's too, was to check the website's main settings file. The theme I'm using has a section for the cover image, so we changed the settings to make sure the images were not hidden.
 
 ```yaml
 cover:
@@ -31,29 +31,23 @@ cover:
     hiddenInSingle: false
 ```
 
-We committed the change, confident this would solve the problem. It didn't. The cover images were still missing from the category and tag pages.
+We saved the change, thinking this would fix the problem. But it didn't. The cover images were still missing from the category and tag pages.
 
-### Attempt #2: The Template Override
+### Try #2: Changing the Website's Template
 
-If the global configuration wasn't being respected, the next logical step was to assume the theme's template file for list pages (`list.html`) had its own logic that was overriding our settings.
+If the main settings didn't work, the next logical step was to think that the website's template for the list pages was overriding our settings.
 
-Gemini dived into the theme files and found this line in `themes/PaperMod/layouts/_default/list.html`:
+Gemini looked at the theme's files and found a line of code that was checking the settings of each individual post, not the main settings file. This seemed to be the problem. To fix it, Gemini created a new version of the file that would use the main settings.
 
-```go-template
-{{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-```
+We saved the change. But it *still* didn't work.
 
-This code checks the *front matter* of each individual post, not the site's `config.yaml`. This seemed to be the smoking gun. To fix it, Gemini created a custom override of the `list.html` file in my site's `layouts/_default/` directory and changed the line to respect the global site parameters.
+### The Real Problem: A Single Line of Code
 
-We committed the change. And yet, it *still* didn't work.
+This was very confusing. The settings were right, and the template was now told to show the images. What else could be hiding them?
 
-### The Real Culprit: A Single Line of CSS
+This is when Gemini had a great idea. If the website's structure was right, then the problem must be in the way the website was being styled. The problem was in the **CSS**, the code that controls how a website looks.
 
-This was a head-scratcher. The configuration was right, and the template logic was now explicitly told to show the images. What else could be hiding them?
-
-This is where the debugging process took a crucial turn. Gemini realized that if the HTML was being generated correctly, the problem must be in the final rendering layer: the **CSS**.
-
-The `list.html` template adds a special class, `tag-entry`, to posts when they are on a taxonomy page (like a tag or category list). Gemini searched the theme's CSS files for this specific class and found the culprit in `common/post-entry.css`:
+The template adds a special name, `tag-entry`, to posts when they are on a tag or category page. Gemini searched the CSS files for this name and found the problem:
 
 ```css
 .tag-entry .entry-cover {
@@ -61,11 +55,11 @@ The `list.html` template adds a special class, `tag-entry`, to posts when they a
 }
 ```
 
-There it was. A simple, direct CSS rule that explicitly told the browser to hide the cover image on any post appearing in a tag or category list. No amount of configuration or template changes could have overridden this without touching the CSS.
+There it was. A simple line of code that was telling the browser to hide the cover image on any post on a tag or category page. No matter what we did with the settings or the template, this one line of code would always hide the image.
 
-### The Solution: A CSS Override
+### The Solution: A Simple Fix
 
-The fix was now clear and simple. We didn't need to edit the theme directly. Instead, we created a custom CSS file at `assets/css/extended/custom.css` with a single rule to counteract the theme's style:
+Now that we knew the real problem, the fix was easy. We didn't need to change the theme's files. Instead, we created a new CSS file and added one line of code to undo the theme's style:
 
 ```css
 .tag-entry .entry-cover {
@@ -73,13 +67,13 @@ The fix was now clear and simple. We didn't need to edit the theme directly. Ins
 }
 ```
 
-The PaperMod theme is designed to automatically load any CSS in this `extended` directory, making it the perfect place for custom styles.
+The theme is set up to automatically use this new file, so it was the perfect place to put our fix.
 
-With this final change, the cover images appeared exactly as intended on all pages.
+With this final change, the cover images showed up on all the pages, just like I wanted.
 
-### What This Teaches Us
+### What We Learned
 
-This collaboration was a powerful reminder that debugging is a process of elimination. We started with the most likely suspect (configuration), moved to the next (templates), and finally uncovered the true cause in a place we hadn't initially considered (CSS). It highlights the importance of understanding the different layers that make up a website and how they interact. It was a great real-world example of how an AI assistant can work through a problem logically, even when the initial assumptions are wrong.
+This was a great reminder that fixing problems is a process of elimination. We started with the most likely problem (the settings), then moved to the next (the template), and finally found the real problem in a place we didn't think to look at first (the CSS). It shows that it's important to understand all the different parts of a website and how they work together. It was also a great example of how an AI can help you solve a problem, even when the first few guesses are wrong.
 
 ### The Gemini Journals Series
 

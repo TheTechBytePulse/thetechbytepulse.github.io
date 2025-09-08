@@ -14,18 +14,18 @@ description = "A new beta feature in WhatsApp suggests that users will soon be a
 
 
 
-In a move that signals deeper integration between Meta's family of apps, WhatsApp is testing a new feature that will allow users to import their profile photos directly from Instagram and Facebook. This new option was spotted in the latest beta version of the Android app and could soon roll out to all users.
+WhatsApp is testing a new feature that will let you use your Instagram and Facebook profile pictures as your WhatsApp profile picture. This new feature was found in a test version of the Android app and could be available to everyone soon.
 
 ### A More Connected Experience
 
-The feature, which is currently in development, will provide a convenient way for users to keep their profile pictures synchronized across Meta's platforms. Instead of manually uploading the same photo to each app, users will be able to simply import their existing Instagram or Facebook profile picture with a single tap.
+This new feature will make it easier to keep your profile pictures the same across all of Meta's apps (WhatsApp, Instagram, and Facebook). Instead of having to upload the same picture to each app, you'll be able to just import your picture from Instagram or Facebook with one tap.
 
 ### How it Works
 
-According to reports, the new feature will appear in the profile photo settings menu, alongside the existing options to take a photo or choose one from the gallery. When a user selects the "Import from Instagram" option, they will be prompted to log in to their Instagram account and grant permission for WhatsApp to access their profile information.
+The new feature will be in the profile picture settings menu. When you choose the "Import from Instagram" option, you will be asked to log in to your Instagram account and give WhatsApp permission to use your profile picture.
 
-### What This Means for Users
+### What This Means for You
 
-For users who are active on multiple Meta platforms, this new feature will be a welcome time-saver. It also suggests that Meta is continuing to explore ways to create a more seamless and interconnected experience for its billions of users.
+If you use more than one of Meta's apps, this new feature will save you time. It also shows that Meta is trying to make its apps work together more smoothly.
 
-While there is no official release date for this feature yet, its appearance in the beta version is a strong indication that it will be coming to a future version of WhatsApp.
+We don't know when this feature will be released, but since it's in the test version, it will probably be coming to WhatsApp soon.

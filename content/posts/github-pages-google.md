@@ -11,28 +11,22 @@ description = "A step-by-step guide on how to verify your Hugo static site with 
   alt = "The logos of GitHub Pages and Google Search Console."
   caption = "Get your GitHub Pages site indexed by Google."
 +++
-To verify your Hugo site with Google Search Console, you need to place the verification file in the static directory of your Hugo project and then publish your site. Hugo will automatically serve files from the static directory at the root of your site.
+To get your Hugo website to show up in Google search results, you need to prove to Google that you own the website. You can do this using a free tool from Google called Google Search Console. This guide will show you how to do it.
 
-{{< youtube s0Tuat2VReQ >}}  
+The easiest way to do this is to upload a special HTML file from Google to your website. Here's how to do it with Hugo.
 
+{{< youtube s0Tuat2VReQ >}} 
 
 **Here's a step-by-step guide:**
 
-1.  Create the static directory: If you don't already have one, create a directory named static at the root of your Hugo project. 
-    
-2.  **Place the verification file:** Put your Google verification file (e.g., googleXXXXXXXX.html) inside the static directory. 
-    
-3.  **Publish your site:** Build and deploy your Hugo site using your preferred method (e.g., Netlify, GitHub Pages, etc.). 
-    
-4.  **Verify in Search Console:** Once your site is live, go to Google Search Console and select the "HTML file" verification method. Enter the URL of your verification file (e.g., https://yourdomain.com/googleXXXXXXXX.html) and click "Verify". 
-    
+1.  **Create a "static" folder:** If you don't already have one, create a folder called `static` in the main folder of your Hugo project.
+2.  **Put the Google file in the "static" folder:** Google will give you a special HTML file to download. It will have a name like `googleXXXXXXXX.html`. Put this file inside the `static` folder.
+3.  **Publish your website:** Upload your website to the internet like you normally do (using a service like Netlify or GitHub Pages).
+4.  **Verify in Search Console:** Once your website is online, go back to Google Search Console and choose the "HTML file" option to verify. Type in the web address of your verification file (for example, `https://yourwebsite.com/googleXXXXXXXX.html`) and click "Verify."
 
-**Important Considerations:** 
+**Important things to remember:**
 
-*   **File Location:** Ensure the verification file is placed directly inside the static directory, not within any subfolders.
-    
-*   **File Extension:** If you are having trouble with the .html extension, try accessing the file without it (e.g., https://yourdomain.com/googleXXXXXXXX) as Hugo might handle the extension automatically.
-    
-*   **Theme Overrides:** If you are using a theme, make sure it's not overriding the static directory or its contents. Check your theme's documentation or settings.
-    
-*   **Hugo Version:** If you are using an older version of Hugo, consider updating to the latest version as it may contain fixes for file serving issues.
+*   **Where to put the file:** Make sure the Google file is directly inside the `static` folder, not in any other folders inside it.
+*   **File name:** If you have trouble with the `.html` part of the file name, try leaving it off (for example, `https://yourwebsite.com/googleXXXXXXXX`). Sometimes Hugo will handle this for you.
+*   **Your website's theme:** If you are using a theme for your website, make sure it's not changing how the `static` folder works. You can check the theme's instructions to be sure.
+*   **Hugo version:** If you are using an old version of Hugo, you might want to update it to the newest version. This can fix some problems with how files are shown on your website.
