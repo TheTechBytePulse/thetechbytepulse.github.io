@@ -1,6 +1,6 @@
 +++
 title = "⚡ How to Use Kiro AI for Faster Development"
-date = "2025-07-17T10:00:00Z"
+date = "2026-07-17T10:00:00Z"
 draft = false
 author = "Prateep Gedupudi"
 tags = ["AI", "Kiro", "Developer Tools", "Productivity", "Vibe-Coding", "AI Agents", "Software Development"]
