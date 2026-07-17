@@ -13,7 +13,7 @@ description = "The Grenaro Type-C to Lightning OTG Adapter lets you use any USB-
   caption = "The Grenaro Type-C to Lightning OTG Adapter — small but essential."
 +++
 
-**If you own a Grenaro wireless microphone and an iPhone with a Lightning port, there's one small accessory that makes the whole setup work: the Grenaro Type-C to Lightning OTG Adapter. It's a compact, no-fuss connector — but where you buy it makes a surprisingly big difference.**
+**If you own a DJI Mic Mini and an iPhone with a Lightning port, there's one small accessory that makes the whole setup work: the Grenaro Type-C to Lightning OTG Adapter. It's a compact, no-fuss connector — but where you buy it makes a surprisingly big difference.**
 
 ### 🎙️ What Does This Adapter Actually Do?
 
@@ -43,7 +43,6 @@ One verified buyer on the Grenaro website summed it up well after getting a repl
 When you order from [grenaro.com](https://www.grenaro.com/products/type-c-to-lightning-otg-adapter-for-grenaro-wireless-microphone-receiver-seamless-conversion-for-iphone-compatibility), here's what you actually get:
 
 *   **Guaranteed original product** — directly from the brand
-*   **1-Year Warranty** — activate it on their site after purchase
 *   **Free shipping** across India
 *   **24-hour order dispatch**
 *   **WhatsApp + email support** if anything goes wrong
