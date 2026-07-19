@@ -1,3 +1,4 @@
+# Classic programmer jokes
 - question: Why do Java developers wear glasses?
   answer: Because they don't C#!
 
@@ -13,6 +14,37 @@
 - question: What's a developer's favorite country?
   answer: localhost.
 
+- question: Why did the programmer quit his job?
+  answer: Because he didn't get arrays.
+
+- question: What's the object-oriented way to become wealthy?
+  answer: Inheritance.
+
+- question: Why was the JavaScript developer sad?
+  answer: Because he didn't know how to `console.log` his feelings.
+
+- question: Why did the function break up with the variable?
+  answer: Because it had too many arguments.
+
+- question: What's the difference between a junior dev and a senior dev?
+  answer: The senior dev knows which Stack Overflow answer to copy.
+
+- question: Why was the Python developer always calm?
+  answer: Because they knew how to handle exceptions.
+
+- question: What did the router say to the doctor?
+  answer: It hurts when IP.
+
+- question: Why don't programmers like nature?
+  answer: It has too many bugs and no Stack Overflow.
+
+- question: What do you call a programmer from Finland?
+  answer: Nerdic.
+
+- question: What's a developer's favorite type of music?
+  answer: Algo-rhythm.
+
+# AI & LLM jokes
 - question: Why did the AI get a promotion?
   answer: It kept exceeding expectations — literally, it had no context limit.
 
@@ -31,7 +63,7 @@
 - question: What's an LLM's least favorite food?
   answer: Tokens — it always runs out at the worst time.
 
-- question: Why did the programmer quit using ChatGPT?
+- question: Why did the programmer stop using ChatGPT?
   answer: It kept finishing his sentences — and his job.
 
 - question: What do you call code that an AI wrote but no one understands?
@@ -40,20 +72,54 @@
 - question: Why did the machine learning model go to therapy?
   answer: It had too many unresolved training issues.
 
-- question: What's a developer's favorite type of music?
-  answer: Algo-rhythm.
+- question: What did the AI say when asked to write a poem?
+  answer: "As an AI language model, I'd be happy to — here are 47 versions."
 
-- question: Why did the function break up with the variable?
-  answer: Because it had too many arguments.
+- question: Why is prompt engineering so hard?
+  answer: Because "do the right thing" is not a valid prompt.
 
-- question: What's the difference between a junior dev and a senior dev?
-  answer: The senior dev knows which Stack Overflow answer to copy.
+- question: What's the difference between AI and a junior developer?
+  answer: The junior developer admits when they don't know something.
 
-- question: Why was the Python developer always calm?
-  answer: Because they knew how to handle exceptions.
+- question: Why did the neural network fail its exam?
+  answer: It overfit on the practice tests.
 
-- question: What did the router say to the doctor?
-  answer: "It hurts when IP."
+- question: What do you call an AI that only answers with questions?
+  answer: A chatbot that's read too many Socratic dialogues.
 
-- question: Why don't programmers like nature?
-  answer: It has too many bugs and no Stack Overflow.
+- question: Why did the GPT model get kicked out of the library?
+  answer: It kept making things up.
+
+# Tech & startup jokes
+- question: Why do tech startups love dark mode?
+  answer: To hide the red in their financial charts.
+
+- question: What's a startup's favorite movie?
+  answer: The Social Network — they're still waiting for their sequel.
+
+- question: Why did the cloud engineer get lost?
+  answer: He was always in a different region.
+
+- question: What's a DevOps engineer's favorite song?
+  answer: "99 problems but a deploy ain't one."
+
+- question: Why did the database administrator leave his wife?
+  answer: She had one-to-many relationships.
+
+- question: Why did the smartphone go to school?
+  answer: To improve its apps-titude.
+
+- question: What do you call a sleeping developer at a hackathon?
+  answer: A slow leak.
+
+- question: Why did the developer go broke?
+  answer: Because he used up all his cache.
+
+- question: What do you get when you cross a computer with a lifeguard?
+  answer: A screensaver.
+
+- question: Why did the Wi-Fi and the Bluetooth break up?
+  answer: There was no connection.
+
+- question: What's the most used programming language in the world?
+  answer: Profanity — used by every developer debugging at 2 AM.
