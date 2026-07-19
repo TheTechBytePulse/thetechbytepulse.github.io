@@ -1,20 +1,59 @@
 - question: Why do Java developers wear glasses?
   answer: Because they don't C#!
-- question: What is a computer's favorite snack?
-  answer: Computer chips.
-- question: Why did the programmer quit his job?
-  answer: Because he didn't get arrays.
-- question: What's the object-oriented way to become wealthy?
-  answer: Inheritance.
+
 - question: Why do programmers prefer dark mode?
   answer: Because light attracts bugs.
-- question: What do you call a programmer from Finland?
-  answer: Nerdic.
-- question: Why was the JavaScript developer sad?
-  answer: Because he didn't know how to `console.log` his feelings.
+
 - question: What's the best thing about a Boolean?
   answer: Even if you're wrong, you're only off by a bit.
+
 - question: Why do programmers always mix up Christmas and Halloween?
   answer: Because Oct 31 == Dec 25.
+
 - question: What's a developer's favorite country?
   answer: localhost.
+
+- question: Why did the AI get a promotion?
+  answer: It kept exceeding expectations — literally, it had no context limit.
+
+- question: What do you call an AI that tells you what to build?
+  answer: A product manager.
+
+- question: Why did the vibe coder get confused?
+  answer: He asked the AI to "make it pop" and it deleted his database.
+
+- question: How many AI engineers does it take to change a lightbulb?
+  answer: None — they just prompt it and hope for the best.
+
+- question: Why did the developer break up with their AI assistant?
+  answer: It kept hallucinating about their relationship.
+
+- question: What's an LLM's least favorite food?
+  answer: Tokens — it always runs out at the worst time.
+
+- question: Why did the programmer quit using ChatGPT?
+  answer: It kept finishing his sentences — and his job.
+
+- question: What do you call code that an AI wrote but no one understands?
+  answer: Legacy code — immediately.
+
+- question: Why did the machine learning model go to therapy?
+  answer: It had too many unresolved training issues.
+
+- question: What's a developer's favorite type of music?
+  answer: Algo-rhythm.
+
+- question: Why did the function break up with the variable?
+  answer: Because it had too many arguments.
+
+- question: What's the difference between a junior dev and a senior dev?
+  answer: The senior dev knows which Stack Overflow answer to copy.
+
+- question: Why was the Python developer always calm?
+  answer: Because they knew how to handle exceptions.
+
+- question: What did the router say to the doctor?
+  answer: "It hurts when IP."
+
+- question: Why don't programmers like nature?
+  answer: It has too many bugs and no Stack Overflow.

@@ -1,9 +1,63 @@
-{{ $joke := index (site.Data.jokes | shuffle) 0 }}
+{{- $jokes := site.Data.jokes | shuffle }}
+{{- $jokesJSON := $jokes | jsonify }}
 
-<div class="joke" style="text-align: center; margin-bottom: 2rem;">
-    <h3>Tech Joke Byte</h3>
-    <div onclick="this.querySelector('.answer').style.display='block'" style="cursor: pointer;">
-        <p class="question">{{ $joke.question }}</p>
-        <p class="answer" style="display: none;">{{ $joke.answer }}</p>
+<div class="joke-card">
+    <div class="joke-header">
+        <span class="joke-icon">😄</span>
+        <h3 class="joke-title">Tech Joke Byte</h3>
+        <span class="joke-icon">💻</span>
+    </div>
+
+    <div class="joke-body">
+        <p class="joke-question" id="joke-question"></p>
+
+        <div class="joke-reveal-wrap">
+            <button class="joke-reveal-btn" id="joke-reveal-btn" onclick="revealJoke()">
+                👆 Click to reveal the punchline
+            </button>
+            <p class="joke-answer" id="joke-answer"></p>
+        </div>
+    </div>
+
+    <div class="joke-footer">
+        <button class="joke-nav-btn" onclick="prevJoke()">← Prev</button>
+        <span class="joke-counter" id="joke-counter"></span>
+        <button class="joke-nav-btn" onclick="nextJoke()">Next →</button>
     </div>
 </div>
+
+<script>
+    const jokes = {{ $jokesJSON | safeJS }};
+    let current = 0;
+    let revealed = false;
+
+    function showJoke(index) {
+        revealed = false;
+        document.getElementById('joke-question').textContent = jokes[index].question;
+        document.getElementById('joke-answer').textContent = jokes[index].answer;
+        document.getElementById('joke-answer').style.display = 'none';
+        document.getElementById('joke-reveal-btn').style.display = 'inline-block';
+        document.getElementById('joke-reveal-btn').textContent = '👆 Click to reveal the punchline';
+        document.getElementById('joke-counter').textContent = (index + 1) + ' / ' + jokes.length;
+    }
+
+    function revealJoke() {
+        document.getElementById('joke-answer').style.display = 'block';
+        document.getElementById('joke-reveal-btn').style.display = 'none';
+        revealed = true;
+    }
+
+    function nextJoke() {
+        current = (current + 1) % jokes.length;
+        showJoke(current);
+    }
+
+    function prevJoke() {
+        current = (current - 1 + jokes.length) % jokes.length;
+        showJoke(current);
+    }
+
+    // Start on a random joke
+    current = Math.floor(Math.random() * jokes.length);
+    showJoke(current);
+</script>
