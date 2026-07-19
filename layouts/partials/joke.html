@@ -17,6 +17,16 @@
             </button>
             <p class="joke-answer" id="joke-answer"></p>
         </div>
+
+        <div class="joke-reactions" id="joke-reactions" style="display:none;">
+            <span class="joke-reaction-label">Was that funny?</span>
+            <button class="joke-react-btn" id="btn-funny" onclick="reactToJoke('funny')" title="Funny!">
+                😂 <span id="count-funny">0</span>
+            </button>
+            <button class="joke-react-btn" id="btn-meh" onclick="reactToJoke('meh')" title="Meh...">
+                😐 <span id="count-meh">0</span>
+            </button>
+        </div>
     </div>
 
     <div class="joke-footer">
@@ -31,6 +41,60 @@
     let current = 0;
     let revealed = false;
 
+    // Load all reactions from localStorage
+    function getReactions() {
+        try {
+            return JSON.parse(localStorage.getItem('joke-reactions') || '{}');
+        } catch(e) {
+            return {};
+        }
+    }
+
+    function saveReactions(reactions) {
+        localStorage.setItem('joke-reactions', JSON.stringify(reactions));
+    }
+
+    function getJokeKey(index) {
+        // Use first 30 chars of the question as a stable key
+        return 'joke_' + jokes[index].question.substring(0, 30).replace(/\s+/g, '_');
+    }
+
+    function updateReactionUI(index) {
+        const reactions = getReactions();
+        const key = getJokeKey(index);
+        const jokeData = reactions[key] || { funny: 0, meh: 0, voted: null };
+
+        document.getElementById('count-funny').textContent = jokeData.funny;
+        document.getElementById('count-meh').textContent = jokeData.meh;
+
+        // Highlight the button the user already voted
+        document.getElementById('btn-funny').classList.toggle('joke-react-btn--active', jokeData.voted === 'funny');
+        document.getElementById('btn-meh').classList.toggle('joke-react-btn--active', jokeData.voted === 'meh');
+    }
+
+    function reactToJoke(type) {
+        const reactions = getReactions();
+        const key = getJokeKey(current);
+        const jokeData = reactions[key] || { funny: 0, meh: 0, voted: null };
+
+        if (jokeData.voted === type) {
+            // Toggle off — undo the vote
+            jokeData[type] = Math.max(0, jokeData[type] - 1);
+            jokeData.voted = null;
+        } else {
+            // Remove previous vote if any
+            if (jokeData.voted) {
+                jokeData[jokeData.voted] = Math.max(0, jokeData[jokeData.voted] - 1);
+            }
+            jokeData[type]++;
+            jokeData.voted = type;
+        }
+
+        reactions[key] = jokeData;
+        saveReactions(reactions);
+        updateReactionUI(current);
+    }
+
     function showJoke(index) {
         revealed = false;
         document.getElementById('joke-question').textContent = jokes[index].question;
@@ -39,11 +103,14 @@
         document.getElementById('joke-reveal-btn').style.display = 'inline-block';
         document.getElementById('joke-reveal-btn').textContent = '👆 Click to reveal the punchline';
         document.getElementById('joke-counter').textContent = (index + 1) + ' / ' + jokes.length;
+        document.getElementById('joke-reactions').style.display = 'none';
+        updateReactionUI(index);
     }
 
     function revealJoke() {
         document.getElementById('joke-answer').style.display = 'block';
         document.getElementById('joke-reveal-btn').style.display = 'none';
+        document.getElementById('joke-reactions').style.display = 'flex';
         revealed = true;
     }
 
