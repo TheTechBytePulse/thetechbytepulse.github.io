@@ -1,6 +1,6 @@
 +++
 title = "🎤 Is Your Phone Always Listening? The Truth Behind Hey Siri and OK Google"
-date = "2026-07-17T22:00:00Z"
+date = "2026-08-11T22:00:00Z"
 draft = false
 author = "Prateep Gedupudi"
 tags = ["Privacy", "Siri", "Google Assistant", "Alexa", "iPhone", "Android", "Tech Explained", "AI"]
