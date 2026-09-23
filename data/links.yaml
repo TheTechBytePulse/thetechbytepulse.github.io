@@ -1,0 +1,89 @@
+profile:
+  name: "Prateep Gedupudi"
+  tagline: "Tech • Food • Solar • Life"
+  avatar: "/images/profile.jpeg"
+
+channels:
+  - name: "TechBytePulse"
+    icon: "▶️"
+    url: "https://www.youtube.com/@TechBytePulse"
+    label: "Tech & AI Videos"
+  - name: "FoodiesPark"
+    icon: "🍽️"
+    url: "https://www.youtube.com/@FoodiesPark"
+    label: "Food Videos"
+  - name: "Prateep Gedupudi"
+    icon: "🎬"
+    url: "https://www.youtube.com/prateepgedupudi"
+    label: "Personal Channel"
+  - name: "Instagram"
+    icon: "📸"
+    url: "https://www.instagram.com/"
+    label: "Follow on Instagram"
+
+sections:
+  - title: "🎙️ Audio & Recording Gear"
+    id: "audio"
+    products:
+      - name: "DJI Mic Mini"
+        description: "Compact wireless mic — my go-to for all YouTube videos."
+        url: "https://link.amazon/B03gsO0sk"
+        badge: "Amazon"
+        available: true
+      - name: "Grenaro Wireless Mic"
+        description: "Affordable wireless mic that works great with phones and PCs."
+        url: ""
+        badge: "Coming Soon"
+        available: false
+      - name: "Grenaro Type-C to Lightning Adapter"
+        description: "Use your DJI Mic Mini or any USB-C accessory with Lightning iPhones."
+        url: "https://www.grenaro.com/products/type-c-to-lightning-otg-adapter-for-grenaro-wireless-microphone-receiver-seamless-conversion-for-iphone-compatibility"
+        badge: "Grenaro.com"
+        available: true
+      - name: "NOTYEX Multi-Functional Cable Kit"
+        description: "Connect USB-C mics to older PCs with USB-A ports — plug and play."
+        url: "https://link.amazon/B0j0A19Xk"
+        badge: "Amazon"
+        available: true
+
+  - title: "☀️ Solar & Off-Grid Gear"
+    id: "solar"
+    products:
+      - name: "Waaree 540Wp Mono PERC Solar Panels"
+        description: "The panels powering my home solar setup — high efficiency, great for limited roof space."
+        url: ""
+        badge: "Link Coming Soon"
+        available: false
+      - name: "UTL Gamma Plus 1kVA PCU"
+        description: "The brain of my solar system. Smart, efficient, and easy to configure."
+        url: ""
+        badge: "Link Coming Soon"
+        available: false
+      - name: "Exide Solar C10 Tubular Battery 150AH"
+        description: "Reliable lead-acid battery designed specifically for solar storage."
+        url: ""
+        badge: "Link Coming Soon"
+        available: false
+      - name: "Inverter Trolley"
+        description: "Clean and practical stand to hold the battery and inverter together."
+        url: ""
+        badge: "Link Coming Soon"
+        available: false
+
+  - title: "💻 Dev & AI Tools"
+    id: "dev"
+    products:
+      - name: "Kiro IDE"
+        description: "AI-powered dev environment — spec-driven development with autonomous agents."
+        url: "https://kiro.dev"
+        badge: "Free"
+        available: true
+      - name: "Ollama"
+        description: "Run AI models like Gemma 4 and Llama 3 completely offline on your Mac."
+        url: "https://ollama.com"
+        badge: "Free"
+        available: true
+
+blog:
+  url: "https://www.techbytepulse.com"
+  label: "Read the Blog"

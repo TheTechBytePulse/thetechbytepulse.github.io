@@ -1,0 +1,75 @@
+{{- define "main" }}
+{{- $data := site.Data.links }}
+
+<div class="links-page">
+
+  {{/* ── Profile Header ── */}}
+  <div class="links-profile">
+    {{- with $data.profile.avatar }}
+    <img src="{{ . }}" alt="{{ $data.profile.name }}" class="links-avatar" />
+    {{- end }}
+    <h1 class="links-name">{{ $data.profile.name }}</h1>
+    <p class="links-tagline">{{ $data.profile.tagline }}</p>
+  </div>
+
+  {{/* ── Affiliate Disclosure ── */}}
+  <div class="links-disclosure">
+    <span class="links-disclosure-icon">ℹ️</span>
+    <p>This page contains affiliate links. If you purchase through these links, I may earn a small commission at no extra cost to you. I only recommend products I personally use and trust.</p>
+  </div>
+
+  {{/* ── My Channels ── */}}
+  <section class="links-section" aria-labelledby="channels-heading">
+    <h2 class="links-section-title" id="channels-heading">📺 My Channels</h2>
+    <div class="links-channels">
+      {{- range $data.channels }}
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="links-channel-btn" aria-label="{{ .name }} — {{ .label }}">
+        <span class="links-channel-icon" aria-hidden="true">{{ .icon }}</span>
+        <span class="links-channel-info">
+          <span class="links-channel-name">{{ .name }}</span>
+          <span class="links-channel-label">{{ .label }}</span>
+        </span>
+        <span class="links-external-icon" aria-hidden="true">↗</span>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+
+  {{/* ── Product Sections ── */}}
+  {{- range $data.sections }}
+  <section class="links-section" aria-labelledby="section-{{ .id }}">
+    <h2 class="links-section-title" id="section-{{ .id }}">{{ .title }}</h2>
+    <div class="links-products">
+      {{- range .products }}
+      {{- if .available }}
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer sponsored" class="links-product-card links-product-card--available" aria-label="{{ .name }}">
+      {{- else }}
+      <div class="links-product-card links-product-card--unavailable" aria-label="{{ .name }} — not yet available">
+      {{- end }}
+        <div class="links-product-body">
+          <span class="links-product-name">{{ .name }}</span>
+          <span class="links-product-desc">{{ .description }}</span>
+        </div>
+        <span class="links-product-badge links-product-badge--{{ if .available }}active{{ else }}inactive{{ end }}">{{ .badge }}</span>
+      {{- if .available }}
+      </a>
+      {{- else }}
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{/* ── Blog CTA ── */}}
+  <section class="links-section links-section--blog" aria-label="Visit the blog">
+    <a href="{{ $data.blog.url }}" class="links-blog-btn" aria-label="Read the Tech Byte Pulse blog">
+      <span>📝</span>
+      <span>{{ $data.blog.label }}</span>
+      <span aria-hidden="true">↗</span>
+    </a>
+  </section>
+
+</div>
+
+{{- end }}

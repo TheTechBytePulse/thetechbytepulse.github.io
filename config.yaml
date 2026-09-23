@@ -39,6 +39,9 @@ languages:
         - name: Categories
           url: categories/
           weight: 10
+        - name: Links
+          url: links
+          weight: 14
         - name: About
           url: about
           weight: 15
