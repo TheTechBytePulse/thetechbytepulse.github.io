@@ -94,6 +94,44 @@ sections:
         image: "/images/products/ollama.jpg"
         available: true
 
+  - title: "🏠 Home Improvement"
+    id: "home"
+    products:
+      - name: "Aucklien 360° Vacuum Magnetic Car Phone Mount"
+        description: "Strong suction cup phone holder for dashboard, windshield, gym, mirror & shower — hands-free and 360° rotatable."
+        url: "https://link.amazon/B057422u4"
+        badge: "Amazon"
+        image: "/images/products/aucklien-car-phone-mount.jpg"
+        available: true
+      - name: "WD-40 Multipurpose Spray"
+        description: "Lubricant, rust remover and cleaning agent — great for stuck hinges, bike chains, and squeaky parts."
+        url: "https://link.amazon/B0d3Ydrya"
+        badge: "Amazon"
+        image: "/images/products/wd40-multipurpose-spray.jpg"
+        available: true
+      - name: "Jon Bhandari Ratchet PVC Pipe Cutter"
+        description: "Heavy duty tube cutter with heat-treated stainless steel blade — cuts PVC and plastic pipes up to 42mm cleanly."
+        url: "https://link.amazon/B05KTrL5n"
+        badge: "Amazon"
+        image: "/images/products/jon-bhandari-pipe-cutter.jpg"
+        available: true
+
+  - title: "🌿 Gardening"
+    id: "gardening"
+    products:
+      - name: "Utkarsh Geotextile Non-Woven Fabric Cloth"
+        description: "120 GSM geo textile for terrace gardens and sub-surface drainage — controls erosion, retains soil, and manages water flow."
+        url: "https://link.amazon/B09m4mXjq"
+        badge: "Amazon"
+        image: "/images/products/utkarsh-geotextile-fabric.jpg"
+        available: true
+      - name: "TrustBasket Premium Cocopeat Block"
+        description: "5kg cocopeat block made from Kerala coconut husk — expands up to 75 litres, great water retention for organic gardening."
+        url: "https://link.amazon/B0iZEeETc"
+        badge: "Amazon"
+        image: "/images/products/trustbasket-cocopeat.jpg"
+        available: true
+
 blog:
   url: "https://www.techbytepulse.com"
   label: "Read the Blog"
