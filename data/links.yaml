@@ -73,10 +73,10 @@ sections:
         available: true
       - name: "Inverter Trolley"
         description: "Clean and practical stand to hold the battery and inverter together."
-        url: ""
-        badge: "Link Coming Soon"
+        url: "https://link.amazon/B0a8TZ695"
+        badge: "Amazon"
         image: "/images/products/inverter-trolley.jpg"
-        available: false
+        available: true
 
   - title: "💻 Dev & AI Tools"
     id: "dev"
