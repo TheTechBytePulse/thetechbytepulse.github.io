@@ -33,10 +33,10 @@ sections:
         available: true
       - name: "Grenaro Wireless Mic"
         description: "Affordable wireless mic that works great with phones and PCs."
-        url: ""
-        badge: "Coming Soon"
+        url: "https://link.amazon/B0c2aW6QD"
+        badge: "Amazon"
         image: "/images/products/grenaro-wireless-mic.jpg"
-        available: false
+        available: true
       - name: "Grenaro Type-C to Lightning Adapter"
         description: "Use your DJI Mic Mini or any USB-C accessory with Lightning iPhones."
         url: "https://www.grenaro.com/products/type-c-to-lightning-otg-adapter-for-grenaro-wireless-microphone-receiver-seamless-conversion-for-iphone-compatibility"
