@@ -49,6 +49,12 @@ sections:
         badge: "Amazon"
         image: "/images/products/notyex-cable-kit.jpg"
         available: true
+      - name: "Aucklien 360° Vacuum Magnetic Car Phone Mount"
+        description: "Strong suction cup phone holder for dashboard, windshield, gym, mirror & shower — hands-free and 360° rotatable."
+        url: "https://link.amazon/B057422u4"
+        badge: "Amazon"
+        image: "/images/products/aucklien-car-phone-mount.jpg"
+        available: true
 
   - title: "☀️ Solar & Off-Grid Gear"
     id: "solar"
@@ -97,12 +103,6 @@ sections:
   - title: "🏠 Home Improvement"
     id: "home"
     products:
-      - name: "Aucklien 360° Vacuum Magnetic Car Phone Mount"
-        description: "Strong suction cup phone holder for dashboard, windshield, gym, mirror & shower — hands-free and 360° rotatable."
-        url: "https://link.amazon/B057422u4"
-        badge: "Amazon"
-        image: "/images/products/aucklien-car-phone-mount.jpg"
-        available: true
       - name: "WD-40 Multipurpose Spray"
         description: "Lubricant, rust remover and cleaning agent — great for stuck hinges, bike chains, and squeaky parts."
         url: "https://link.amazon/B0d3Ydrya"
