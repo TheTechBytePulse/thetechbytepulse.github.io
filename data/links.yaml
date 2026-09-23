@@ -84,22 +84,6 @@ sections:
         image: "/images/products/inverter-trolley.jpg"
         available: true
 
-  - title: "💻 Dev & AI Tools"
-    id: "dev"
-    products:
-      - name: "Kiro IDE"
-        description: "AI-powered dev environment — spec-driven development with autonomous agents."
-        url: "https://kiro.dev"
-        badge: "Free"
-        image: "/images/products/kiro-ide.jpg"
-        available: true
-      - name: "Ollama"
-        description: "Run AI models like Gemma 4 and Llama 3 completely offline on your Mac."
-        url: "https://ollama.com"
-        badge: "Free"
-        image: "/images/products/ollama.jpg"
-        available: true
-
   - title: "🏠 Home Improvement"
     id: "home"
     products:
