@@ -29,21 +29,25 @@ sections:
         description: "Compact wireless mic — my go-to for all YouTube videos."
         url: "https://link.amazon/B03gsO0sk"
         badge: "Amazon"
+        image: "/images/products/dji-mic-mini.jpg"
         available: true
       - name: "Grenaro Wireless Mic"
         description: "Affordable wireless mic that works great with phones and PCs."
         url: ""
         badge: "Coming Soon"
+        image: "/images/products/grenaro-wireless-mic.jpg"
         available: false
       - name: "Grenaro Type-C to Lightning Adapter"
         description: "Use your DJI Mic Mini or any USB-C accessory with Lightning iPhones."
         url: "https://www.grenaro.com/products/type-c-to-lightning-otg-adapter-for-grenaro-wireless-microphone-receiver-seamless-conversion-for-iphone-compatibility"
         badge: "Grenaro.com"
+        image: "/images/products/grenaro-type-c-lightning-adapter.jpg"
         available: true
       - name: "NOTYEX Multi-Functional Cable Kit"
         description: "Connect USB-C mics to older PCs with USB-A ports — plug and play."
         url: "https://link.amazon/B0j0A19Xk"
         badge: "Amazon"
+        image: "/images/products/notyex-cable-kit.jpg"
         available: true
 
   - title: "☀️ Solar & Off-Grid Gear"
@@ -53,21 +57,25 @@ sections:
         description: "The panels powering my home solar setup — high efficiency, great for limited roof space."
         url: ""
         badge: "Link Coming Soon"
+        image: "/images/products/waaree-solar-panels.jpg"
         available: false
       - name: "UTL Gamma Plus 1kVA PCU"
         description: "The brain of my solar system. Smart, efficient, and easy to configure."
         url: ""
         badge: "Link Coming Soon"
+        image: "/images/products/utl-gamma-plus-pcu.jpg"
         available: false
       - name: "Exide Solar C10 Tubular Battery 150AH"
         description: "Reliable lead-acid battery designed specifically for solar storage."
         url: ""
         badge: "Link Coming Soon"
+        image: "/images/products/exide-solar-battery.jpg"
         available: false
       - name: "Inverter Trolley"
         description: "Clean and practical stand to hold the battery and inverter together."
         url: ""
         badge: "Link Coming Soon"
+        image: "/images/products/inverter-trolley.jpg"
         available: false
 
   - title: "💻 Dev & AI Tools"
@@ -77,11 +85,13 @@ sections:
         description: "AI-powered dev environment — spec-driven development with autonomous agents."
         url: "https://kiro.dev"
         badge: "Free"
+        image: "/images/products/kiro-ide.jpg"
         available: true
       - name: "Ollama"
         description: "Run AI models like Gemma 4 and Llama 3 completely offline on your Mac."
         url: "https://ollama.com"
         badge: "Free"
+        image: "/images/products/ollama.jpg"
         available: true
 
 blog:

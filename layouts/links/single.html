@@ -46,6 +46,11 @@
       {{- else }}
       <div class="links-product-card links-product-card--unavailable" aria-label="{{ .name }} — not yet available">
       {{- end }}
+        {{- if .image }}
+        <div class="links-product-img-wrap">
+          <img src="{{ .image }}" alt="{{ .name }}" class="links-product-img" loading="lazy" onerror="this.parentElement.style.display='none'" />
+        </div>
+        {{- end }}
         <div class="links-product-body">
           <span class="links-product-name">{{ .name }}</span>
           <span class="links-product-desc">{{ .description }}</span>
