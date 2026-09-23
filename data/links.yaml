@@ -1,6 +1,6 @@
 profile:
   name: "Prateep Gedupudi"
-  tagline: "Tech • Food • Solar • Life"
+  tagline: "Tech • Food • Life"
   avatar: "/images/profile.jpeg"
 
 channels:
@@ -55,22 +55,22 @@ sections:
     products:
       - name: "Waaree 540Wp Mono PERC Solar Panels"
         description: "The panels powering my home solar setup — high efficiency, great for limited roof space."
-        url: ""
-        badge: "Link Coming Soon"
+        url: "https://link.amazon/B08BbddJg"
+        badge: "Amazon"
         image: "/images/products/waaree-solar-panels.jpg"
-        available: false
+        available: true
       - name: "UTL Gamma Plus 1kVA PCU"
         description: "The brain of my solar system. Smart, efficient, and easy to configure."
-        url: ""
-        badge: "Link Coming Soon"
+        url: "https://link.amazon/B0jdxr9MW"
+        badge: "Amazon"
         image: "/images/products/utl-gamma-plus-pcu.jpg"
-        available: false
+        available: true
       - name: "Exide Solar C10 Tubular Battery 150AH"
         description: "Reliable lead-acid battery designed specifically for solar storage."
-        url: ""
-        badge: "Link Coming Soon"
+        url: "https://link.amazon/B07VitLyt"
+        badge: "Amazon"
         image: "/images/products/exide-solar-battery.jpg"
-        available: false
+        available: true
       - name: "Inverter Trolley"
         description: "Clean and practical stand to hold the battery and inverter together."
         url: ""
