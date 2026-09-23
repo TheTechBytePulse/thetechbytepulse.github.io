@@ -55,6 +55,24 @@ sections:
         badge: "Amazon"
         image: "/images/products/aucklien-car-phone-mount.jpg"
         available: true
+      - name: "Dyazo 6ft Adjustable Aluminum Light Stand"
+        description: "Portable height-adjustable light stand for ring lights and panels — 2.5ft to 6ft, max 2kg load capacity."
+        url: "https://link.amazon/B008hGeXD"
+        badge: "Amazon"
+        image: "/images/products/dyazo-light-stand.jpg"
+        available: true
+      - name: "GiftMax RL-11 LED Video Soft Light Panel 35W"
+        description: "11-inch bi-colour LED panel light (2700K–5700K, CRI95+) with remote — ideal for YouTube, studio and video calls."
+        url: "https://link.amazon/B0eGUcKvQ"
+        badge: "Amazon"
+        image: "/images/products/giftmax-led-light-panel.jpg"
+        available: true
+      - name: "YUGAM Octagon Honeycomb Softbox Grid"
+        description: "Speedlight umbrella softbox grid for studio flash — controls light spill and adds depth to your shots."
+        url: "https://link.amazon/B0aXDU256"
+        badge: "Amazon"
+        image: "/images/products/yugam-softbox-grid.jpg"
+        available: true
 
   - title: "☀️ Solar & Off-Grid Gear"
     id: "solar"
@@ -99,6 +117,12 @@ sections:
         badge: "Amazon"
         image: "/images/products/jon-bhandari-pipe-cutter.jpg"
         available: true
+      - name: "UrbanWipe Washing Machine Cleaner & Descaler"
+        description: "500ml deep cleaning liquid for top load, front load and semi-automatic machines — removes limescale, grime and odour."
+        url: "https://link.amazon/B0jgS0vRc"
+        badge: "Amazon"
+        image: "/images/products/urbanwipe-washing-machine-cleaner.jpg"
+        available: true
 
   - title: "🌿 Gardening"
     id: "gardening"
@@ -114,6 +138,18 @@ sections:
         url: "https://link.amazon/B0iZEeETc"
         badge: "Amazon"
         image: "/images/products/trustbasket-cocopeat.jpg"
+        available: true
+      - name: "Premium HDPE UV Protected Grow Bags"
+        description: "Pack of 5 heavy-duty 24x24 inch grow bags for terrace gardening — UV protected, reusable, great for vegetables."
+        url: "https://link.amazon/B0aJJkGPS"
+        badge: "Amazon"
+        image: "/images/products/hdpe-grow-bags.jpg"
+        available: true
+      - name: "PAVITHRAVANAM Fish Amino Acid Plant Fertilizer"
+        description: "1 litre organic liquid fertilizer combining fish amino acids and cyanobacteria — boosts root growth, greener foliage, and soil health."
+        url: "https://link.amazon/B0hargbCd"
+        badge: "Amazon"
+        image: "/images/products/pavithravanam-fish-fertilizer.jpg"
         available: true
 
 blog:
