@@ -73,6 +73,18 @@ sections:
         badge: "Amazon"
         image: "/images/products/yugam-softbox-grid.jpg"
         available: true
+      - name: "Desidiya 16-Color LED Sunset Lamp"
+        description: "16-colour RGB sunset lamp — great for adding mood lighting and aesthetic backdrops to your videos and reels."
+        url: "https://link.amazon/B0eeNSnHt"
+        badge: "Amazon"
+        image: "/images/products/desidiya-sunset-lamp.jpg"
+        available: true
+      - name: "Elfora Overhead Mobile Phone Holder"
+        description: "Adjustable long-arm overhead phone holder for top-down video recording, cooking videos, and crafting shots."
+        url: "https://link.amazon/B00Tz2dFz"
+        badge: "Amazon"
+        image: "/images/products/elfora-overhead-phone-holder.jpg"
+        available: true
 
   - title: "☀️ Solar & Off-Grid Gear"
     id: "solar"
@@ -101,10 +113,158 @@ sections:
         badge: "Amazon"
         image: "/images/products/inverter-trolley.jpg"
         available: true
+      - name: "Kenbrook Solar 6mm DC Wire 20M with Y Branch Connectors"
+        description: "UV-protected 6mm copper solar DC wire (10M red + 10M black) with 2-in-1 T2 Y branch MC4 connectors for parallel panel connections."
+        url: "https://link.amazon/B0bn0Pwry"
+        badge: "Amazon"
+        image: "/images/products/kenbrook-solar-dc-wire.jpg"
+        available: true
+      - name: "Kenbrook Solar 2-in-1 Branch Connector (MC4)"
+        description: "MC4 2-in-1 solar branch connector to connect 2 solar panels in parallel — includes 1 pair of solar connectors."
+        url: "https://link.amazon/B0j8xj61M"
+        badge: "Amazon"
+        image: "/images/products/kenbrook-solar-branch-connector.jpg"
+        available: true
+      - name: "Kenbrook Solar MC4 Connectors"
+        description: "Compatible MC4 solar connectors for panel wiring — UV resistant and weatherproof."
+        url: "https://link.amazon/B0eesml5e"
+        badge: "Amazon"
+        image: "/images/products/kenbrook-mc4-connectors.jpg"
+        available: true
+
+  - title: "📱 Gadgets & Accessories"
+    id: "gadgets"
+    products:
+      - name: "ProElite Tempered Glass Screen Protector for iPad 10.2\""
+        description: "9th/8th/7th Gen iPad screen protector with auto alignment kit — scratch and shatter resistant."
+        url: "https://link.amazon/B0gkdfoLu"
+        badge: "Amazon"
+        image: "/images/products/proelite-ipad-screen-protector.jpg"
+        available: true
+      - name: "Amazon Basics Trifold iPad Case 9th/8th/7th Gen"
+        description: "Slim hard-back flip stand case with auto sleep/wake and frosted back — tailored for iPad 10.2 inch."
+        url: "https://link.amazon/B0gMqKrdE"
+        badge: "Amazon"
+        image: "/images/products/amazon-basics-ipad-case.jpg"
+        available: true
+      - name: "Dyazo 13.3\" Laptop Sleeve with Handle"
+        description: "Sleek black laptop sleeve with handle and 2 accessory pockets — fits all 13-13.3 inch laptops."
+        url: "https://link.amazon/B0c5orqHM"
+        badge: "Amazon"
+        image: "/images/products/dyazo-laptop-sleeve.jpg"
+        available: true
+      - name: "Portronics Adapto 45 GaN 22.5W Fast Charger"
+        description: "Dual port USB-A & Type-C GaN fast charger with PD 3.0 — charges iPhone from 0 to 50% in 30 mins."
+        url: "https://link.amazon/B0bVOGf4v"
+        badge: "Amazon"
+        image: "/images/products/portronics-gan-charger.jpg"
+        available: true
+      - name: "Portronics Konnect L 1.2M Lightning Cable"
+        description: "Fast charging 3A Lightning cable — durable build, compatible with all iPhone and iPad models."
+        url: "https://link.amazon/B0a0KynCZ"
+        badge: "Amazon"
+        image: "/images/products/portronics-lightning-cable.jpg"
+        available: true
+      - name: "Logitech B170 Wireless USB Mouse"
+        description: "Reliable wireless USB mouse with plug-and-play nano receiver — works on Windows, macOS and Linux."
+        url: "https://link.amazon/B02LmzveX"
+        badge: "Amazon"
+        image: "/images/products/logitech-b170-mouse.jpg"
+        available: true
 
   - title: "🏠 Home Improvement"
     id: "home"
     products:
+      - name: "Green Soul Alex Height Adjustable Standing Desk"
+        description: "Dual motor electric standing desk lifting up to 150kg — memory presets, 3 year warranty, installation included."
+        url: "https://link.amazon/B0159fV8J"
+        badge: "Amazon"
+        image: "/images/products/green-soul-standing-desk.jpg"
+        available: true
+      - name: "Metal Under Desk Cable Management Tray 42cm"
+        description: "Screw-mount wire organiser tray for home office desks — holds extension boards and cables neatly out of sight."
+        url: "https://link.amazon/B0h8zaGop"
+        badge: "Amazon"
+        image: "/images/products/cable-management-tray.jpg"
+        available: true
+      - name: "Urbanmade Extended Desk Mat / Mouse Pad"
+        description: "Large non-slip reversible desk mat covering full keyboard and mouse — great for home office setups."
+        url: "https://link.amazon/B0e2vZRgS"
+        badge: "Amazon"
+        image: "/images/products/urbanmade-desk-mat.jpg"
+        available: true
+      - name: "Ruhe Matte Black Quartz Kitchen Sink"
+        description: "24x18x9 inch single bowl granite kitchen sink — noise-reducing, scratch-resistant, includes waste pipe and basket."
+        url: "https://link.amazon/B0dCeQFon"
+        badge: "Amazon"
+        image: "/images/products/ruhe-kitchen-sink.jpg"
+        available: true
+      - name: "Mr.Mop 360° Spin Mop with Microfiber Refill"
+        description: "Extendable handle 360° spin mop with 1 microfiber refill — great for floor cleaning."
+        url: "https://link.amazon/B00kjrxWZ"
+        badge: "Amazon"
+        image: "/images/products/mrmop-spin-mop.jpg"
+        available: true
+      - name: "Amigos 100% Cotton Grommet Curtains (Set of 2)"
+        description: "9ft semi-sheer cotton door curtains with stainless steel rings — multi-colour floral design for bedroom and living room."
+        url: "https://link.amazon/B06mIMHGU"
+        badge: "Amazon"
+        image: "/images/products/amigos-curtains.jpg"
+        available: true
+      - name: "BLACK+DECKER 4.8V Cordless Screwdriver Set"
+        description: "15-piece screwdriver set with LED worklight and adjustable torque — perfect for home DIY tasks."
+        url: "https://link.amazon/B01Wj8uwA"
+        badge: "Amazon"
+        image: "/images/products/blackdecker-screwdriver.jpg"
+        available: true
+      - name: "AASONS Hole Saw Drill Bit Set (6 Pieces)"
+        description: "High carbon steel hole saw set in sizes 32–54mm — cuts clean holes in wood, plaster, PVC and plastic."
+        url: "https://link.amazon/B01NsTVBv"
+        badge: "Amazon"
+        image: "/images/products/aasons-hole-saw-set.jpg"
+        available: true
+      - name: "Bathla Advance 5-Step Aluminium Ladder"
+        description: "Lightweight 150kg capacity step ladder with anti-slip steps, sure-hinge technology and 5 year warranty."
+        url: "https://link.amazon/B07JLFVZo"
+        badge: "Amazon"
+        image: "/images/products/bathla-aluminium-ladder.jpg"
+        available: true
+      - name: "Aarpee 360° Height Adjustable Bar Stool (Pair of 2)"
+        description: "Revolving height-adjustable bar stools for kitchen, cafeteria, dining and office use — set of 2."
+        url: "https://link.amazon/B0evtzCM2"
+        badge: "Amazon"
+        image: "/images/products/aarpee-bar-stool.jpg"
+        available: true
+      - name: "GM 3060 Extension Board 4 Sockets 2M"
+        description: "10A extension board with master switch, safety shutter and 4 international sockets — 1 year warranty."
+        url: "https://link.amazon/B0hCApOp9"
+        badge: "Amazon"
+        image: "/images/products/gm-extension-board.jpg"
+        available: true
+      - name: "GM 3041 Trio Flex Box 5M Copper Cord"
+        description: "2-pin flex box with 5M copper cord, universal sockets, master switch, LED indicator and cable guard."
+        url: "https://link.amazon/B00Cm1NLk"
+        badge: "Amazon"
+        image: "/images/products/gm-flex-box.jpg"
+        available: true
+      - name: "HIT Rechargeable Mosquito Racquet with LED"
+        description: "3500V DC instant-kill mosquito bat with aircraft-grade ABS, 400mAh battery, LED light and 6-month warranty."
+        url: "https://link.amazon/B01am9tyB"
+        badge: "Amazon"
+        image: "/images/products/hit-mosquito-racquet.jpg"
+        available: true
+      - name: "Pigeon Amaze Plus Electric Kettle 1.5L"
+        description: "1300W stainless steel electric kettle with auto shut-off — quick boil for tea, coffee and more."
+        url: "https://link.amazon/B087RwHfc"
+        badge: "Amazon"
+        image: "/images/products/pigeon-electric-kettle.jpg"
+        available: true
+      - name: "Philips Hair Dryer 1000W"
+        description: "Travel-friendly 1000W hair dryer with ThermoProtect technology, 2 heat settings and frizz control for Indian hair."
+        url: "https://link.amazon/B0fofD8tT"
+        badge: "Amazon"
+        image: "/images/products/philips-hair-dryer.jpg"
+        available: true
       - name: "WD-40 Multipurpose Spray"
         description: "Lubricant, rust remover and cleaning agent — great for stuck hinges, bike chains, and squeaky parts."
         url: "https://link.amazon/B0d3Ydrya"
@@ -122,6 +282,34 @@ sections:
         url: "https://link.amazon/B0jgS0vRc"
         badge: "Amazon"
         image: "/images/products/urbanwipe-washing-machine-cleaner.jpg"
+        available: true
+
+  - title: "💊 Health & Wellness"
+    id: "health"
+    products:
+      - name: "Omron NE C101 Compressor Nebulizer"
+        description: "Medical-grade nebulizer for asthma, bronchitis and respiratory care — 12ml capacity, 3.9µm particle size for effective treatment."
+        url: "https://link.amazon/B06YTCER2"
+        badge: "Amazon"
+        image: "/images/products/omron-nebulizer.jpg"
+        available: true
+      - name: "DR VAKU Infrared Non-Contact Thermometer"
+        description: "Instant-read non-contact IR thermometer with Duracell batteries included — easy to use for the whole family."
+        url: "https://link.amazon/B0dfPRGBt"
+        badge: "Amazon"
+        image: "/images/products/dr-vaku-thermometer.jpg"
+        available: true
+      - name: "Omron HEM 7124 Blood Pressure Monitor"
+        description: "Fully automatic digital BP monitor — accurate upper arm readings, easy to use at home for all ages."
+        url: "https://link.amazon/B0alSn7vN"
+        badge: "Amazon"
+        image: "/images/products/omron-bp-monitor.jpg"
+        available: true
+      - name: "Accu-Chek Instant S Glucometer Kit"
+        description: "Blood glucose testing kit with 10 strips, 10 lancets and lancing device — accurate and easy blood sugar monitoring."
+        url: "https://link.amazon/B0faJ4y7h"
+        badge: "Amazon"
+        image: "/images/products/accu-chek-glucometer.jpg"
         available: true
 
   - title: "🌿 Gardening"
@@ -150,6 +338,38 @@ sections:
         url: "https://link.amazon/B0hargbCd"
         badge: "Amazon"
         image: "/images/products/pavithravanam-fish-fertilizer.jpg"
+        available: true
+      - name: "Boniry Folding Saw / Plant Cutter"
+        description: "Heavy-duty 18cm steel blade folding saw for pruning branches, patio repair and travel camps."
+        url: "https://link.amazon/B00Dbdhi2"
+        badge: "Amazon"
+        image: "/images/products/boniry-folding-saw.jpg"
+        available: true
+      - name: "Garbnoire 15M PVC Water Pipe with Connectors"
+        description: "Lightweight flexible 0.5 inch PVC garden hose with connectors and clamps — for watering, cleaning and outdoor use."
+        url: "https://link.amazon/B0evtzCM2"
+        badge: "Amazon"
+        image: "/images/products/garbnoire-water-pipe.jpg"
+        available: true
+
+  - title: "🍽️ Food & Kitchen"
+    id: "food"
+    products:
+      - name: "Foldable Charcoal BBQ Grill"
+        description: "Portable foldable BBQ grill with 10 skewers, 2 spatulas and 1 air blower — perfect for camping, picnics and outdoor cooking."
+        url: "https://link.amazon/B0hI03eaV"
+        badge: "Amazon"
+        image: "/images/products/foldable-bbq-grill.jpg"
+        available: true
+
+  - title: "🚗 Travel"
+    id: "travel"
+    products:
+      - name: "Robustt Inflatable Car Bed for Back Seat"
+        description: "Universal size inflatable PVC car bed with 2 air pillows and pump — great for kids, road trips, camping and beach."
+        url: "https://link.amazon/B0ir2Ne7F"
+        badge: "Amazon"
+        image: "/images/products/robustt-car-bed.jpg"
         available: true
 
 blog:
