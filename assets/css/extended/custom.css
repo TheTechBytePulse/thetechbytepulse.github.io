@@ -443,3 +443,14 @@
     border: 1px solid color-mix(in srgb, var(--primary) 25%, transparent);
     line-height: 1.6;
 }
+
+/* ── Disclosure multi-paragraph spacing ── */
+.links-disclosure div p {
+    margin: 0;
+}
+
+.links-disclosure div p + p {
+    margin-top: 0.45rem;
+    color: var(--primary);
+    font-weight: 500;
+}
