@@ -35,10 +35,21 @@
     </div>
   </section>
 
+  {{/* ── Jump Nav ── */}}
+  <nav class="links-jumpnav" aria-label="Jump to section">
+    {{- range $data.sections }}
+    <a href="#section-{{ .id }}" class="links-jumpnav-item">{{ .title }}</a>
+    {{- end }}
+  </nav>
+
   {{/* ── Product Sections ── */}}
   {{- range $data.sections }}
+  {{- $count := len .products }}
   <section class="links-section" aria-labelledby="section-{{ .id }}">
-    <h2 class="links-section-title" id="section-{{ .id }}">{{ .title }}</h2>
+    <h2 class="links-section-title" id="section-{{ .id }}">
+      {{ .title }}
+      <span class="links-section-count" aria-label="{{ $count }} products">{{ $count }}</span>
+    </h2>
     <div class="links-products">
       {{- range .products }}
       {{- if .available }}

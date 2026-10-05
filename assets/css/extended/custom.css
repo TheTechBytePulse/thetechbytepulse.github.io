@@ -397,3 +397,49 @@
         align-self: flex-start;
     }
 }
+
+/* ── Links page: Jump Nav ── */
+.links-jumpnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.links-jumpnav-item {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--entry);
+    color: var(--secondary);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.links-jumpnav-item:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--theme);
+    text-decoration: none;
+}
+
+/* ── Links page: Section count badge ── */
+.links-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.links-section-count {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: 20px;
+    background: color-mix(in srgb, var(--primary) 12%, transparent);
+    color: var(--primary);
+    border: 1px solid color-mix(in srgb, var(--primary) 25%, transparent);
+    line-height: 1.6;
+}

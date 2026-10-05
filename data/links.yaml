@@ -18,7 +18,7 @@ channels:
     label: "Personal Channel"
   - name: "Instagram"
     icon: "📸"
-    url: "https://www.instagram.com/"
+    url: "https://www.instagram.com/prateep.gedupudi/"
     label: "Follow on Instagram"
 
 sections:
@@ -172,9 +172,67 @@ sections:
         image: "/images/products/logitech-b170-mouse.jpg"
         available: true
 
-  - title: "🏠 Home Improvement"
+  - title: "🛠️ Tools & DIY"
+    id: "tools"
+    products:
+      - name: "BLACK+DECKER 4.8V Cordless Screwdriver Set"
+        description: "15-piece screwdriver set with LED worklight and adjustable torque — perfect for home DIY tasks."
+        url: "https://link.amazon/B01Wj8uwA"
+        badge: "Amazon"
+        image: "/images/products/blackdecker-screwdriver.jpg"
+        available: true
+      - name: "AASONS Hole Saw Drill Bit Set (6 Pieces)"
+        description: "High carbon steel hole saw set in sizes 32–54mm — cuts clean holes in wood, plaster, PVC and plastic."
+        url: "https://link.amazon/B01NsTVBv"
+        badge: "Amazon"
+        image: "/images/products/aasons-hole-saw-set.jpg"
+        available: true
+      - name: "Bathla Advance 5-Step Aluminium Ladder"
+        description: "Lightweight 150kg capacity step ladder with anti-slip steps, sure-hinge technology and 5 year warranty."
+        url: "https://link.amazon/B07JLFVZo"
+        badge: "Amazon"
+        image: "/images/products/bathla-aluminium-ladder.jpg"
+        available: true
+      - name: "Jon Bhandari Ratchet PVC Pipe Cutter"
+        description: "Heavy duty tube cutter with heat-treated stainless steel blade — cuts PVC and plastic pipes up to 42mm cleanly."
+        url: "https://link.amazon/B05KTrL5n"
+        badge: "Amazon"
+        image: "/images/products/jon-bhandari-pipe-cutter.jpg"
+        available: true
+      - name: "WD-40 Multipurpose Spray"
+        description: "Lubricant, rust remover and cleaning agent — great for stuck hinges, bike chains, and squeaky parts."
+        url: "https://link.amazon/B0d3Ydrya"
+        badge: "Amazon"
+        image: "/images/products/wd40-multipurpose-spray.jpg"
+        available: true
+      - name: "GM 3060 Extension Board 4 Sockets 2M"
+        description: "10A extension board with master switch, safety shutter and 4 international sockets — 1 year warranty."
+        url: "https://link.amazon/B0hCApOp9"
+        badge: "Amazon"
+        image: "/images/products/gm-extension-board.jpg"
+        available: true
+      - name: "GM 3041 Trio Flex Box 5M Copper Cord"
+        description: "2-pin flex box with 5M copper cord, universal sockets, master switch, LED indicator and cable guard."
+        url: "https://link.amazon/B00Cm1NLk"
+        badge: "Amazon"
+        image: "/images/products/gm-flex-box.jpg"
+        available: true
+      - name: "HIT Rechargeable Mosquito Racquet with LED"
+        description: "3500V DC instant-kill mosquito bat with aircraft-grade ABS, 400mAh battery, LED light and 6-month warranty."
+        url: "https://link.amazon/B01am9tyB"
+        badge: "Amazon"
+        image: "/images/products/hit-mosquito-racquet.jpg"
+        available: true
+
+  - title: "🏠 Home & Living"
     id: "home"
     products:
+      - name: "Wopno Sheesham Solid Wood 4 Seater Dining Table"
+        description: "100% termite-free solid sheesham wood dining table set — classic design, spacious top, great for family dining."
+        url: "https://link.amazon/B0g7JfxuQ"
+        badge: "Amazon"
+        image: "/images/products/wopno-dining-table.jpg"
+        available: true
       - name: "Green Soul Alex Height Adjustable Standing Desk"
         description: "Dual motor electric standing desk lifting up to 150kg — memory presets, 3 year warranty, installation included."
         url: "https://link.amazon/B0159fV8J"
@@ -211,47 +269,11 @@ sections:
         badge: "Amazon"
         image: "/images/products/amigos-curtains.jpg"
         available: true
-      - name: "BLACK+DECKER 4.8V Cordless Screwdriver Set"
-        description: "15-piece screwdriver set with LED worklight and adjustable torque — perfect for home DIY tasks."
-        url: "https://link.amazon/B01Wj8uwA"
-        badge: "Amazon"
-        image: "/images/products/blackdecker-screwdriver.jpg"
-        available: true
-      - name: "AASONS Hole Saw Drill Bit Set (6 Pieces)"
-        description: "High carbon steel hole saw set in sizes 32–54mm — cuts clean holes in wood, plaster, PVC and plastic."
-        url: "https://link.amazon/B01NsTVBv"
-        badge: "Amazon"
-        image: "/images/products/aasons-hole-saw-set.jpg"
-        available: true
-      - name: "Bathla Advance 5-Step Aluminium Ladder"
-        description: "Lightweight 150kg capacity step ladder with anti-slip steps, sure-hinge technology and 5 year warranty."
-        url: "https://link.amazon/B07JLFVZo"
-        badge: "Amazon"
-        image: "/images/products/bathla-aluminium-ladder.jpg"
-        available: true
       - name: "Aarpee 360° Height Adjustable Bar Stool (Pair of 2)"
         description: "Revolving height-adjustable bar stools for kitchen, cafeteria, dining and office use — set of 2."
         url: "https://link.amazon/B0evtzCM2"
         badge: "Amazon"
         image: "/images/products/aarpee-bar-stool.jpg"
-        available: true
-      - name: "GM 3060 Extension Board 4 Sockets 2M"
-        description: "10A extension board with master switch, safety shutter and 4 international sockets — 1 year warranty."
-        url: "https://link.amazon/B0hCApOp9"
-        badge: "Amazon"
-        image: "/images/products/gm-extension-board.jpg"
-        available: true
-      - name: "GM 3041 Trio Flex Box 5M Copper Cord"
-        description: "2-pin flex box with 5M copper cord, universal sockets, master switch, LED indicator and cable guard."
-        url: "https://link.amazon/B00Cm1NLk"
-        badge: "Amazon"
-        image: "/images/products/gm-flex-box.jpg"
-        available: true
-      - name: "HIT Rechargeable Mosquito Racquet with LED"
-        description: "3500V DC instant-kill mosquito bat with aircraft-grade ABS, 400mAh battery, LED light and 6-month warranty."
-        url: "https://link.amazon/B01am9tyB"
-        badge: "Amazon"
-        image: "/images/products/hit-mosquito-racquet.jpg"
         available: true
       - name: "Pigeon Amaze Plus Electric Kettle 1.5L"
         description: "1300W stainless steel electric kettle with auto shut-off — quick boil for tea, coffee and more."
@@ -265,23 +287,17 @@ sections:
         badge: "Amazon"
         image: "/images/products/philips-hair-dryer.jpg"
         available: true
-      - name: "WD-40 Multipurpose Spray"
-        description: "Lubricant, rust remover and cleaning agent — great for stuck hinges, bike chains, and squeaky parts."
-        url: "https://link.amazon/B0d3Ydrya"
-        badge: "Amazon"
-        image: "/images/products/wd40-multipurpose-spray.jpg"
-        available: true
-      - name: "Jon Bhandari Ratchet PVC Pipe Cutter"
-        description: "Heavy duty tube cutter with heat-treated stainless steel blade — cuts PVC and plastic pipes up to 42mm cleanly."
-        url: "https://link.amazon/B05KTrL5n"
-        badge: "Amazon"
-        image: "/images/products/jon-bhandari-pipe-cutter.jpg"
-        available: true
       - name: "UrbanWipe Washing Machine Cleaner & Descaler"
         description: "500ml deep cleaning liquid for top load, front load and semi-automatic machines — removes limescale, grime and odour."
         url: "https://link.amazon/B0jgS0vRc"
         badge: "Amazon"
         image: "/images/products/urbanwipe-washing-machine-cleaner.jpg"
+        available: true
+      - name: "Foldable Charcoal BBQ Grill"
+        description: "Portable foldable BBQ grill with 10 skewers, 2 spatulas and 1 air blower — perfect for camping, picnics and outdoor cooking."
+        url: "https://link.amazon/B0hI03eaV"
+        badge: "Amazon"
+        image: "/images/products/foldable-bbq-grill.jpg"
         available: true
 
   - title: "💊 Health & Wellness"
@@ -350,16 +366,6 @@ sections:
         url: "https://link.amazon/B0evtzCM2"
         badge: "Amazon"
         image: "/images/products/garbnoire-water-pipe.jpg"
-        available: true
-
-  - title: "🍽️ Food & Kitchen"
-    id: "food"
-    products:
-      - name: "Foldable Charcoal BBQ Grill"
-        description: "Portable foldable BBQ grill with 10 skewers, 2 spatulas and 1 air blower — perfect for camping, picnics and outdoor cooking."
-        url: "https://link.amazon/B0hI03eaV"
-        badge: "Amazon"
-        image: "/images/products/foldable-bbq-grill.jpg"
         available: true
 
   - title: "🚗 Travel"
