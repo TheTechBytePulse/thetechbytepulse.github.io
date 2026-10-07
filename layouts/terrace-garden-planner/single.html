@@ -1,0 +1,789 @@
+{{- define "main" }}
+<div class="tgp-wrap">
+
+<!-- ═══════════════════════════════════════════════════════════
+     TERRACE GARDEN PLANNER
+     All logic is self-contained in this template.
+     Units: mm internally, displayed as inch/cm based on toggle.
+════════════════════════════════════════════════════════════════ -->
+
+<h1 class="tgp-title">🌿 Terrace Garden Planner</h1>
+<p class="tgp-subtitle">Design your CPVC grow bag stand layout and get an exact materials list.</p>
+
+<!-- ── Unit Toggle ── -->
+<div class="tgp-unit-toggle" role="group" aria-label="Unit system">
+  <button class="tgp-unit-btn tgp-unit-btn--active" data-unit="metric" id="btn-metric">cm / mm</button>
+  <button class="tgp-unit-btn" data-unit="imperial" id="btn-imperial">inch</button>
+</div>
+
+<!-- ═══ SECTION 1 — Terrace Size ═══ -->
+<section class="tgp-section">
+  <h2 class="tgp-section-title">📐 Step 1: Your Terrace Size</h2>
+  <div class="tgp-row">
+    <div class="tgp-field">
+      <label for="terrace-l">Length <span class="tgp-unit-label">cm</span></label>
+      <input type="number" id="terrace-l" min="100" max="5000" value="400" class="tgp-input">
+    </div>
+    <div class="tgp-field">
+      <label for="terrace-w">Width <span class="tgp-unit-label">cm</span></label>
+      <input type="number" id="terrace-w" min="100" max="5000" value="300" class="tgp-input">
+    </div>
+    <div class="tgp-field">
+      <label for="pathway">Walkway width <span class="tgp-unit-label">cm</span></label>
+      <input type="number" id="pathway" min="30" max="200" value="60" class="tgp-input">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION 2 — Stand Configuration ═══ -->
+<section class="tgp-section">
+  <h2 class="tgp-section-title">🛠️ Step 2: Add Stand Types</h2>
+  <p class="tgp-hint">Add one or more stand types. You can mix different stands on the same terrace.</p>
+
+  <div id="stand-list" class="tgp-stand-list"></div>
+
+  <button class="tgp-btn tgp-btn--secondary" id="btn-add-stand">+ Add Stand Type</button>
+</section>
+
+<!-- ═══ SECTION 3 — CPVC Settings ═══ -->
+<section class="tgp-section">
+  <h2 class="tgp-section-title">⚙️ Step 3: CPVC Settings</h2>
+  <div class="tgp-row">
+    <div class="tgp-field">
+      <label for="stand-height">Stand height <span class="tgp-unit-label">mm</span>
+        <span class="tgp-tooltip" title="Height of legs. Your stand uses 177mm (7 inch). Recommend 130–200mm.">ℹ️</span>
+      </label>
+      <input type="number" id="stand-height" min="80" max="300" value="178" class="tgp-input">
+    </div>
+    <div class="tgp-field">
+      <label for="bag-margin">Bag margin <span class="tgp-unit-label">mm</span>
+        <span class="tgp-tooltip" title="Extra space beyond grow bag diameter on each side. Default 50mm (proven in Prateep's build).">ℹ️</span>
+      </label>
+      <input type="number" id="bag-margin" min="20" max="100" value="50" class="tgp-input">
+    </div>
+    <div class="tgp-field">
+      <label for="pipe-length-stock">Stock pipe length <span class="tgp-unit-label">mm</span></label>
+      <input type="number" id="pipe-length-stock" min="1000" max="6000" value="3000" class="tgp-input">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Calculate Button ═══ -->
+<button class="tgp-btn tgp-btn--primary" id="btn-calculate">🌱 Calculate Layout</button>
+
+<!-- ═══ OUTPUT ═══ -->
+<div id="tgp-output" class="tgp-output" hidden>
+
+  <!-- Summary cards -->
+  <div class="tgp-summary" id="tgp-summary"></div>
+
+  <!-- 2D Grid -->
+  <section class="tgp-section">
+    <h2 class="tgp-section-title">📐 Layout Preview <span class="tgp-hint-inline">(top-down view, to scale)</span></h2>
+    <div class="tgp-canvas-wrap">
+      <canvas id="tgp-canvas"></canvas>
+    </div>
+    <div class="tgp-legend" id="tgp-legend"></div>
+  </section>
+
+  <!-- Materials -->
+  <section class="tgp-section">
+    <h2 class="tgp-section-title">🛒 Materials List</h2>
+    <div id="tgp-materials"></div>
+  </section>
+
+  <!-- Cutting Guide -->
+  <section class="tgp-section">
+    <h2 class="tgp-section-title">✂️ CPVC Cutting Guide</h2>
+    <p class="tgp-hint">All measurements are <strong>cut lengths</strong> — the actual pipe length to cut before fitting assembly.</p>
+    <div id="tgp-cutting"></div>
+  </section>
+
+</div><!-- /tgp-output -->
+
+</div><!-- /tgp-wrap -->
+
+<!-- ════════════════════════════════════════════════════════════
+     STYLES
+════════════════════════════════════════════════════════════════ -->
+<style>
+.tgp-wrap { max-width: 860px; margin: 0 auto; padding: 1rem 0 4rem; }
+.tgp-title { font-size: 1.6rem; margin-bottom: 0.25rem; }
+.tgp-subtitle { color: var(--secondary); margin-bottom: 1.5rem; }
+
+/* Unit toggle */
+.tgp-unit-toggle { display: flex; gap: 0; margin-bottom: 1.5rem; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: fit-content; }
+.tgp-unit-btn { background: var(--entry); border: none; padding: 0.4rem 1rem; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--secondary); transition: background 0.2s, color 0.2s; }
+.tgp-unit-btn--active { background: var(--primary); color: var(--theme); }
+
+/* Sections */
+.tgp-section { margin-bottom: 2rem; }
+.tgp-section-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; border: none; padding: 0; }
+.tgp-hint { font-size: 0.82rem; color: var(--secondary); margin-bottom: 0.75rem; }
+.tgp-hint-inline { font-size: 0.78rem; color: var(--secondary); font-weight: 400; }
+
+/* Inputs */
+.tgp-row { display: flex; flex-wrap: wrap; gap: 1rem; }
+.tgp-field { display: flex; flex-direction: column; gap: 0.3rem; flex: 1; min-width: 140px; }
+.tgp-field label { font-size: 0.85rem; font-weight: 600; }
+.tgp-input { border: 1px solid var(--border); border-radius: 8px; padding: 0.5rem 0.75rem; font-size: 0.95rem; background: var(--entry); color: var(--primary); width: 100%; box-sizing: border-box; }
+.tgp-input:focus { outline: 2px solid var(--primary); border-color: transparent; }
+.tgp-tooltip { cursor: help; font-size: 0.8rem; }
+
+/* Stand list */
+.tgp-stand-list { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem; }
+.tgp-stand-card { border: 1px solid var(--border); border-radius: 12px; padding: 1rem; background: var(--entry); position: relative; }
+.tgp-stand-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+.tgp-stand-card-title { font-size: 0.9rem; font-weight: 700; }
+.tgp-stand-remove { background: none; border: none; cursor: pointer; color: var(--secondary); font-size: 1rem; padding: 0.2rem 0.4rem; border-radius: 6px; }
+.tgp-stand-remove:hover { color: #e53e3e; background: #fff5f5; }
+
+/* Buttons */
+.tgp-btn { border: none; border-radius: 10px; padding: 0.7rem 1.5rem; font-size: 0.95rem; font-weight: 700; cursor: pointer; transition: opacity 0.2s, transform 0.15s; }
+.tgp-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.tgp-btn--primary { background: var(--primary); color: var(--theme); margin-top: 0.5rem; }
+.tgp-btn--secondary { background: var(--entry); color: var(--primary); border: 1px solid var(--border); font-size: 0.85rem; padding: 0.5rem 1rem; }
+
+/* Output */
+.tgp-output { margin-top: 2.5rem; }
+
+/* Summary cards */
+.tgp-summary { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
+.tgp-summary-card { flex: 1; min-width: 140px; border: 1px solid var(--border); border-radius: 12px; padding: 0.9rem 1rem; background: var(--entry); text-align: center; }
+.tgp-summary-card-value { font-size: 1.6rem; font-weight: 800; color: var(--primary); display: block; }
+.tgp-summary-card-label { font-size: 0.75rem; color: var(--secondary); }
+
+/* Canvas */
+.tgp-canvas-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: #f8fdf5; padding: 1rem; margin-bottom: 0.75rem; }
+canvas { display: block; max-width: 100%; }
+
+/* Legend */
+.tgp-legend { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
+.tgp-legend-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; }
+.tgp-legend-swatch { width: 16px; height: 16px; border-radius: 4px; flex-shrink: 0; }
+
+/* Materials table */
+.tgp-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin-bottom: 1rem; }
+.tgp-table th { text-align: left; padding: 0.5rem 0.75rem; background: var(--entry); border-bottom: 2px solid var(--border); font-weight: 700; }
+.tgp-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+.tgp-table tr:last-child td { border-bottom: none; }
+.tgp-table-total td { font-weight: 700; background: color-mix(in srgb, var(--primary) 8%, transparent); }
+
+/* Cutting guide */
+.tgp-cutting-block { margin-bottom: 1.5rem; }
+.tgp-cutting-block h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; }
+.tgp-pipe-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; font-size: 0.85rem; flex-wrap: wrap; }
+.tgp-pipe-bar-wrap { flex: 1; min-width: 120px; height: 18px; background: var(--entry); border-radius: 4px; overflow: hidden; border: 1px solid var(--border); display: flex; }
+.tgp-pipe-seg { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; font-weight: 700; color: white; }
+.tgp-pipe-waste { background: #e2e8f0; }
+.tgp-alert { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.85rem; margin-bottom: 1rem; }
+.tgp-alert--error { background: #ffe0e0; border-color: #e53e3e; }
+
+/* Select */
+.tgp-select { border: 1px solid var(--border); border-radius: 8px; padding: 0.5rem 0.75rem; font-size: 0.9rem; background: var(--entry); color: var(--primary); width: 100%; }
+
+@media (max-width: 480px) {
+  .tgp-row { flex-direction: column; }
+  .tgp-summary-card { min-width: 100px; }
+}
+</style>
+
+<!-- ════════════════════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════════════════════ -->
+<script>
+(function() {
+
+// ── Constants ───────────────────────────────────────────────
+const SOCKET_DEPTH = 22.4;       // mm CPVC socket insertion depth
+const FITTING_5WAY = { w: 81, d: 81, h: 56 }; // 5-way cross body mm
+const FITTING_3WAY = { w: 45, d: 45, h: 45 }; // 3-way elbow body mm
+const DRAIN_CELL   = { l: 500, w: 250 };       // drain cell mat mm
+
+// Grow bag catalogue
+const GROW_BAGS = [
+  { id:'round-9',  label:'Round 9" (herbs)',        shape:'round', dia:229, h:229,  color:'#68d391' },
+  { id:'round-12', label:'Round 12" (tomato/chilli)',shape:'round', dia:305, h:305,  color:'#48bb78' },
+  { id:'round-15', label:'Round 15" (capsicum)',     shape:'round', dia:381, h:381,  color:'#38a169' },
+  { id:'round-18', label:'Round 18" (papaya/gourd)', shape:'round', dia:457, h:457,  color:'#276749' },
+  { id:'round-24', label:'Round 24" (fruit trees)',  shape:'round', dia:610, h:610,  color:'#1c4532' },
+  { id:'rect-s',   label:'Rect 24×9" (microgreens)', shape:'rect',  l:610, w:229, h:229, color:'#90cdf4' },
+  { id:'rect-m',   label:'Rect 36×12" (veggies row)',shape:'rect',  l:914, w:305, h:305, color:'#63b3ed' },
+  { id:'rect-l',   label:'Rect 60×24" (row crops)',  shape:'rect',  l:1524,w:610, h:457, color:'#3182ce' },
+];
+
+// Stand type catalogue
+const STAND_TYPES = [
+  { id:'flat',    label:'Flat Stand (1 level)',  levels:1, icon:'▭' },
+  { id:'step2',   label:'2-Step Stand',           levels:2, icon:'⌐' },
+  { id:'step3',   label:'3-Step Stand',           levels:3, icon:'⌐⌐'},
+  { id:'trellis', label:'Creeper/Trellis Stand',  levels:1, icon:'⊞' },
+];
+
+// Stand colours for canvas
+const STAND_COLORS = ['#68d391','#63b3ed','#f6ad55','#fc8181','#b794f4','#76e4f7','#fbb6ce','#9ae6b4'];
+
+// ── State ────────────────────────────────────────────────────
+let unit = 'metric'; // 'metric' | 'imperial'
+let standEntries = []; // [{id, standType, bagId, qty, color}]
+let standIdCounter = 0;
+
+// ── Unit helpers ─────────────────────────────────────────────
+function toDisplay(mm) {
+  if (unit === 'imperial') return +(mm / 25.4).toFixed(2);
+  return +(mm / 10).toFixed(1); // cm
+}
+function toMM(val) {
+  if (unit === 'imperial') return val * 25.4;
+  return val * 10; // cm → mm
+}
+function unitLabel(type) {
+  if (type === 'mm') return unit === 'imperial' ? 'inch' : 'mm';
+  return unit === 'imperial' ? 'inch' : 'cm';
+}
+
+// ── Pipe length formula ──────────────────────────────────────
+// Returns cut length for a pipe spanning between two 5-way fittings
+// along a frame of total outer dimension `frameSize` with `n` fittings in a row
+function calcPipeCutLength(frameSize, n) {
+  // frame = n×fitting_body - (n-1)×2×socket_depth(already in fitting) + (n-1)×exposed_pipe
+  // exposed = (frameSize - n×fitting_body + (n-1)×2×socket_depth) / (n-1) ... wait simpler:
+  // Each fitting contributes: body_width - 2×socket_depth on each side it connects
+  // Total pipe cuts = n-1
+  // frameSize = n × FITTING_5WAY.w - (n-1)×2×SOCKET_DEPTH + (n-1)×cut_len - (n-1)×2×SOCKET_DEPTH... 
+  // Simplified direct:
+  // frameSize = (n × (FITTING_5WAY.w - 2×SOCKET_DEPTH)) + (n-1) × cut_len + 2×SOCKET_DEPTH
+  // Actually cleanest: treat each fitting as occupying (body - 2×socket) exposed + pipe spans between
+  const fittingExposed = FITTING_5WAY.w - 2 * SOCKET_DEPTH; // exposed fitting width = 81 - 44.8 = 36.2mm
+  const totalFittingLen = n * fittingExposed;
+  const nPipes = n - 1;
+  const exposedPipe = (frameSize - totalFittingLen) / nPipes;
+  const cutLength = exposedPipe + 2 * SOCKET_DEPTH; // add socket insertion on each end
+  return Math.max(0, cutLength);
+}
+
+// ── Stand geometry ───────────────────────────────────────────
+function getStandFootprint(bag, margin) {
+  if (bag.shape === 'round') {
+    const size = bag.dia + 2 * margin;
+    return { w: size, d: size };
+  } else {
+    return { w: bag.l + 2 * margin, d: bag.w + 2 * margin };
+  }
+}
+
+function calcFlatStandPipes(bag, margin, standHeight) {
+  const fp = getStandFootprint(bag, margin);
+  // 3×3 grid of 5-way crosses
+  const nCols = 3, nRows = 3;
+  const hPipeCut = calcPipeCutLength(fp.w, nCols); // horizontal
+  const vPipeCut = calcPipeCutLength(fp.d, nRows); // depth
+  const legCut   = standHeight; // we take user's stand height as the cut length (net height = standHeight - 2×socket)
+
+  const nHPipes = (nCols - 1) * nRows;  // 6
+  const nVPipes = (nRows - 1) * nCols;  // 6
+  const nLegs   = nCols * nRows;        // 9
+  const n5way   = nCols * nRows;        // 9
+  const nEndCap = nLegs;                // 9
+
+  return {
+    pipes: [
+      { label: 'Top frame horizontal', cut: hPipeCut, qty: nHPipes },
+      { label: 'Top frame depth',      cut: vPipeCut, qty: nVPipes },
+      { label: 'Legs',                 cut: legCut,   qty: nLegs   },
+    ],
+    fittings: [
+      { label: '5-way cross',  qty: n5way   },
+      { label: 'End cap',      qty: nEndCap },
+    ],
+    drainCells: 2,
+    standHeight: standHeight - 2 * SOCKET_DEPTH,
+  };
+}
+
+function calcStep2Pipes(bag, margin, standHeight) {
+  // Two flat platforms, lower and upper, sharing rear verticals
+  const base = calcFlatStandPipes(bag, margin, standHeight);
+  const stepRiser = standHeight; // riser pipes connecting lower to upper
+  return {
+    pipes: [
+      ...base.pipes,
+      { label: 'Step riser pipes', cut: stepRiser, qty: 4 },
+    ],
+    fittings: [
+      { label: '5-way cross', qty: base.fittings[0].qty * 2 },
+      { label: '3-way elbow', qty: 4 },
+      { label: 'End cap',     qty: base.fittings[1].qty },
+    ],
+    drainCells: 4,
+    standHeight: (standHeight - 2 * SOCKET_DEPTH) * 2,
+    bagsPerStand: 2,
+  };
+}
+
+function calcStep3Pipes(bag, margin, standHeight) {
+  const base = calcFlatStandPipes(bag, margin, standHeight);
+  return {
+    pipes: [
+      ...base.pipes,
+      { label: 'Step riser pipes', cut: standHeight, qty: 8 },
+    ],
+    fittings: [
+      { label: '5-way cross', qty: base.fittings[0].qty * 3 },
+      { label: '3-way elbow', qty: 8 },
+      { label: 'End cap',     qty: base.fittings[1].qty },
+    ],
+    drainCells: 6,
+    standHeight: (standHeight - 2 * SOCKET_DEPTH) * 3,
+    bagsPerStand: 3,
+  };
+}
+
+function calcTrellisPipes(bag, margin, standHeight) {
+  const base = calcFlatStandPipes(bag, margin, standHeight);
+  const trellisH = 1200; // 1.2m trellis poles
+  return {
+    pipes: [
+      ...base.pipes,
+      { label: 'Trellis vertical poles', cut: trellisH, qty: 4 },
+      { label: 'Trellis cross bars',      cut: calcPipeCutLength(getStandFootprint(bag, margin).w, 2), qty: 6 },
+    ],
+    fittings: [
+      { label: '5-way cross',  qty: base.fittings[0].qty },
+      { label: '3-way elbow',  qty: 4 },
+      { label: 'T-joint',      qty: 12 },
+      { label: 'End cap',      qty: base.fittings[1].qty + 4 },
+    ],
+    drainCells: 2,
+    standHeight: base.standHeight,
+    bagsPerStand: 1,
+  };
+}
+
+function getStandCalc(standTypeId, bag, margin, standHeight) {
+  switch(standTypeId) {
+    case 'flat':    return calcFlatStandPipes(bag, margin, standHeight);
+    case 'step2':   return calcStep2Pipes(bag, margin, standHeight);
+    case 'step3':   return calcStep3Pipes(bag, margin, standHeight);
+    case 'trellis': return calcTrellisPipes(bag, margin, standHeight);
+    default:        return calcFlatStandPipes(bag, margin, standHeight);
+  }
+}
+
+// ── Layout algorithm ─────────────────────────────────────────
+function computeLayout(terraceL, terraceW, pathway, standEntries, margin) {
+  // Build list of all individual stands to place
+  let items = [];
+  standEntries.forEach(entry => {
+    const bag = GROW_BAGS.find(b => b.id === entry.bagId);
+    const st  = STAND_TYPES.find(s => s.id === entry.standType);
+    const fp  = getStandFootprint(bag, margin);
+    // For step/trellis, footprint depth is same as flat but width may be × levels
+    const itemW = entry.standType === 'step2' ? fp.w * 2 : entry.standType === 'step3' ? fp.w * 3 : fp.w;
+    const itemD = fp.d;
+    for (let i = 0; i < entry.qty; i++) {
+      items.push({ entry, bag, st, fp, itemW, itemD });
+    }
+  });
+
+  // Sort largest footprint first
+  items.sort((a, b) => (b.itemW * b.itemD) - (a.itemW * a.itemD));
+
+  // Row-based packing
+  let placed = [];
+  let y = pathway;
+  let remaining = [...items];
+
+  while (remaining.length > 0 && y < terraceW) {
+    let x = pathway;
+    let rowHeight = 0;
+    let rowItems = [];
+
+    for (let i = remaining.length - 1; i >= 0; i--) {
+      const item = remaining[i];
+      if (x + item.itemW + pathway <= terraceL) {
+        placed.push({ ...item, x, y });
+        rowItems.push(i);
+        x += item.itemW + pathway;
+        rowHeight = Math.max(rowHeight, item.itemD);
+      }
+    }
+
+    if (rowItems.length === 0) break; // nothing fits in this row
+    rowItems.forEach(i => remaining.splice(i, 1));
+    y += rowHeight + pathway;
+  }
+
+  return { placed, unplaced: remaining };
+}
+
+// ── Cutting guide ────────────────────────────────────────────
+function buildCuttingGuide(allPipes, stockLen) {
+  // Group identical cuts
+  let cuts = {};
+  allPipes.forEach(p => {
+    const key = Math.round(p.cut);
+    cuts[key] = (cuts[key] || 0) + p.qty;
+  });
+
+  // Bin packing: fit cuts into stock pipes
+  let cutList = Object.entries(cuts).map(([len, qty]) => ({ len: +len, qty }));
+  let stocks = [];
+
+  cutList.forEach(({ len, qty }) => {
+    for (let i = 0; i < qty; i++) {
+      let placed = false;
+      for (let s of stocks) {
+        if (s.remaining >= len) {
+          s.cuts.push(len);
+          s.remaining -= len;
+          placed = true;
+          break;
+        }
+      }
+      if (!placed) {
+        stocks.push({ cuts: [len], remaining: stockLen - len });
+      }
+    }
+  });
+
+  return stocks;
+}
+
+// ── DOM helpers ──────────────────────────────────────────────
+function addStandEntry() {
+  const id = ++standIdCounter;
+  const color = STAND_COLORS[(id - 1) % STAND_COLORS.length];
+  const entry = { id, standType: 'flat', bagId: 'round-15', qty: 2, color };
+  standEntries.push(entry);
+  renderStandList();
+}
+
+function removeStandEntry(id) {
+  standEntries = standEntries.filter(e => e.id !== id);
+  renderStandList();
+}
+
+function renderStandList() {
+  const list = document.getElementById('stand-list');
+  list.innerHTML = '';
+  if (standEntries.length === 0) {
+    list.innerHTML = '<p class="tgp-hint">No stands added yet. Click "+ Add Stand Type" below.</p>';
+    return;
+  }
+  standEntries.forEach(entry => {
+    const div = document.createElement('div');
+    div.className = 'tgp-stand-card';
+    div.innerHTML = `
+      <div class="tgp-stand-card-header">
+        <span class="tgp-stand-card-title" style="display:flex;align-items:center;gap:0.5rem">
+          <span style="width:14px;height:14px;border-radius:3px;background:${entry.color};display:inline-block"></span>
+          Stand Group ${entry.id}
+        </span>
+        <button class="tgp-stand-remove" data-id="${entry.id}" title="Remove">✕</button>
+      </div>
+      <div class="tgp-row">
+        <div class="tgp-field">
+          <label>Stand type</label>
+          <select class="tgp-select" data-id="${entry.id}" data-field="standType">
+            ${STAND_TYPES.map(s => `<option value="${s.id}" ${s.id===entry.standType?'selected':''}>${s.icon} ${s.label}</option>`).join('')}
+          </select>
+        </div>
+        <div class="tgp-field">
+          <label>Grow bag</label>
+          <select class="tgp-select" data-id="${entry.id}" data-field="bagId">
+            ${GROW_BAGS.map(b => `<option value="${b.id}" ${b.id===entry.bagId?'selected':''}>${b.label}</option>`).join('')}
+          </select>
+        </div>
+        <div class="tgp-field">
+          <label>Quantity</label>
+          <input type="number" class="tgp-input" data-id="${entry.id}" data-field="qty" min="1" max="50" value="${entry.qty}">
+        </div>
+      </div>`;
+    list.appendChild(div);
+  });
+
+  // Bind events
+  list.querySelectorAll('.tgp-stand-remove').forEach(btn => {
+    btn.addEventListener('click', () => removeStandEntry(+btn.dataset.id));
+  });
+  list.querySelectorAll('[data-field]').forEach(el => {
+    el.addEventListener('change', e => {
+      const id = +e.target.dataset.id;
+      const field = e.target.dataset.field;
+      const entry = standEntries.find(en => en.id === id);
+      if (entry) entry[field] = field === 'qty' ? +e.target.value : e.target.value;
+    });
+  });
+}
+
+// ── Canvas rendering ─────────────────────────────────────────
+function renderCanvas(placed, terraceL, terraceW) {
+  const canvas = document.getElementById('tgp-canvas');
+  const maxW = Math.min(800, canvas.parentElement.clientWidth - 32);
+  const scale = maxW / terraceL;
+  canvas.width  = terraceL * scale;
+  canvas.height = terraceW * scale;
+  const ctx = canvas.getContext('2d');
+
+  // Terrace background
+  ctx.fillStyle = '#e8f5e9';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  // Border
+  ctx.strokeStyle = '#2d6a4f';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(1, 1, canvas.width - 2, canvas.height - 2);
+
+  placed.forEach(item => {
+    const x = item.x * scale;
+    const y = item.y * scale;
+    const w = item.itemW * scale;
+    const d = item.itemD * scale;
+
+    // Stand base
+    ctx.fillStyle = item.entry.color + 'cc';
+    ctx.beginPath();
+    ctx.roundRect(x, y, w, d, 4);
+    ctx.fill();
+
+    ctx.strokeStyle = item.entry.color;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.roundRect(x, y, w, d, 4);
+    ctx.stroke();
+
+    // Grow bag circle
+    const cx = x + w / 2;
+    const cy = y + d / 2;
+    const r  = (item.fp.w / 2) * scale * 0.85;
+    ctx.fillStyle = item.bag.color + 'dd';
+    if (item.bag.shape === 'round') {
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.fill();
+    } else {
+      const bw = item.bag.l * scale * 0.85;
+      const bh = item.bag.w * scale * 0.85;
+      ctx.fillRect(cx - bw/2, cy - bh/2, bw, bh);
+    }
+
+    // Label
+    ctx.fillStyle = '#1a202c';
+    ctx.font = `bold ${Math.max(8, Math.min(13, w / 8))}px sans-serif`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    const labelText = item.st.label.split(' ')[0];
+    ctx.fillText(labelText, cx, cy);
+  });
+
+  // Dimension labels
+  ctx.fillStyle = '#4a5568';
+  ctx.font = '11px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+  ctx.fillText(`${toDisplay(terraceL)} ${unitLabel('main')}`, canvas.width / 2, 4);
+  ctx.save();
+  ctx.translate(8, canvas.height / 2);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillText(`${toDisplay(terraceW)} ${unitLabel('main')}`, 0, 0);
+  ctx.restore();
+}
+
+// ── Main calculate ────────────────────────────────────────────
+function calculate() {
+  const terraceL  = toMM(+document.getElementById('terrace-l').value);
+  const terraceW  = toMM(+document.getElementById('terrace-w').value);
+  const pathway   = toMM(+document.getElementById('pathway').value);
+  const standH    = +document.getElementById('stand-height').value; // always mm
+  const margin    = +document.getElementById('bag-margin').value;   // always mm
+  const stockLen  = +document.getElementById('pipe-length-stock').value; // mm
+
+  if (standEntries.length === 0) {
+    alert('Please add at least one stand type first.');
+    return;
+  }
+
+  // Layout
+  const { placed, unplaced } = computeLayout(terraceL, terraceW, pathway, standEntries, margin);
+
+  // Aggregate materials across all placed stands
+  let totalFittings = {};
+  let totalPipes    = {};
+  let totalDrainCells = 0;
+  let totalBags = {};
+  let allPipeInstances = [];
+
+  placed.forEach(item => {
+    const calc = getStandCalc(item.entry.standType, item.bag, margin, standH);
+    const bagsPerStand = calc.bagsPerStand || 1;
+
+    // Fittings
+    calc.fittings.forEach(f => {
+      totalFittings[f.label] = (totalFittings[f.label] || 0) + f.qty;
+    });
+
+    // Pipes
+    calc.pipes.forEach(p => {
+      const key = p.label;
+      if (!totalPipes[key]) totalPipes[key] = { cut: p.cut, qty: 0 };
+      totalPipes[key].qty += p.qty;
+      for (let i = 0; i < p.qty; i++) allPipeInstances.push({ cut: p.cut, qty: 1 });
+    });
+
+    totalDrainCells += calc.drainCells;
+
+    const bagLabel = item.bag.label;
+    totalBags[bagLabel] = (totalBags[bagLabel] || 0) + bagsPerStand;
+  });
+
+  // Total pipe length in metres
+  let totalPipeMM = 0;
+  Object.values(totalPipes).forEach(p => totalPipeMM += p.cut * p.qty);
+
+  // Cutting guide
+  const stocks = buildCuttingGuide(allPipeInstances, stockLen);
+
+  // ── Render output ──
+  document.getElementById('tgp-output').hidden = false;
+
+  // Summary cards
+  const summary = document.getElementById('tgp-summary');
+  summary.innerHTML = `
+    <div class="tgp-summary-card"><span class="tgp-summary-card-value">${placed.length}</span><span class="tgp-summary-card-label">Stands placed</span></div>
+    <div class="tgp-summary-card"><span class="tgp-summary-card-value">${Object.values(totalBags).reduce((a,b)=>a+b,0)}</span><span class="tgp-summary-card-label">Grow bags</span></div>
+    <div class="tgp-summary-card"><span class="tgp-summary-card-value">${totalDrainCells}</span><span class="tgp-summary-card-label">Drain cell mats</span></div>
+    <div class="tgp-summary-card"><span class="tgp-summary-card-value">${stocks.length}</span><span class="tgp-summary-card-label">CPVC pipes (3m) needed</span></div>
+    ${unplaced.length > 0 ? `<div class="tgp-summary-card" style="border-color:#e53e3e"><span class="tgp-summary-card-value" style="color:#e53e3e">${unplaced.length}</span><span class="tgp-summary-card-label">Stands don't fit</span></div>` : ''}
+  `;
+
+  // Canvas
+  renderCanvas(placed, terraceL, terraceW);
+
+  // Legend
+  const legend = document.getElementById('tgp-legend');
+  const seen = new Set();
+  legend.innerHTML = placed.filter(p => {
+    const k = p.entry.id; if (seen.has(k)) return false; seen.add(k); return true;
+  }).map(p => `
+    <div class="tgp-legend-item">
+      <span class="tgp-legend-swatch" style="background:${p.entry.color}"></span>
+      ${p.st.label} + ${p.bag.label}
+    </div>`).join('');
+
+  // Materials table
+  const matDiv = document.getElementById('tgp-materials');
+  let matHTML = '';
+
+  if (unplaced.length > 0) {
+    matHTML += `<div class="tgp-alert tgp-alert--error">⚠️ ${unplaced.length} stand(s) could not fit on your terrace with the current settings. Try reducing quantity or using smaller bags.</div>`;
+  }
+
+  matHTML += '<h3 style="font-size:0.9rem;font-weight:700;margin-bottom:0.5rem">CPVC Fittings</h3>';
+  matHTML += '<table class="tgp-table"><thead><tr><th>Item</th><th>Qty</th></tr></thead><tbody>';
+  Object.entries(totalFittings).forEach(([label, qty]) => {
+    matHTML += `<tr><td>${label}</td><td>${qty}</td></tr>`;
+  });
+  matHTML += '</tbody></table>';
+
+  matHTML += '<h3 style="font-size:0.9rem;font-weight:700;margin:1rem 0 0.5rem">CPVC Pipes</h3>';
+  matHTML += `<table class="tgp-table"><thead><tr><th>Pipe type</th><th>Cut length</th><th>Qty</th></tr></thead><tbody>`;
+  Object.entries(totalPipes).forEach(([label, p]) => {
+    matHTML += `<tr><td>${label}</td><td>${p.cut.toFixed(1)} mm</td><td>${p.qty}</td></tr>`;
+  });
+  matHTML += `<tr class="tgp-table-total"><td>Total pipe length</td><td>${(totalPipeMM/1000).toFixed(2)} m</td><td>—</td></tr>`;
+  matHTML += '</tbody></table>';
+
+  matHTML += '<h3 style="font-size:0.9rem;font-weight:700;margin:1rem 0 0.5rem">Other Items</h3>';
+  matHTML += '<table class="tgp-table"><thead><tr><th>Item</th><th>Qty</th></tr></thead><tbody>';
+  matHTML += `<tr><td>30mm Drain cell mats (300×300mm)</td><td>${totalDrainCells}</td></tr>`;
+  Object.entries(totalBags).forEach(([label, qty]) => {
+    matHTML += `<tr><td>Grow bag — ${label}</td><td>${qty}</td></tr>`;
+  });
+  matHTML += `<tr><td>Geotextile fabric cloth (for drain cells)</td><td>${totalDrainCells} pieces</td></tr>`;
+  matHTML += '</tbody></table>';
+
+  matDiv.innerHTML = matHTML;
+
+  // Cutting guide
+  const cutDiv = document.getElementById('tgp-cutting');
+  let cutHTML = `<p class="tgp-hint">You need <strong>${stocks.length} × ${stockLen}mm (${(stockLen/1000).toFixed(1)}m) CPVC pipes</strong>. Cut each pipe as follows:</p>`;
+  stocks.forEach((stock, i) => {
+    const used = stockLen - stock.remaining;
+    const usedPct = (used / stockLen * 100).toFixed(0);
+    cutHTML += `<div class="tgp-cutting-block">
+      <h3>Pipe ${i + 1} — ${usedPct}% used, ${stock.remaining.toFixed(0)}mm waste</h3>
+      <div class="tgp-pipe-row">
+        <div class="tgp-pipe-bar-wrap">`;
+    stock.cuts.forEach(len => {
+      const pct = len / stockLen * 100;
+      const hue = Math.round((len / stockLen) * 120);
+      cutHTML += `<div class="tgp-pipe-seg" style="width:${pct}%;background:hsl(${hue+100},60%,45%)" title="${len.toFixed(0)}mm">${pct > 8 ? len.toFixed(0) : ''}</div>`;
+    });
+    if (stock.remaining > 0) {
+      const wastePct = stock.remaining / stockLen * 100;
+      cutHTML += `<div class="tgp-pipe-seg tgp-pipe-waste" style="width:${wastePct}%" title="Waste: ${stock.remaining.toFixed(0)}mm"></div>`;
+    }
+    cutHTML += `</div></div>
+      <div style="font-size:0.8rem;color:var(--secondary)">Cuts: ${stock.cuts.map(c => c.toFixed(0)+'mm').join(' | ')}${stock.remaining > 0 ? ` | waste: ${stock.remaining.toFixed(0)}mm` : ''}</div>
+    </div>`;
+  });
+  cutDiv.innerHTML = cutHTML;
+
+  // Scroll to output
+  document.getElementById('tgp-output').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ── Unit toggle ───────────────────────────────────────────────
+function updateUnitLabels() {
+  document.querySelectorAll('.tgp-unit-label').forEach(el => {
+    el.textContent = unit === 'imperial' ? 'inch' : 'cm';
+  });
+  // Convert current input values
+  const fields = ['terrace-l','terrace-w','pathway'];
+  fields.forEach(id => {
+    const el = document.getElementById(id);
+    const mmVal = unit === 'imperial'
+      ? +el.value * 25.4          // was inch, now converting — actually we store display
+      : +el.value * 10;
+    // just update placeholder, keep raw value as display unit
+  });
+}
+
+document.getElementById('btn-metric').addEventListener('click', () => {
+  if (unit === 'metric') return;
+  // Convert displayed values from inch to cm
+  ['terrace-l','terrace-w','pathway'].forEach(id => {
+    const el = document.getElementById(id);
+    el.value = +(+el.value * 2.54).toFixed(1);
+  });
+  unit = 'metric';
+  document.getElementById('btn-metric').classList.add('tgp-unit-btn--active');
+  document.getElementById('btn-imperial').classList.remove('tgp-unit-btn--active');
+  updateUnitLabels();
+});
+
+document.getElementById('btn-imperial').addEventListener('click', () => {
+  if (unit === 'imperial') return;
+  // Convert displayed values from cm to inch
+  ['terrace-l','terrace-w','pathway'].forEach(id => {
+    const el = document.getElementById(id);
+    el.value = +(+el.value / 2.54).toFixed(1);
+  });
+  unit = 'imperial';
+  document.getElementById('btn-imperial').classList.add('tgp-unit-btn--active');
+  document.getElementById('btn-metric').classList.remove('tgp-unit-btn--active');
+  updateUnitLabels();
+});
+
+// ── Init ──────────────────────────────────────────────────────
+document.getElementById('btn-add-stand').addEventListener('click', addStandEntry);
+document.getElementById('btn-calculate').addEventListener('click', calculate);
+
+// Add a default stand to start
+addStandEntry();
+
+})();
+</script>
+
+{{- end }}
