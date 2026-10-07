@@ -172,19 +172,19 @@ sections:
     products:
       - name: "BLACK+DECKER 4.8V Cordless Screwdriver Set"
         description: "15-piece screwdriver set with LED worklight and adjustable torque — perfect for home DIY tasks."
-        url: "https://link.amazon/B01Wj8uwA"
+        url: "https://link.amazon/B02bVz8fv"
         badge: "Amazon"
         image: "/images/products/blackdecker-screwdriver.jpg"
         available: true
       - name: "AASONS Hole Saw Drill Bit Set (6 Pieces)"
         description: "High carbon steel hole saw set in sizes 32–54mm — cuts clean holes in wood, plaster, PVC and plastic."
-        url: "https://link.amazon/B01NsTVBv"
+        url: "https://link.amazon/B01Wj8uwA"
         badge: "Amazon"
         image: "/images/products/aasons-hole-saw-set.jpg"
         available: true
       - name: "Bathla Advance 5-Step Aluminium Ladder"
         description: "Lightweight 150kg capacity step ladder with anti-slip steps, sure-hinge technology and 5 year warranty."
-        url: "https://link.amazon/B07JLFVZo"
+        url: "https://link.amazon/B01NsTVBv"
         badge: "Amazon"
         image: "/images/products/bathla-aluminium-ladder.jpg"
         available: true
