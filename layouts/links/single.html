@@ -10,6 +10,9 @@
     {{- end }}
     <h1 class="links-name">{{ $data.profile.name }}</h1>
     <p class="links-tagline">{{ $data.profile.tagline }}</p>
+    {{- with $data.profile.lastUpdated }}
+    <p class="links-lastupdated">🕒 Last updated: {{ . }}</p>
+    {{- end }}
   </div>
 
   {{/* ── Affiliate Disclosure ── */}}
@@ -52,6 +55,7 @@
     <h2 class="links-section-title" id="section-{{ .id }}">
       {{ .title }}
       <span class="links-section-count" aria-label="{{ $count }} products">{{ $count }}</span>
+      <button class="links-anchor-btn" data-anchor="section-{{ .id }}" aria-label="Copy link to {{ .title }} section" title="Copy link to this section">🔗</button>
     </h2>
     <div class="links-products">
       {{- range .products }}
@@ -90,5 +94,27 @@
   </section>
 
 </div>
+
+<script>
+  document.querySelectorAll('.links-anchor-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var anchor = btn.getAttribute('data-anchor');
+      var url = window.location.origin + window.location.pathname + '#' + anchor;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function() {
+          var orig = btn.textContent;
+          btn.textContent = '✅';
+          btn.classList.add('links-anchor-btn--copied');
+          setTimeout(function() {
+            btn.textContent = orig;
+            btn.classList.remove('links-anchor-btn--copied');
+          }, 2000);
+        });
+      } else {
+        window.location.hash = '#' + anchor;
+      }
+    });
+  });
+</script>
 
 {{- end }}

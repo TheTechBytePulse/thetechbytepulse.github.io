@@ -403,7 +403,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 0.25rem 0;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--theme);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid var(--border);
 }
 
 .links-jumpnav-item {
@@ -453,4 +462,40 @@
     margin-top: 0.45rem;
     color: var(--primary);
     font-weight: 500;
+}
+
+/* ── Last updated ── */
+.links-lastupdated {
+    font-size: 0.75rem;
+    color: var(--secondary);
+    margin: 0;
+}
+
+/* ── Section anchor copy button ── */
+.links-anchor-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 6px;
+    color: var(--secondary);
+    opacity: 0;
+    transition: opacity 0.2s, background 0.2s;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.links-section-title:hover .links-anchor-btn,
+.links-anchor-btn:focus {
+    opacity: 1;
+}
+
+.links-anchor-btn:hover {
+    background: var(--entry);
+    color: var(--primary);
+}
+
+.links-anchor-btn--copied {
+    opacity: 1;
 }
