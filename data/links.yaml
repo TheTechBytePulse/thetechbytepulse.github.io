@@ -122,15 +122,9 @@ sections:
         available: true
       - name: "Kenbrook Solar 2-in-1 Branch Connector (MC4)"
         description: "MC4 2-in-1 solar branch connector to connect 2 solar panels in parallel — includes 1 pair of solar connectors."
-        url: "https://link.amazon/B0j8xj61M"
-        badge: "Amazon"
-        image: "/images/products/kenbrook-solar-branch-connector.jpg"
-        available: true
-      - name: "Kenbrook Solar MC4 Connectors"
-        description: "Compatible MC4 solar connectors for panel wiring — UV resistant and weatherproof."
         url: "https://link.amazon/B0eesml5e"
         badge: "Amazon"
-        image: "/images/products/kenbrook-mc4-connectors.jpg"
+        image: "/images/products/kenbrook-solar-branch-connector.jpg"
         available: true
 
   - title: "📱 Gadgets & Accessories"
